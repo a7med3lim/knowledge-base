@@ -281,39 +281,43 @@ input:empty {
             .modal-header {
                 background-color: var(--primary);
                 color: var(--white);
-                button{
+
+                button {
                     color: var(--white) !important;
                     opacity: 1;
                 }
             }
 
-            .modal-body {
-               
-            }
+            .modal-body {}
         }
     }
 }
-.nav{
-    &.nav-tabs{
+
+.nav {
+    &.nav-tabs {
         padding: 0;
         margin-bottom: 1.5rem;
         border: 0;
-        .nav-item{
-            .nav-link{
+
+        .nav-item {
+            .nav-link {
                 color: var(--primary);
                 background-color: var(--white);
                 border-color: #dee2e600 #dee2e600 #fff0;
                 border-radius: 15px;
                 margin: 0 2px;
-                box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
-                &.active{
-                    color: var(--white);
-                background-color: var(--primary);
+                box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075) !important;
+                font-weight: 500;
+                &.active {
+                    color: #00603f;
+                    background-color: #0068455e;
+                    
                 }
             }
         }
     }
 }
+
 // If pages rtl
 html[lang="ar"] {
     body {
@@ -505,7 +509,7 @@ html[lang="ar"] {
                 margin-right: 17rem;
 
                 // width: calc(100% - 17rem);
-           
+
             }
         }
     }
@@ -528,28 +532,28 @@ html[lang="en"] {
 
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {
-    * {
-        font-size: small  !important;
-    }
+    // * {
+    //     font-size: small !important;
+    // }
 }
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
-    * {
-        font-size: small  !important;
-    }
+    // * {
+    //     font-size: small !important;
+    // }
 }
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
-    * {
-        font-size: small!important;
-    }
+    // * {
+    //     font-size: small !important;
+    // }
 }
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
-    * {
-        font-size: small!important;
-    }
+    // * {
+    //     font-size: inherit !important;
+    // }
 }
