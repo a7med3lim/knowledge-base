@@ -1,0 +1,402 @@
+:root {
+  --blue: #007bff;
+  --indigo: #6610f2;
+  --purple: #6f42c1;
+  --pink: #e83e8c;
+  --red: #dc3545;
+  --orange: #fd7e14;
+  --yellow: #ffc107;
+  --green: #28a745;
+  --teal: #20c997;
+  --cyan: #17a2b8;
+  --white: #fff;
+  --gray: #626262;
+  --gray-dark: #343a40;
+  --primary: #006845;
+  --secondary: #626262;
+  --success: #00603F;
+  --info: #F5F5F5;
+  --warning: #ffc107;
+  --danger: #dc3545;
+  --light: #ffff;
+  --dark: #343a40;
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+  background-color: #F5F5F5;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+  background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+  background-image: linear-gradient(to top, #626262 0%, #005337 100%);
+}
+
+/*Set Some Value*/
+.bg-light {
+  background-color: var(--light) !important;
+}
+
+.btn-DEDprimary {
+  color: #fff !important;
+  background-color: var(--primary) !important;
+  width: 100%;
+  margin: auto;
+  text-align: start;
+}
+
+.card.rounded {
+  border-radius: 0.65rem !important;
+}
+.card h6 {
+  line-height: 1.5;
+}
+
+i {
+  color: var(--primary);
+}
+
+table tbody tr:hover {
+  background-color: #dbdbdb !important;
+}
+
+input:focus {
+  border: 1px solid #006845 !important;
+}
+
+input:active {
+  border: 0.5px solid #006845 !important;
+}
+
+input:empty {
+  border: 0.5px solid var(--gray) !important;
+}
+
+/***************/
+.announcement .carousel-dashboard {
+  position: relative;
+  height: 25.5rem;
+}
+.announcement .carousel-dashboard .carousel-indicators {
+  position: absolute;
+  bottom: -9px;
+  margin: auto 0;
+}
+.announcement .carousel-dashboard .carousel-indicators li {
+  background-color: var(--secondary);
+}
+.announcement .carousel-dashboard .carousel-indicators li.active {
+  background-color: var(--primary) !important;
+}
+.announcement .carousel-dashboard .carousel-inner .carousel-item .card .card-img-top {
+  width: 35vmin;
+  margin: 0 auto;
+}
+.announcement .carousel-dashboard .carousel-inner .carousel-item .card .card-body {
+  height: 13.5rem !important;
+  overflow: auto;
+  overflow-x: hidden;
+}
+.announcement .carousel-dashboard .carousel-inner .carousel-item .card .card-body .btn {
+  background-color: var(--gray) !important;
+}
+.titleWithIcon {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.titleWithIcon i {
+  background: white;
+  padding: 0.9rem;
+  border-radius: 100%;
+  width: 0.5rem;
+  height: 0.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+  box-shadow: 0px 0px 3px 1px #00000012;
+  font-size: 12px;
+}
+
+.innerTabs .tabName button {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0.84rem 0.86rem;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--primary) !important;
+  box-shadow: none !important;
+}
+.innerTabs .tabName button i {
+  margin: auto;
+  color: var(--primary);
+  order: 2;
+}
+.innerTabs .tabName button::after {
+  content: " ";
+  display: flex;
+  width: 70%;
+  height: 1px;
+  background-color: var(--gray);
+  opacity: 0.2;
+  order: 1;
+  margin: 0 10px;
+}
+.innerTabs .tabName button .iconmainTab {
+  background: white;
+  padding: 0.9rem;
+  border-radius: 100%;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+  box-shadow: 0px 0px 3px 1px #00000012;
+  font-size: 12px;
+}
+.innerTabs .tabName button[aria-expanded=true] {
+  background-color: transparent !important;
+  color: var(--primary);
+}
+.innerTabs .tabName button[aria-expanded=false] {
+  background-color: transparent !important;
+}
+.innerTabs .tabName button[aria-expanded=false] i {
+  transform: rotate(90deg);
+}
+.innerTabs .card .card-body .iconBodyCard {
+  height: 5rem;
+  background: #d1c2c21f;
+  box-shadow: inset -4px 0px 10px 1px #6262621a;
+}
+.innerTabs .card .card-body .iconBodyCard i {
+  color: #6262629a;
+}
+.innerTabs .card .card-body h6 {
+  color: #666464 !important;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.modal .modal-dialog .modal-content .modal-header {
+  background-color: var(--primary);
+  color: var(--white);
+}
+.modal .modal-dialog .modal-content .modal-header button {
+  color: var(--white) !important;
+  opacity: 1;
+}
+.nav.nav-tabs {
+  padding: 0;
+  margin-bottom: 1.5rem;
+  border: 0;
+}
+.nav.nav-tabs .nav-item .nav-link {
+  color: var(--primary);
+  background-color: var(--white);
+  border-color: #dee2e600 #dee2e600 #fff0;
+  border-radius: 15px;
+  margin: 0 2px;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+}
+.nav.nav-tabs .nav-item .nav-link.active {
+  color: var(--white);
+  background-color: var(--primary);
+}
+
+html[lang=ar] {
+  /* for toggle behavior */
+}
+html[lang=ar] body {
+  direction: rtl;
+  text-align: start;
+  background-color: #F5F5F5;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+html[lang=ar] .vertical-nav {
+  min-width: 240px;
+  width: 240px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s;
+  background-color: var(--primary);
+  padding-top: 5rem;
+  overflow-x: hidden;
+  overflow: auto;
+}
+html[lang=ar] .vertical-nav .accordion.sideNav .mainMenu .mainMenu_name button {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.84rem 0.86rem;
+  font-size: 14px;
+  font-weight: 500;
+}
+html[lang=ar] .vertical-nav .accordion.sideNav .mainMenu .mainMenu_name button i {
+  color: white;
+}
+html[lang=ar] .vertical-nav .accordion.sideNav .mainMenu .mainMenu_name button[aria-expanded=true] {
+  background-color: #00603F !important;
+}
+html[lang=ar] .vertical-nav .accordion.sideNav .mainMenu .mainMenu_name button[aria-expanded=false] i {
+  color: white;
+  transform: rotate(90deg);
+}
+html[lang=ar] .vertical-nav .accordion.sideNav .mainMenu .mainMenu_links ul {
+  background: #015B3D;
+  padding: 0;
+}
+html[lang=ar] .vertical-nav .accordion.sideNav .mainMenu .mainMenu_links ul li {
+  padding: 0.25rem 2.5rem;
+}
+html[lang=ar] .vertical-nav .accordion.sideNav .mainMenu .mainMenu_links ul li a {
+  color: var(--white);
+  position: relative;
+  font-size: 14px;
+  font-weight: 400;
+  display: block;
+  width: 100%;
+}
+html[lang=ar] .vertical-nav .accordion.sideNav .mainMenu .mainMenu_links ul li a::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 3px;
+  height: 100px;
+  right: -14px;
+  top: -6px;
+  background-color: white;
+}
+html[lang=ar] .vertical-nav .accordion.sideNav .mainMenu .mainMenu_links ul li a::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 11px;
+  height: 11px;
+  border: 2px solid var(--primary);
+  right: -18px;
+  top: 16px;
+  background-color: white;
+  z-index: 2;
+  border-radius: 50%;
+}
+html[lang=ar] .vertical-nav .accordion.sideNav .mainMenu .mainMenu_links ul li.active {
+  background: #005337;
+}
+html[lang=ar] .vertical-nav .accordion.sideNav .mainMenu .mainMenu_links ul li:hover {
+  background: #005337;
+}
+html[lang=ar] .page-content {
+  width: calc(100% - 240px);
+  margin-right: 240px;
+  transition: all 0.4s;
+}
+html[lang=ar] .page-content .pageLocation {
+  background-color: var(--secondary);
+}
+html[lang=ar] .page-content .pageLocation ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+html[lang=ar] .page-content .pageLocation ul li {
+  list-style: none;
+  padding: 0 1rem;
+}
+html[lang=ar] .page-content .pageLocation ul li a {
+  color: #c1bebe;
+}
+html[lang=ar] .page-content .pageLocation ul li.current a {
+  color: white;
+  font-weight: 400;
+}
+html[lang=ar] .page-content .pageLocation ul li:nth-last-child(1) {
+  padding: 0;
+}
+html[lang=ar] .page-content .pageLocation ul li:nth-last-child(1)::before {
+  content: " / ";
+  font-size: 16px;
+  color: white;
+}
+html[lang=ar] #sidebar.active {
+  margin-right: -17rem;
+}
+html[lang=ar] #content.active {
+  width: 100%;
+  margin: 0;
+}
+@media (max-width: 768px) {
+  html[lang=ar] #sidebar {
+    margin-right: -17rem;
+  }
+  html[lang=ar] #sidebar.active {
+    margin-right: 0;
+    z-index: 999;
+  }
+  html[lang=ar] #content {
+    width: 100%;
+    margin: 0;
+  }
+  html[lang=ar] #content.active {
+    margin-right: 17rem;
+  }
+}
+html[lang=ar] table {
+  direction: rtl;
+}
+
+html[lang=en] body {
+  direction: ltr;
+  text-align: start;
+}
+
+@media (min-width: 576px) {
+  * {
+    font-size: small !important;
+  }
+}
+@media (min-width: 768px) {
+  * {
+    font-size: small !important;
+  }
+}
+@media (min-width: 992px) {
+  * {
+    font-size: small !important;
+  }
+}
+@media (min-width: 1200px) {
+  * {
+    font-size: small !important;
+  }
+}/*# sourceMappingURL=style.css.map */
