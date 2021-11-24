@@ -1,0 +1,20 @@
+[
+  {
+    "nationality": "إماراتي , مجلس الخليج",
+    "legalForm": "مؤسسة فردية",
+    "activity": "اipiodisapidpsaip",
+    "numberOfPartners": "1"
+  },
+   {
+    "nationality": "مجلس الخليج",
+    "legalForm": "مؤسسة فردية",
+    "activity": "اipiodisapidpsaip",
+    "numberOfPartners": "2~أكثر"
+  },
+   {
+    "nationality": "إماراتي",
+    "legalForm": "مؤسسة فردية",
+    "activity": "اipiodisapidpsaip",
+    "numberOfPartners": "2~أكثر"
+  }
+]
