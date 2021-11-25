@@ -1,5 +1,4 @@
 
-
 // UI Fix  //fix Table Header in modal
 $(document).on('shown.bs.modal', function () {
 
@@ -20,7 +19,7 @@ let dt = $('#dt-vertical-scroll-ConsumerProtection').DataTable({
 	paging: true,
 	"pagingType": "simple_numbers",
 	"ajax": {
-		"url": "page_Consumer_protection_data/tb_consumer_protection.txt",
+		"url": "tb_consumer_protection.txt",
 		"dataSrc": ""
 	},
 	"columns": [
@@ -35,7 +34,7 @@ let dt2 = $('#dt-vertical-scroll-OutsideConsumerProtection').DataTable({
 	paging: true,
 	"pagingType": "simple_numbers",
 	"ajax": {
-		"url": "page_Consumer_protection_data/tb_OutsideConsumer_Protection.txt",
+		"url": "tb_OutsideConsumer_Protection.txt",
 		"dataSrc": ""
 	},
 	"columns": [
@@ -51,7 +50,7 @@ let dt3 = $('#dt-vertical-scroll-complaintsExInt').DataTable({
 	paging: true,
 	"pagingType": "simple_numbers",
 	"ajax": {
-		"url": "page_Consumer_protection_data/tb_complaintsExInt.txt",
+		"url": "tb_complaintsExInt.txt",
 		"dataSrc": ""
 	},
 	"columns": [
@@ -67,7 +66,7 @@ let dt4 = $('#dt-vertical-scroll-complaintsOtherPhones').DataTable({
 	paging: true,
 	"pagingType": "simple_numbers",
 	"ajax": {
-		"url": "page_Consumer_protection_data/tb_complaintsOtherPhones.txt",
+		"url": "tb_complaintsOtherPhones.txt",
 		"dataSrc": ""
 	},
 	"columns": [
@@ -108,6 +107,10 @@ $("#dt-vertical-scroll-complaintsOtherPhones").ready(function () {
 });
 
 
+
+
+
+//*From Index Page*//
 //check if the URL(Browser) contains a given from index page
 //Open Modal modal_tb_consumer_protection From index page
 if (window.location.href.indexOf("#table_Consumer_Protection") > -1) {
@@ -117,3 +120,4 @@ if (window.location.href.indexOf("#table_Consumer_Protection") > -1) {
 if (window.location.href.indexOf("#table_Outside_consumer_protection") > -1) {
 	$("#modal_tb__outside_consumer_protection").modal("show");
 }
+/// Active in sideNav
