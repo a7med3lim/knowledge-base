@@ -36,19 +36,18 @@ let dt = $('#dt-vertical-scroll-BRL-Req-Doc-CreateBusiness').DataTable({
 			} );
 		} );
 	},
-	scrollY: 440,
+	scrollY: 540,
 	paging: true,
 	filter:true,
 	"pagingType": "simple_numbers",
 	"ajax": {
-		"url": "page_BRL_Required_Documents/tb_BRL_Req_Doc_CreateBusiness.txt",
+		"url": "page_Consumer_protection_data/tb_consumer_protection.txt",
 		"dataSrc": ""
 	},
 	"columns": [
-		{ "data": "nationality" },
-		{ "data": "legalForm" },
-		{ "data": "activity" },
-		{ "data": "numberOfPartners" }
+		{ "data": "number" },
+		{ "data": "position" },
+		{ "data": "notes" }
 	]
 });
 
@@ -59,10 +58,6 @@ $("#dt-vertical-scroll-BRL-Req-Doc-CreateBusiness").ready(function () {
 	$("#dt-vertical-scroll-BRL-Req-Doc-CreateBusiness_wrapper").find(".form-control").css("height", "41px")
 	$("#dt-vertical-scroll-BRL-Req-Doc-CreateBusiness_wrapper").find(".form-control").attr("placeholder", "اكتب هنا كلمات المراد البحث عنها");
 	$("#dt-vertical-scroll-BRL-Req-Doc-CreateBusiness_wrapper").find(".form-control").focus();
-	//Set footer table UI
-	$("#dt-vertical-scroll-BRL-Req-Doc-CreateBusiness_wrapper").find(".dataTables_scroll").css('position','relative');
-	$("#dt-vertical-scroll-BRL-Req-Doc-CreateBusiness_wrapper").find(".dataTables_scrollHead").css('margin-top','5rem');
-	$("#dt-vertical-scroll-BRL-Req-Doc-CreateBusiness_wrapper").find(".dataTables_scrollFoot").css({"position":"absolute","top":"-75px"});
 });
 
 

@@ -1,0 +1,20 @@
+[
+  {
+    "theSide": "1",
+    "phone": "+9715016546",
+    "notes": "We-egypt",
+    "address": "address1"
+  },
+    {
+    "theSide": "1",
+    "phone": "+9715016546",
+    "notes": "Du",
+    "address": "address1"
+  },
+    {
+    "theSide": "1",
+    "phone": "+9715016546",
+    "notes": "Vodafone",
+    "address": "address1"
+  }
+]
