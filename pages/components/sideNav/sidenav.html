@@ -16,7 +16,7 @@
                 data-parent="#accordionExample">
                 <ul class="nav flex-column">
                     <li class="nav-item waves-effect">
-                        <a href="../../../pages/page_Consumer_protection/page_Consumer_protection.html" class=""> حماية
+                        <a href="/pages/page_Consumer_protection/page_Consumer_protection.html" class=""> حماية
                             المستهلك
                             <br>Consumer protection </a>
                     </li>
@@ -81,7 +81,7 @@
                         </a>
                     </li>
                     <li class="nav-item activeX waves-effect">
-                        <a href="../../../pages/page_BRL_Required_Documents/page_BRL_Required_Documents.html" class="">
+                        <a href="/pages/page_BRL_Required_Documents/page_BRL_Required_Documents.html" class="">
                             الأوراق المطلوبة
                             <br>
                             Required Documents
@@ -210,5 +210,14 @@
     </div>
     <!-- !!End -->
 </div>
+<script>
+
+
+    $('.nav-item a').click(function () {
+        var page = $(this).attr('href');
+        $("#loadPages").load(page);
+        return false;
+    })
+
 
 </script>
