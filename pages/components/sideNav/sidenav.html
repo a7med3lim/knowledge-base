@@ -212,13 +212,12 @@
 </div>
 <script>
     $('.nav-item a').click(function (event) {
+        debugger
         alert(1);
         var page = $(this).attr('href');
         $("#loadPages").load(page);
         event.preventDefault();
         return false;
     })
-    $('.nav-item').click(function(){
-        alert(2);
-    })
+
 </script>
