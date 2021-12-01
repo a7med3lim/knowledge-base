@@ -211,13 +211,16 @@
     <!-- !!End -->
 </div>
 <script>
-    $('.nav-item a').click(function (event) {
-        debugger
-        alert(page);
-        var page = $(this).attr('href');
-        $("#loadPages").load(page);
-        event.preventDefault();
-        return false;
-    })
+    $(document).ready(function () {
+        $('.nav-item a').click(function (event) {
+            debugger
+            alert("page");
+            var page = $(this).attr('href');
+            $("#loadPages").load(page);
+            event.preventDefault();
+            return false;
+        })
+    });
+
 
 </script>
