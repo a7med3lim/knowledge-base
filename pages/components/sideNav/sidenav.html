@@ -15,7 +15,7 @@
             <div id="collapseOne" class="collapse mainMenu_links" aria-labelledby="heading_1"
                 data-parent="#accordionExample">
                 <ul class="nav flex-column">
-                    <li class="nav-item waves-effect">
+                    <li class="nav-item activeX waves-effect">
                         <a href="/pages/page_Consumer_protection/page_Consumer_protection.html" class=""> حماية
                             المستهلك
                             <br>Consumer protection </a>
@@ -211,9 +211,11 @@
     <!-- !!End -->
 </div>
 <script>
-    $('.nav-item a').click(function () {
+    $('.nav-item a').click(function (event) {
         var page = $(this).attr('href');
         $("#loadPages").load(page);
+        event.preventDefault();
         return false;
     })
+    
 </script>
