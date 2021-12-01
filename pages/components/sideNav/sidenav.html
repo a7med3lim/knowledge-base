@@ -16,7 +16,7 @@
                 data-parent="#accordionExample">
                 <ul class="nav flex-column">
                     <li class="nav-item activeX waves-effect">
-                        <a href="../../../page_Consumer_protection/page_Consumer_protection.html" class=""> حماية
+                        <a href="../../../pages/page_Consumer_protection/page_Consumer_protection.html" class=""> حماية
                             المستهلك
                             <br>Consumer protection </a>
                     </li>
@@ -213,8 +213,6 @@
 <script>
     $(document).ready(function () {
         $('.nav-item a').click(function (event) {
-            debugger
-            alert("page");
             var page = $(this).attr('href');
             $("#loadPages").load(page);
             event.preventDefault();
