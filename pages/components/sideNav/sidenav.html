@@ -213,7 +213,7 @@
 <script>
     $('.nav-item a').click(function (event) {
         debugger
-        alert(1);
+        alert(page);
         var page = $(this).attr('href');
         $("#loadPages").load(page);
         event.preventDefault();
