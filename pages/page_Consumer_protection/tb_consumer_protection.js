@@ -18,7 +18,7 @@ var dt_CP1 = $('#dt-vertical-scroll-ConsumerProtection').DataTable({
     paging: true,
     "pagingType": "simple_numbers",
     "ajax": {
-        "url": "/pages/page_Consumer_protection/tb_consumer_protection.txt",
+        "url": "pages/page_Consumer_protection/tb_consumer_protection.txt",
         "dataSrc": ""
     },
     "columns": [
@@ -33,7 +33,7 @@ var dt_CP2 = $('#dt-vertical-scroll-OutsideConsumerProtection').DataTable({
     paging: true,
     "pagingType": "simple_numbers",
     "ajax": {
-        "url": "/pages/page_Consumer_protection/tb_OutsideConsumer_Protection.txt",
+        "url": "pages/page_Consumer_protection/tb_OutsideConsumer_Protection.txt",
         "dataSrc": ""
     },
     "columns": [
@@ -49,7 +49,7 @@ var dt_CP3 = $('#dt-vertical-scroll-complaintsExInt').DataTable({
     paging: true,
     "pagingType": "simple_numbers",
     "ajax": {
-        "url": "/pages/page_Consumer_protection/tb_complaintsExInt.txt",
+        "url": "pages/page_Consumer_protection/tb_complaintsExInt.txt",
         "dataSrc": ""
     },
     "columns": [
@@ -65,7 +65,7 @@ var dt_CP4 = $('#dt-vertical-scroll-complaintsOtherPhones').DataTable({
     paging: true,
     "pagingType": "simple_numbers",
     "ajax": {
-        "url": "/pages/page_Consumer_protection/tb_complaintsOtherPhones.txt",
+        "url": "pages/page_Consumer_protection/tb_complaintsOtherPhones.txt",
         "dataSrc": ""
     },
     "columns": [
