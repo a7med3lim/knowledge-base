@@ -70,9 +70,21 @@
 	<script type="text/javascript" src="js/addons/rating.min.js"></script>
 	
 	<!-- Your custom scripts (optional) -->
-
 	<script>
 		$(document).ready(function () {
+			$('.nav-item a').click(function (event) {
+				var page = $(this).attr('href');
+				$("#loadPages").load(page);
+				event.preventDefault();
+				return false;
+			})
+		});
+	</script>
+	<script>
+		$(document).ready(function () {
+
+
+			
 			// For Side Nave
 			$(function () {
 				$("#sidebarCollapse").on("click", function () {
