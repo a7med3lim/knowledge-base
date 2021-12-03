@@ -28,7 +28,13 @@
     --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
-
+@font-face {
+    font-family: "DubaiFont-R";
+    src: url("/webfonts/DubaiW23-Medium.woff2") format("woff2"),
+         url("/webfonts/DubaiW23-Medium.woff") format("woff"),
+         url("/webfonts/DubaiW23-Medium.eot") format("eot"),
+         url("/webfonts/DubaiW23-Medium.ttf") format("ttf");
+  }
 ::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
     background-color: #F5F5F5;
@@ -318,7 +324,9 @@ input:empty {
         }
     }
 }
-
+*{
+    font-family: "DubaiFont-R";
+}
 // If pages rtl
 html[lang="ar"] {
     body {
