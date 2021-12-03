@@ -327,7 +327,17 @@ input:empty {
         }
     }
 }
-
+body,#loadPages div{
+    animation: fade-in 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+@keyframes fade-in {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
 // If pages rtl
 html[lang="ar"] {
     body {
