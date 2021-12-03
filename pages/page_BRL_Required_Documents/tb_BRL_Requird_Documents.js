@@ -41,7 +41,7 @@ let dt = $('#dt-vertical-scroll-BRL-Req-Doc-CreateBusiness').DataTable({
 	filter:true,
 	"pagingType": "simple_numbers",
 	"ajax": {
-		"url": "tb_BRL_Req_Doc_CreateBusiness.txt",
+		"url": "pages/page_BRL_Required_Documents/tb_BRL_Req_Doc_CreateBusiness.txt",
 		"dataSrc": ""
 	},
 	"columns": [
