@@ -30,11 +30,14 @@
 }
 @font-face {
     font-family: "DubaiFont-R";
-    src: url("/webfonts/DubaiW23-Medium.woff2") format("woff2"),
-         url("/webfonts/DubaiW23-Medium.woff") format("woff"),
-         url("/webfonts/DubaiW23-Medium.eot") format("eot"),
-         url("/webfonts/DubaiW23-Medium.ttf") format("ttf");
+    src: url("/webfonts/DubaiW23-Regular.woff2") format("woff2"),
+         url("/webfonts/DubaiW23-Regular.woff") format("woff"),
+         url("/webfonts/DubaiW23-Regular.eot") format("eot"),
+         url("/webfonts/DubaiW23-Regular.ttf") format("ttf");
   }
+.btn,.btn-DEDprimary,button,input,select,textarea,h1,h2,h3,h4,h5,h6,span{
+    font-family: "DubaiFont-R";
+}
 ::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
     background-color: #F5F5F5;
@@ -324,9 +327,7 @@ input:empty {
         }
     }
 }
-*{
-    font-family: "DubaiFont-R" !important;
-}
+
 // If pages rtl
 html[lang="ar"] {
     body {
