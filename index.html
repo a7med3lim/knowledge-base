@@ -18,7 +18,10 @@
 	<link rel="stylesheet" href="css/mdb.min.css" />
 	<!-- Your custom styles (optional) -->
 	<link rel="stylesheet" href="css/style.css" />
+<script>
 
+			//
+</script>
 </head>
 
 <body class="fixed-sn dark-blue-skin">
@@ -36,7 +39,7 @@
 		<!-- Header -->
 		<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
 			<!-- Toggle button Side Nav -->
-			<button id="sidebarCollapse" type="button" class="btn-Ded rounded-pill shadow-sm d-lg-none d-md-none">
+			<button id="sidebarCollapse" type="button" class="btn-Ded rounded-pill shadow-sm d-lg-noneX d-md-noneX">
 				<i class="fa fa-bars" aria-hidden="true"></i>
 			</button>
 			<!-- Logo -->
@@ -68,23 +71,18 @@
 	<script type="text/javascript" src="js/addons/imagesloaded.pkgd.min.js"></script>
 	<script type="text/javascript" src="js/addons/masonry.pkgd.min.js"></script>
 	<script type="text/javascript" src="js/addons/rating.min.js"></script>
-	
+
 	<!-- Your custom scripts (optional) -->
 
 	<script>
 		$(document).ready(function () {
-
-
-			
-			// For Side Nave
-			$(function () {
-				$("#sidebarCollapse").on("click", function () {
-					alert();
+				// For Side Nave
+				$(function () {
+				$('html').find("#sidebarCollapse").on("click", function () {
 					$("#content").toggleClass("active");
 					$("#sidebar").toggleClass("active");
 				});
 			});
-			//
 			// !!End Side Nave
 			$("#loadSideBar").load("pages/components/sideNav/sidenav.html");
 			$("#loadPages").load("pages/dashboard/dashboard.html");

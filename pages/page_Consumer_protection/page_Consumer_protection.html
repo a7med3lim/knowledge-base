@@ -1,4 +1,4 @@
-<script src="../pages/page_Consumer_protection/tb_consumer_protection.js"></script>
+
 <div class="container-fluid mt-5">
 	<!-- Page Location -->
 	<div class="row">
@@ -426,3 +426,13 @@
 		<!--/.Content-->
 	</div>
 </div>
+<script>
+	$(document).ready(function () {
+		if ($('body').hasClass("btnFormDashboard_OpenModal_tb_consumer_protection")) {
+			$('#modal_tb_consumer_protection').modal('show');
+		} else {
+			$('#modal_tb_consumer_protection').modal('hide');
+		}
+	})
+</script>
+<script src="/pages/page_Consumer_protection/tb_consumer_protection.js"></script>
