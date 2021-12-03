@@ -325,7 +325,7 @@ input:empty {
     }
 }
 *{
-    font-family: "DubaiFont-R";
+    font-family: "DubaiFont-R" !important;
 }
 // If pages rtl
 html[lang="ar"] {

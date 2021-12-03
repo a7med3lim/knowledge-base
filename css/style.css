@@ -304,7 +304,7 @@ input:empty {
 }
 
 * {
-  font-family: "DubaiFont-R";
+  font-family: "DubaiFont-R" !important;
 }
 
 html[lang="ar"] {
