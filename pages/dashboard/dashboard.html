@@ -53,7 +53,7 @@
                                 <div class="card waves-effect rounded h-100">
                                     <!-- Card content -->
                                     <a href="pages\page_Consumer_protection\page_Consumer_protection.html#table_Outside_consumer_protection"
-                                        class="h-100">
+                                        class="h-100 openModal_tb_consumer_protectionOutside">
                                         <div class="card-body d-flex flex-column h-100 justify-content-between">
                                             <!-- Title -->
                                             <h5 class="card-title medium text-primery text-dark">خارج اختصاص حماية
@@ -357,6 +357,14 @@
             $("#loadPages").load(page);
             event.preventDefault();
             $('body').addClass("btnFormDashboard_OpenModal_tb_consumer_protection");
+            return false;
+        })
+        //
+        $('.openModal_tb_consumer_protectionOutside').click(function (event) {
+            var page = $(this).attr('href');
+            $("#loadPages").load(page);
+            event.preventDefault();
+            $('body').addClass("btnFormDashboard_OpenModal_tb_consumer_protection_outside");
             return false;
         })
     });

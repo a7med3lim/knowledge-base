@@ -426,11 +426,18 @@
 	</div>
 </div>
 <script>
+	// If popup called form dashboard
 	$(document).ready(function () {
 		if ($('body').hasClass("btnFormDashboard_OpenModal_tb_consumer_protection")) {
 			$('#modal_tb_consumer_protection').modal('show');
 		} else {
 			$('#modal_tb_consumer_protection').modal('hide');
+		}
+		// 
+		if ($('body').hasClass("btnFormDashboard_OpenModal_tb_consumer_protection_outside")) {
+			$('#modal_tb__outside_consumer_protection').modal('show');
+		} else {
+			$('#modal_tb__outside_consumer_protection').modal('hide');
 		}
 	})
 </script>
