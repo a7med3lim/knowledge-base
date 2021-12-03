@@ -8,10 +8,10 @@ $(document).on('shown.bs.modal', function () {
 $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
 	e.target // newly activated tab
 	e.relatedTarget // previous active tab
-	dt.columns.adjust();
-	dt2.columns.adjust();
-	dt3.columns.adjust();
-	dt4.columns.adjust();
+	dt_BRL1.columns.adjust();
+	// dt2.columns.adjust();
+	// dt3.columns.adjust();
+	// dt4.columns.adjust();
 })
 /******************************************************* */
 // //call Data ConsumerProtection

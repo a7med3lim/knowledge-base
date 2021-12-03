@@ -1,15 +1,15 @@
 // UI Fix  //fix Table Header in modal
 $(document).on('shown.bs.modal', function () {
 
-    dt2.columns.adjust();
-    dt.columns.adjust();
+    dt_CP2.columns.adjust();
+    dt_CP1.columns.adjust();
 });
 // UI Fix //fix Table Header in tabs
 $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
     e.target // newly activated tab
     e.relatedTarget // previous active tab
-    dt3.columns.adjust();
-    dt4.columns.adjust();
+    dt_CP3.columns.adjust();
+    dt_CP4.columns.adjust();
 })
 /******************************************************* */
 // //call Data ConsumerProtection
