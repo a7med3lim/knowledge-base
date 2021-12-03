@@ -15,7 +15,7 @@ $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
 })
 /******************************************************* */
 // //call Data ConsumerProtection
-var dt = $('#dt-vertical-scroll-BRL-Req-Doc-CreateBusiness').DataTable({
+var dt_BRL1 = $('#dt-vertical-scroll-BRL-Req-Doc-CreateBusiness').DataTable({
 	initComplete: function () {
 		this.api().columns().every( function () {
 			var column = this;

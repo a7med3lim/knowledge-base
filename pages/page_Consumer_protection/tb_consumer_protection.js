@@ -13,7 +13,7 @@ $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
 })
 /******************************************************* */
 // //call Data ConsumerProtection
-var dt = $('#dt-vertical-scroll-ConsumerProtection').DataTable({
+var dt_CP1 = $('#dt-vertical-scroll-ConsumerProtection').DataTable({
     scrollY: 400,
     paging: true,
     "pagingType": "simple_numbers",
@@ -28,7 +28,7 @@ var dt = $('#dt-vertical-scroll-ConsumerProtection').DataTable({
     ]
 });
 // //call Data ConsumerProtection
-var dt2 = $('#dt-vertical-scroll-OutsideConsumerProtection').DataTable({
+var dt_CP2 = $('#dt-vertical-scroll-OutsideConsumerProtection').DataTable({
     scrollY: 400,
     paging: true,
     "pagingType": "simple_numbers",
@@ -44,7 +44,7 @@ var dt2 = $('#dt-vertical-scroll-OutsideConsumerProtection').DataTable({
     ]
 });
 // //call Data complaintsExInt
-var dt3 = $('#dt-vertical-scroll-complaintsExInt').DataTable({
+var dt_CP3 = $('#dt-vertical-scroll-complaintsExInt').DataTable({
     scrollY: 400,
     paging: true,
     "pagingType": "simple_numbers",
@@ -60,7 +60,7 @@ var dt3 = $('#dt-vertical-scroll-complaintsExInt').DataTable({
     ]
 });
 // // Call Data complaintsOtherPhones
-var dt4 = $('#dt-vertical-scroll-complaintsOtherPhones').DataTable({
+var dt_CP4 = $('#dt-vertical-scroll-complaintsOtherPhones').DataTable({
     scrollY: 400,
     paging: true,
     "pagingType": "simple_numbers",
