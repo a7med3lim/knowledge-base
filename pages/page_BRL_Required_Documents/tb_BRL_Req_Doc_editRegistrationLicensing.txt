@@ -1,0 +1,14 @@
+[
+  {
+    "legalForm": "مؤسسة فردية",
+    "popup": "<a href='google.com'><i class='far fa-arrow-alt-circle-left' aria-hidden='true'></i></a>"
+  },
+   {
+    "legalForm": "مؤسسة فردية",
+        "popup": "<a href='google.com'><i class='far fa-arrow-alt-circle-left' aria-hidden='true'></i></a>"
+  },
+   {
+    "legalForm": "مؤسسة فردية",
+    "popup": "<a href='google.com'><i class='far fa-arrow-alt-circle-left' aria-hidden='true'></i></a>"
+  }
+]
