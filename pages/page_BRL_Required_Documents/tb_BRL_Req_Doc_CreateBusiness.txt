@@ -17,4 +17,60 @@
     "activity": "اipiodisapidpsaip",
     "numberOfPartners": "2~أكثر"
   }
+,
+   {
+    "nationality": "إماراتي",
+    "legalForm": "مؤسسة فردية",
+    "activity": "اipiodisapidpsaip",
+    "numberOfPartners": "2~أكثر"
+  }
+,
+   {
+    "nationality": "إماراتي",
+    "legalForm": "مؤسسة فردية",
+    "activity": "اipiodisapidpsaip",
+    "numberOfPartners": "2~أكثر"
+  }
+,
+   {
+    "nationality": "إماراتي",
+    "legalForm": "مؤسسة فردية",
+    "activity": "اipiodisapidpsaip",
+    "numberOfPartners": "2~أكثر"
+  }
+,
+   {
+    "nationality": "إماراتي",
+    "legalForm": "مؤسسة فردية",
+    "activity": "اipiodisapidpsaip",
+    "numberOfPartners": "2~أكثر"
+  }
+,
+   {
+    "nationality": "إماراتي",
+    "legalForm": "مؤسسة فردية",
+    "activity": "اipiodisapidpsaip",
+    "numberOfPartners": "2~أكثر"
+  }
+,
+   {
+    "nationality": "إماراتي",
+    "legalForm": "مؤسسة فردية",
+    "activity": "اipiodisapidpsaip",
+    "numberOfPartners": "2~أكثر"
+  }
+,
+   {
+    "nationality": "إماراتي",
+    "legalForm": "مؤسسة فردية",
+    "activity": "اipiodisapidpsaip",
+    "numberOfPartners": "2~أكثر"
+  }
+,
+   {
+    "nationality": "إماراتي",
+    "legalForm": "مؤسسة فردية",
+    "activity": "اipiodisapidpsaip",
+    "numberOfPartners": "2~أكثر"
+  }
 ]

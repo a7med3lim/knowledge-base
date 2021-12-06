@@ -34,7 +34,19 @@
   src: url("../webfonts/DubaiW23-Regular.woff2") format("woff2"), url("../webfonts/DubaiW23-Regular.woff") format("woff"), url("../webfonts/DubaiW23-Regular.eot") format("eot"), url("../webfonts/DubaiW23-Regular.ttf") format("ttf");
 }
 
-.btn, .btn-DEDprimary, button, input, select, textarea, h1, h2, h3, h4, h5, h6, span {
+.btn,
+.btn-DEDprimary,
+button,
+input,
+select,
+textarea,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span {
   font-family: "DubaiFont-R";
 }
 
@@ -46,6 +58,7 @@
 
 ::-webkit-scrollbar {
   width: 7px;
+  height: 3px;
   background-color: #F5F5F5;
 }
 
@@ -86,11 +99,11 @@ table tbody tr:hover {
 }
 
 input:focus {
-  border: 1px solid #006845 !important;
+  border: 1px solid var(--gray) !important;
 }
 
 input:active {
-  border: 0.5px solid #006845 !important;
+  border: 0.5px solid var(--gray) !important;
 }
 
 input:empty {
@@ -299,7 +312,7 @@ input:empty {
   -webkit-box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
           box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
   font-weight: 500;
-  font-size: 13px !important;
+  font-size: small !important;
 }
 
 .nav.nav-tabs .nav-item .nav-link.active {
@@ -307,7 +320,23 @@ input:empty {
   background-color: #0068455e;
 }
 
-body, #loadPages div {
+.tab-content {
+  margin-top: -0.5rem;
+  margin-bottom: 0.5rem;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-top: 1rem;
+  background: white;
+  border-radius: 1rem;
+  -webkit-box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+  -webkit-transition: all;
+  transition: all;
+}
+
+body,
+#loadPages div {
   -webkit-animation: fade-in 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
           animation: fade-in 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
