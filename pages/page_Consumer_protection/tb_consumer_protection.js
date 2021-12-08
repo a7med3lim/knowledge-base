@@ -1,3 +1,4 @@
+
 // UI Fix  //fix Table Header in modal
 $(document).on('shown.bs.modal', function () {
 
@@ -107,12 +108,48 @@ $("#dt-vertical-scroll-complaintsOtherPhones").ready(function () {
 //*From Index Page*//
 //check if the URL(Browser) contains a given from index page
 //Open Modal modal_tb_consumer_protection From index page
-if (window.location.href.indexOf("#table_Consumer_Protection") > -1) {
-    $("#modal_tb_consumer_protection").modal("show");
-}
-//Open Modal modal_tb_Outside_consumer_protection From index page
-if (window.location.href.indexOf("#table_Outside_consumer_protection") > -1) {
-    $("#modal_tb__outside_consumer_protection").modal("show");
-}
-/// Active in sideNav
-
+// if (window.location.href.indexOf("#table_Consumer_Protection") > -1) {
+//     $("#modal_tb_consumer_protection").modal("show");
+// }
+// //Open Modal modal_tb_Outside_consumer_protection From index page
+// if (window.location.href.indexOf("#table_Outside_consumer_protection") > -1) {
+//     $("#modal_tb__outside_consumer_protection").modal("show");
+// }
+$(document).ready(function () {
+    // btn openTouristComlaintPopup
+    $('#openTouristComlaintPopup').click(function (e) {
+        $('#modal_FormAjax').modal('show');
+        e.preventDefault();
+        $(".heading").html("Tourist complaint | شكوى سائح")
+        $.ajax({
+            url: "pages/page_Consumer_protection/openTouristComlaintPopup.txt",
+            success: function (data) {
+                $(".modalBodyFromAjax").html(data);
+                alert(response['response']);
+            },
+            error: function () {
+                alert('Error');
+            }
+        });
+        return false;
+    },
+    );
+     // btn New complaint
+     $('#openNewcomplaint').click(function (e) {
+        $('#modal_FormAjax').modal('show');
+        e.preventDefault();
+        $(".heading").html("New complaint | شكوى جديدة")
+        $.ajax({
+            url: "pages/page_Consumer_protection/openNewcomplaintPopup.txt",
+            success: function (data) {
+                $(".modalBodyFromAjax").html(data);
+                alert(response['response']);
+            },
+            error: function () {
+                alert('Error');
+            }
+        });
+        return false;
+    },
+    );
+});

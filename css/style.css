@@ -12,9 +12,9 @@
   --white: #fff;
   --gray: #626262;
   --gray-dark: #343a40;
-  --primary: #006845;
-  --secondary: #626262;
-  --success: #00603F;
+  --primary: #00909A;
+  --secondary: #00859a;
+  --success: var( --primary);
   --info: #F5F5F5;
   --warning: #ffc107;
   --danger: #dc3545;
@@ -48,6 +48,12 @@ h5,
 h6,
 span {
   font-family: "DubaiFont-R";
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+a.page-link {
+  border-radius: 0.5rem !important;
 }
 
 ::-webkit-scrollbar-track {
@@ -65,8 +71,8 @@ span {
 ::-webkit-scrollbar-thumb {
   border-radius: 10px;
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
-  background-image: -webkit-gradient(linear, left bottom, left top, from(#626262), to(#005337));
-  background-image: linear-gradient(to top, #626262 0%, #005337 100%);
+  background-image: -webkit-gradient(linear, left bottom, left top, from(var(--primary)), color-stop(0%, var(--primary)));
+  background-image: linear-gradient(to top, var(--primary) 0%, var(--primary) 0%);
 }
 
 /*Set Some Value*/
@@ -95,7 +101,12 @@ i {
 }
 
 table tbody tr:hover {
-  background-color: #dbdbdb !important;
+  background-color: var(--primary) !important;
+  color: white;
+}
+
+table tbody tr:hover i {
+  color: white;
 }
 
 input:focus {
@@ -316,8 +327,8 @@ input:empty {
 }
 
 .nav.nav-tabs .nav-item .nav-link.active {
-  color: #00603f;
-  background-color: #0068455e;
+  color: var(--white);
+  background-color: var(--primary);
 }
 
 .tab-content {
@@ -383,7 +394,7 @@ html[lang="ar"] .vertical-nav {
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
   background-color: var(--primary);
-  padding-top: 5rem;
+  padding-top: 6rem;
   overflow-x: hidden;
   overflow: auto;
 }
@@ -416,7 +427,7 @@ html[lang="ar"] .vertical-nav .accordion.sideNav .mainMenu .mainMenu_name button
 }
 
 html[lang="ar"] .vertical-nav .accordion.sideNav .mainMenu .mainMenu_name button[aria-expanded="true"] {
-  background-color: #00603F !important;
+  background-color: var(--primary) !important;
 }
 
 html[lang="ar"] .vertical-nav .accordion.sideNav .mainMenu .mainMenu_name button[aria-expanded="false"] i {
@@ -426,7 +437,7 @@ html[lang="ar"] .vertical-nav .accordion.sideNav .mainMenu .mainMenu_name button
 }
 
 html[lang="ar"] .vertical-nav .accordion.sideNav .mainMenu .mainMenu_links ul {
-  background: #015B3D;
+  background: var(--secondary);
   padding: 0;
 }
 
@@ -469,11 +480,11 @@ html[lang="ar"] .vertical-nav .accordion.sideNav .mainMenu .mainMenu_links ul li
 }
 
 html[lang="ar"] .vertical-nav .accordion.sideNav .mainMenu .mainMenu_links ul li.active {
-  background: #005337;
+  background: var(--primary);
 }
 
 html[lang="ar"] .vertical-nav .accordion.sideNav .mainMenu .mainMenu_links ul li:hover {
-  background: #005337;
+  background: var(--primary);
 }
 
 html[lang="ar"] .page-content {
@@ -516,6 +527,21 @@ html[lang="ar"] .page-content .pageLocation ul li:nth-last-child(1) {
 html[lang="ar"] .page-content .pageLocation ul li:nth-last-child(1)::before {
   content: " / ";
   font-size: 16px;
+  color: white;
+}
+
+html[lang="ar"] #sidebarCollapse {
+  background: var(--primary);
+  border: 0;
+  color: white;
+  padding: 0.5rem 0.5rem;
+  border-radius: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+html[lang="ar"] #sidebarCollapse i {
   color: white;
 }
 
