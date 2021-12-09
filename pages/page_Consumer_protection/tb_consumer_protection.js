@@ -116,6 +116,19 @@ $("#dt-vertical-scroll-complaintsOtherPhones").ready(function () {
 //     $("#modal_tb__outside_consumer_protection").modal("show");
 // }
 $(document).ready(function () {
+
+    $("button").click(function(){
+        $("#div1").load("demo_test.txt", function(responseTxt, statusTxt, xhr){
+          if(statusTxt == "success")
+            alert("External content loaded successfully!");
+          if(statusTxt == "error")
+            alert("Error: " + xhr.status + ": " + xhr.statusText);
+        });
+      })
+
+
+
+
     // btn openTouristComlaintPopup
     $('#openTouristComlaintPopup').click(function (e) {
         $('#modal_FormAjax').modal('show');
@@ -164,7 +177,29 @@ $(document).ready(function () {
                 alert(response['response']);
             },
             error: function () {
-                alert('Error');
+                $(".heading").html("<i class='fas fa-exclamation-triangle' style='color: white;'></i>" + " Error |  خطأ")
+                $(".modalBodyFromAjax").html("There is an error in the file" + " هناك خطأ في الملف");
+            }
+        });
+        return false;
+    },
+    );
+    // btn followUpCRM
+    $('#followUpCRM').click(function (e) {
+        $('#modal_FormAjax').modal('show');
+        e.preventDefault();
+        $(".heading").html(" (CRM Assignment) |  كيفية تخصيص متابعة على النظام")
+        $.ajax({
+            url: "pages/page_Consumer_protection/data-update/followUpCRMPopupX.txt",
+            success: function (data) {
+                $(".modalBodyFromAjax").html(data);
+                alert(response['response']);
+                return true;
+            },
+            error: function () {
+                // alert('Error');
+                $(".heading").html("<i class='fas fa-exclamation-triangle' style='color: white;'></i>" + " Error |  خطأ")
+                $(".modalBodyFromAjax").html("There is an error in the file" + " هناك خطأ في الملف");
             }
         });
         return false;
