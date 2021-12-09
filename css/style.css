@@ -308,6 +308,13 @@ input:empty {
   opacity: 1;
 }
 
+.modal .modal-dialog.modal-fullscreen {
+  width: 100vw;
+  max-width: none;
+  height: 100%;
+  margin: 1rem;
+}
+
 .nav.nav-tabs {
   padding: 0;
   margin-bottom: 1.5rem;

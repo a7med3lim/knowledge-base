@@ -27,6 +27,25 @@
 <body class="fixed-sn dark-blue-skin h-100">
 	<!-- Empty Modal to load other data -->
 	<!--  -->
+	<div class="modal fade" id="modal_FormAjax" tabindex="-1" role="dialog" aria-labelledby="modal_FormAjax" aria-hidden="true" data-backdrop="static">
+		<div class="modal-dialog modal-notify modal-fullscreen w-100" role="document">
+			<!--Content-->
+			<div class="modal-content">
+				<!--Header-->
+				<div class="modal-header priymary m-0 py-3 px-5">
+					<p class="heading lead m-0 p-0"></p>
+					<button type="button" class="close m-0 p-0" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true" class="white-text">&times;</span>
+					</button>
+				</div>
+				<!--Body-->
+				<div class="modal-body modalBodyFromAjax">
+				</div>
+			</div>
+			<!--/.Content-->
+		</div>
+	</div>
+	<!--  -->
 	<!--SideNav  -->
 	<div id="loadSideBar">
 
@@ -45,7 +64,8 @@
 			</button>
 			<!-- Logo -->
 			<a class="navbar-brand mx-3" onclick="javascript:GoToHomePage()" href="javascript:void(0)"><img
-					src="img/logo.svg" style="width: 100%;" alt="Department of Economic Development - Government of Dubai"/></a>
+					src="img/logo.svg" style="width: 100%;"
+					alt="Department of Economic Development - Government of Dubai" /></a>
 			<!-- lang -->
 			<a href="indexEn.html" class="mr-auto">English</a>
 		</nav>

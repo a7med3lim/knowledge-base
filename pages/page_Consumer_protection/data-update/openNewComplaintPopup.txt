@@ -1,7 +1,7 @@
 <div class="row px-3">
-    <div class="col-5 px-1">
+    <div class="col-md-5 col-sm-12 px-1">
         <div>
-            <h5 class="font-weight-bold"><i class="far fa-hand-paper"></i> عند استقبال مكالمات شكاوى حماية المستهلك</h5>
+            <h5 class="font-weight-bold d-flex flex-row justify-content-start align-items-baseline"><i class="far fa-hand-paper"></i> <span class="px-1">عند استقبال مكالمات شكاوى حماية المستهلك:</span></h5>
             <ul>
                 <li>
                     يرجى افادة المستهلك اولاً بخيار التطبيق (الحماية الذكية) ان قبله , وان لم يقبله قم بتسجيل الشكوى ويجب عدم
@@ -14,7 +14,7 @@
         </div>
         <hr />
         <div>
-            <h5 class="font-weight-bold"><i class="far fa-hand-paper"></i> قبل توجيه الشاكي لتسجيل الشكوى او رفع الشكوى يجب التأكد من</h5>
+            <h5 class="font-weight-bold d-flex flex-row justify-content-start align-items-baseline"><i class="far fa-hand-paper"></i> <span class="px-1">قبل توجيه الشاكي لتسجيل الشكوى او رفع الشكوى يجب التأكد من:</span></h5>
             <ul>
                 <li>
                     ان الشركة بدبي سواء كانت منطقة حرة ام تابعة لاقتصادية دبي
@@ -29,7 +29,7 @@
         </div>
         <hr />
         <div>
-            <h5 class="font-weight-bold"><i class="far fa-hand-paper"></i> عند تسجيل أي شكوى متعلقة بالسوق الصيني:</h5>
+            <h5 class="font-weight-bold d-flex flex-row justify-content-start align-items-baseline"><i class="far fa-hand-paper"></i> <span class="px-1">عند تسجيل أي شكوى متعلقة بالسوق الصيني:</span></h5>
             <ul>
                 <li>
                     توضيح اسم المحل / رقم المحل/ السوق الصيني (1 أو 2) بشكل واضح مع العلم بأن أرقام المحلات بالسوق الصيني تتكون من (حروف وأرقام) يجب أخذها من الشاكي بشكل واضح قبل تسجيل الشكوى.
@@ -44,7 +44,7 @@
         </div>
         <hr />
         <div>
-            <h5 class="font-weight-bold"><i class="far fa-sticky-note"></i> ملاحظة:</h5>
+            <h5 class="font-weight-bold d-flex flex-row justify-content-start align-items-baseline"><i class="far fa-sticky-note"></i> <span class="px-1">فتح شكوى جديدة:</span></h5>
             <ul>
                 <li>
                     لا يتم قبول حالات تغيير المستهلك رأيه بشكل عام وتشمل تغيير الرأي بسبب وجود أسعار مخفضة في موقع اخر أو بسبب وجود جودة مختلفة في موقع اخر ويرغم المستهلك بالعدول عن الاتفاق.
@@ -52,8 +52,9 @@
             </ul>
         </div>
     </div>
-    <div class="col-7 border-right">
-        <table class="table table-bordered">
+    <!-- table -->
+    <div class="col-md-7 col-sm-12 border-right">
+        <table class="table table-bordered table-striped">
             <thead>
               <tr>
                 <th scope="col">#</th>

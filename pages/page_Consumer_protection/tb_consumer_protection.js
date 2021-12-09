@@ -19,7 +19,7 @@ var dt_CP1 = $('#dt-vertical-scroll-ConsumerProtection').DataTable({
     paging: true,
     "pagingType": "simple_numbers",
     "ajax": {
-        "url": "pages/page_Consumer_protection/tb_consumer_protection.txt",
+        "url": "pages/page_Consumer_protection/data-update/tb_consumer_protection.txt",
         "dataSrc": ""
     },
     "columns": [
@@ -34,7 +34,7 @@ var dt_CP2 = $('#dt-vertical-scroll-OutsideConsumerProtection').DataTable({
     paging: true,
     "pagingType": "simple_numbers",
     "ajax": {
-        "url": "pages/page_Consumer_protection/tb_OutsideConsumer_Protection.txt",
+        "url": "pages/page_Consumer_protection/data-update/tb_OutsideConsumer_Protection.txt",
         "dataSrc": ""
     },
     "columns": [
@@ -50,7 +50,7 @@ var dt_CP3 = $('#dt-vertical-scroll-complaintsExInt').DataTable({
     paging: true,
     "pagingType": "simple_numbers",
     "ajax": {
-        "url": "pages/page_Consumer_protection/tb_complaintsExInt.txt",
+        "url": "pages/page_Consumer_protection/data-update/tb_complaintsExInt.txt",
         "dataSrc": ""
     },
     "columns": [
@@ -66,7 +66,7 @@ var dt_CP4 = $('#dt-vertical-scroll-complaintsOtherPhones').DataTable({
     paging: true,
     "pagingType": "simple_numbers",
     "ajax": {
-        "url": "pages/page_Consumer_protection/tb_complaintsOtherPhones.txt",
+        "url": "pages/page_Consumer_protection/data-update/tb_complaintsOtherPhones.txt",
         "dataSrc": ""
     },
     "columns": [
@@ -122,7 +122,7 @@ $(document).ready(function () {
         e.preventDefault();
         $(".heading").html("Tourist complaint | شكوى سائح")
         $.ajax({
-            url: "pages/page_Consumer_protection/openTouristComlaintPopup.txt",
+            url: "pages/page_Consumer_protection/data-update/openTouristComlaintPopup.txt",
             success: function (data) {
                 $(".modalBodyFromAjax").html(data);
                 alert(response['response']);
@@ -134,13 +134,31 @@ $(document).ready(function () {
         return false;
     },
     );
-     // btn New complaint
-     $('#openNewcomplaint').click(function (e) {
+    // btn New complaint
+    $('#openNewcCmplaint').click(function (e) {
         $('#modal_FormAjax').modal('show');
         e.preventDefault();
         $(".heading").html("New complaint | شكوى جديدة")
         $.ajax({
-            url: "pages/page_Consumer_protection/openNewcomplaintPopup.txt",
+            url: "pages/page_Consumer_protection/data-update/openNewComplaintPopup.txt",
+            success: function (data) {
+                $(".modalBodyFromAjax").html(data);
+                alert(response['response']);
+            },
+            error: function () {
+                alert('Error');
+            }
+        });
+        return false;
+    },
+    );
+    // btn New complaint
+    $('#followUpComplaint').click(function (e) {
+        $('#modal_FormAjax').modal('show');
+        e.preventDefault();
+        $(".heading").html("Follow up on a complaint | متابعة شكوى")
+        $.ajax({
+            url: "pages/page_Consumer_protection/data-update/followUpComplaintPopup.txt",
             success: function (data) {
                 $(".modalBodyFromAjax").html(data);
                 alert(response['response']);
