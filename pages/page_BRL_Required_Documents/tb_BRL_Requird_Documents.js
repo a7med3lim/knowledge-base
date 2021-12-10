@@ -82,7 +82,7 @@ var dt_BRL3 = $('#dt-vertical-scroll-BRL-Req-Doc-cancelRegistrationLicensing').D
 		{ "data": "popup" }
 	]
 });
-
+//
 var dt_BRL4 = $('#dt-vertical-scroll-BRL-additionalInformation').DataTable({
 	scrollY: 340,
 	paging: true,

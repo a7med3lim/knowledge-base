@@ -1,0 +1,51 @@
+HTTrack3.49-2+htsswf+htsjava launched on Tue, 07 Dec 2021 15:00:28 at https://kb.dubaided.gov.ae/ https://kb.dubaided.gov.ae/ded/DED%20book1.htm file:///C:/Users/ahmed.farghali/Desktop/httpskb.dubaided.gov.ae/kb/kb.dubaided.gov.ae/FDI/FDI_Services_Arabic.html file:///C:/Users/ahmed.farghali/Desktop/httpskb.dubaided.gov.ae/kb/kb.dubaided.gov.ae/kb/free%20zones.html +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qiC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" https://kb.dubaided.gov.ae/ https://kb.dubaided.gov.ae/ded/DED%20book1.htm file:///C:/Users/ahmed.farghali/Desktop/httpskb.dubaided.gov.ae/kb/kb.dubaided.gov.ae/FDI/FDI_Services_Arabic.html file:///C:/Users/ahmed.farghali/Desktop/httpskb.dubaided.gov.ae/kb/kb.dubaided.gov.ae/kb/free%20zones.html -O1 "C:\Users\ahmed.farghali\Desktop\httpskb.dubaided.gov.ae\kb" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+15:00:31	Error: 	"Not Found" (404) at link https://kb.dubaided.gov.ae/main11_files/editdata.mso (from https://kb.dubaided.gov.ae/)
+15:00:31	Error: 	"Not Found" (404) at link https://kb.dubaided.gov.ae/Electrical Notice Board.htm (from https://kb.dubaided.gov.ae/)
+15:00:32	Error: 	"Not Found" (404) at link https://kb.dubaided.gov.ae/Search.ClientControls.js (from https://kb.dubaided.gov.ae/)
+15:00:51	Error: 	"Not Found" (404) at link https://kb.dubaided.gov.ae/M_files/editdata.mso (from https://kb.dubaided.gov.ae/M.htm)
+15:01:44	Error: 	"Not Found" (404) at link https://kb.dubaided.gov.ae/kb/DEServiceGuide.xlsx (from https://kb.dubaided.gov.ae/kb/right11.htm)
+15:02:04	Error: 	"Not Found" (404) at link https://kb.dubaided.gov.ae/kb/free zones_files/editdata.mso (from https://kb.dubaided.gov.ae/kb/free zones.htm)
+15:02:25	Error: 	"Not Found" (404) at link https://kb.dubaided.gov.ae/consumer protection/main BP_files/editdata.mso (from https://kb.dubaided.gov.ae/consumer protection/main BP.htm)
+15:02:25	Error: 	"Not Found" (404) at link https://kb.dubaided.gov.ae/consumer protection/CR E_files/editdata.mso (from https://kb.dubaided.gov.ae/consumer protection/CR E.htm)
+15:02:45	Error: 	"Not Found" (404) at link https://kb.dubaided.gov.ae/consumer protection/Tourist CMP.htm (from https://kb.dubaided.gov.ae/consumer protection/CR E.htm)
+15:03:23	Error: 	"Not Found" (404) at link https://kb.dubaided.gov.ae/consumer protection/Intellectual property_files/editdata.mso (from https://kb.dubaided.gov.ae/consumer protection/Intellectual property.htm)
+15:03:23	Error: 	"Not Found" (404) at link https://kb.dubaided.gov.ae/Old files/Ahlan Dubai/consumer protection/الملكية الفكرية.htm (from https://kb.dubaided.gov.ae/consumer protection/Intellectual property.htm)
+15:03:42	Error: 	"Not Found" (404) at link https://kb.dubaided.gov.ae/consumer protection/Inspection Centers_files/editdata.mso (from https://kb.dubaided.gov.ae/consumer protection/Inspection Centers.htm)
+15:03:42	Error: 	"Not Found" (404) at link https://kb.dubaided.gov.ae/consumer protection/Precautionary measures_files/editdata.mso (from https://kb.dubaided.gov.ae/consumer protection/Precautionary measures.htm)
+15:04:00	Error: 	"Not Found" (404) at link https://kb.dubaided.gov.ae/consumer protection/Friendly Standards_files/editdata.mso (from https://kb.dubaided.gov.ae/consumer protection/Friendly Standards.htm)
+15:04:01	Error: 	"Not Found" (404) at link https://kb.dubaided.gov.ae/consumer protection/حمايةالأعمال_files/editdata.mso (from https://kb.dubaided.gov.ae/consumer protection/حمايةالأعمال.htm)
+15:04:19	Error: 	"Not Found" (404) at link https://kb.dubaided.gov.ae/consumer protection/main CC_files/editdata.mso (from https://kb.dubaided.gov.ae/consumer protection/main CC.htm)
+15:04:23	Error: 	"Not Found" (404) at link https://kb.dubaided.gov.ae/consumer protection/الملكية الفكرية_files/editdata.mso (from https://kb.dubaided.gov.ae/consumer protection/الملكية الفكرية.htm)
+15:04:23	Error: 	"Not Found" (404) at link https://kb.dubaided.gov.ae/consumer protection/مراكز التفتيش_files/editdata.mso (from https://kb.dubaided.gov.ae/consumer protection/مراكز التفتيش.htm)
+15:04:42	Error: 	"Not Found" (404) at link https://kb.dubaided.gov.ae/consumer protection/الإجراءات الاحترازية_files/editdata.mso (from https://kb.dubaided.gov.ae/consumer protection/الإجراءات الاحترازية.htm)
+15:04:42	Error: 	"Not Found" (404) at link https://kb.dubaided.gov.ae/consumer protection/المعايير الصديقة للمستهلك_files/editdata.mso (from https://kb.dubaided.gov.ae/consumer protection/المعايير الصديقة للمستهلك.htm)
+15:05:01	Error: 	"Not Found" (404) at link https://kb.dubaided.gov.ae/consumer protection/Scope Of Support_files/editdata.mso (from https://kb.dubaided.gov.ae/consumer protection/Scope Of Support.htm)
+15:05:01	Error: 	"Not Found" (404) at link https://kb.dubaided.gov.ae/consumer protection/Out of Scope_files/editdata.mso (from https://kb.dubaided.gov.ae/consumer protection/Out of Scope.htm)
+15:05:01	Error: 	"Not Found" (404) at link https://kb.dubaided.gov.ae/consumer protection/Alternate inspector_files/editdata.mso (from https://kb.dubaided.gov.ae/consumer protection/Alternate inspector.htm)
+15:05:19	Error: 	"Not Found" (404) at link https://kb.dubaided.gov.ae/consumer protection/Assignment FWP_files/editdata.mso (from https://kb.dubaided.gov.ae/consumer protection/Assignment FWP.htm)
+15:05:56	Error: 	"Not Found" (404) at link https://kb.dubaided.gov.ae/consumer protection/New CMP_files/editdata.mso (from https://kb.dubaided.gov.ae/consumer protection/New CMP.htm)
+15:06:33	Error: 	"Not Found" (404) at link https://kb.dubaided.gov.ae/consumer protection/هواتف الامارات الاخرى_files/editdata.mso (from https://kb.dubaided.gov.ae/consumer protection/هواتف الامارات الاخرى.htm)
+15:06:51	Error: 	"Not Found" (404) at link https://kb.dubaided.gov.ae/consumer protection/Follow up_files/editdata.mso (from https://kb.dubaided.gov.ae/consumer protection/Follow up.htm)
+15:07:09	Error: 	"Not Found" (404) at link https://kb.dubaided.gov.ae/consumer protection/Price list Approval_files/editdata.mso (from https://kb.dubaided.gov.ae/consumer protection/Price list Approval.htm)
+15:07:46	Error: 	"Not Found" (404) at link https://kb.dubaided.gov.ae/consumer protection/خارج حماية المستهلك_files/editdata.mso (from https://kb.dubaided.gov.ae/consumer protection/خارج حماية المستهلك.htm)
+15:08:04	Error: 	"Not Found" (404) at link https://kb.dubaided.gov.ae/consumer protection/إختصاص حماية المستهلك_files/editdata.mso (from https://kb.dubaided.gov.ae/consumer protection/إختصاص حماية المستهلك.htm)
+15:08:39	Error: 	"Not Found" (404) at link https://kb.dubaided.gov.ae/consumer protection/المفتش المناوب_files/editdata.mso (from https://kb.dubaided.gov.ae/consumer protection/المفتش المناوب.htm)
+15:08:57	Error: 	"Not Found" (404) at link https://kb.dubaided.gov.ae/consumer protection/تخصيص متابعة_files/editdata.mso (from https://kb.dubaided.gov.ae/consumer protection/تخصيص متابعة.htm)
+15:09:33	Error: 	"Not Found" (404) at link https://kb.dubaided.gov.ae/consumer protection/شكوى سائح_files/editdata.mso (from https://kb.dubaided.gov.ae/consumer protection/شكوى سائح.htm)
+15:09:52	Error: 	"Not Found" (404) at link https://kb.dubaided.gov.ae/consumer protection/جهات اتحادية ومحلية_files/editdata.mso (from https://kb.dubaided.gov.ae/consumer protection/جهات اتحادية ومحلية.htm)
+15:10:11	Error: 	"Not Found" (404) at link https://kb.dubaided.gov.ae/consumer protection/متابعة_files/editdata.mso (from https://kb.dubaided.gov.ae/consumer protection/متابعة.htm)
+15:10:29	Error: 	"Not Found" (404) at link https://kb.dubaided.gov.ae/consumer protection/شكوى جديدة_files/editdata.mso (from https://kb.dubaided.gov.ae/consumer protection/شكوى جديدة.htm)
+15:10:47	Error: 	"Not Found" (404) at link https://kb.dubaided.gov.ae/consumer protection/الكتاب الازرق_files/editdata.mso (from https://kb.dubaided.gov.ae/consumer protection/الكتاب الازرق.htm)
+15:11:05	Error: 	"Not Found" (404) at link https://kb.dubaided.gov.ae/Old files/Ahlan Dubai/consumer protection/what is the consumer.htm (from https://kb.dubaided.gov.ae/consumer protection/الكتاب الازرق.htm)
+15:11:21	Error: 	"Not Found" (404) at link https://kb.dubaided.gov.ae/Old files/Ahlan Dubai/consumer protection/how does this benefit for retailer.htm (from https://kb.dubaided.gov.ae/consumer protection/الكتاب الازرق.htm)
+15:11:21	Error: 	"Not Found" (404) at link https://kb.dubaided.gov.ae/consumer protection/اعتماد الاسعار_files/editdata.mso (from https://kb.dubaided.gov.ae/consumer protection/اعتماد الاسعار.htm)
+
+HTTrack Website Copier/3.49-2 mirror complete in 10 minutes 53 seconds : 321 links scanned, 280 files written (6958671 bytes overall), 16 files updated [101379 bytes received at 155 bytes/sec]
+(40 errors, 0 warnings, 0 messages)
