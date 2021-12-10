@@ -5,7 +5,7 @@
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 	<meta http-equiv="x-ua-compatible" content="ie=edge" />
-	<title>DED | Call Center</title>
+	<title>Department of Economic Development - Government of Dubai | Call Center</title>
 	<!-- MDB icon -->
 	<link rel="icon" href="img/logoIcon.ico" type="image/x-icon" />
 	<!-- Font Awesome -->
@@ -24,8 +24,27 @@
 	</script>
 </head>
 
-<body class="fixed-sn dark-blue-skin">
+<body class="fixed-sn dark-blue-skin h-100">
 	<!-- Empty Modal to load other data -->
+	<!--  -->
+	<div class="modal fade" id="modal_FormAjax" tabindex="-1" role="dialog" aria-labelledby="modal_FormAjax" aria-hidden="true" data-backdrop="static">
+		<div class="modal-dialog modal-notify modal-fullscreen w-100" role="document">
+			<!--Content-->
+			<div class="modal-content">
+				<!--Header-->
+				<div class="modal-header priymary m-0 py-3 px-5">
+					<p class="heading lead m-0 p-0"></p>
+					<button type="button" class="close m-0 p-0" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true" class="white-text">&times;</span>
+					</button>
+				</div>
+				<!--Body-->
+				<div class="modal-body modalBodyFromAjax">
+				</div>
+			</div>
+			<!--/.Content-->
+		</div>
+	</div>
 	<!--  -->
 	<!--SideNav  -->
 	<div id="loadSideBar">
@@ -35,22 +54,30 @@
 	<!-- !!End -->
 	<!-- !!End -->
 	<!-- Main Layout -->
-	<div class="page-content " id="content">
+	<div class="page-content h-100" id="content">
 		<!-- Header -->
 		<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
 			<!-- Toggle button Side Nav -->
 			<button id="sidebarCollapse" type="button" class="btn-Ded rounded-pill shadow-sm d-lg-noneX d-md-noneX">
-				<i class="fa fa-bars" aria-hidden="true"></i>
+				<!-- <i class="fa fa-caret-square-o-right" aria-hidden="true"></i> -->
+				<i class="fas fa-minus-square"></i>
 			</button>
 			<!-- Logo -->
 			<a class="navbar-brand mx-3" onclick="javascript:GoToHomePage()" href="javascript:void(0)"><img
-					src="img/logo.svg" /></a>
+					src="img/logo.svg" style="width: 100%;"
+					alt="Department of Economic Development - Government of Dubai" /></a>
 			<!-- lang -->
-			<a href="indexEn.html" class="mr-auto">English</a>
+			<div class="mr-auto">
+				<ul class="nav d-flex flex-row-reverse">
+					<li class="nav-item px-3 border-right"><a href="indexEn.html" class="mr-auto"><i class="fas fa-globe-americas"></i> English</a></li>
+					<li class="nav-item px-3"><a href="tel:600545555" class="text-default"><strong>600 545555 <i class="fas fa-phone-alt"></i> </strong></a></li>
+					<li class="nav-item px-1"><a href="tel:971(04)4455555" class="text-default"><strong>971 (04) 44 55555 <i class="fas fa-phone-alt"></i> </strong></a></li>
+				</ul>
+			</div>
 		</nav>
 		<!--!!End Header  -->
 		<!-- Page content -->
-		<div class="container-fluid p-0 mt-5" id="loadPages">
+		<div class="container-fluid p-0 h-100" id="loadPages" style="margin-top:73px;">
 
 		</div>
 		<!-- !!End -->
@@ -82,6 +109,7 @@
 				$('html').find("#sidebarCollapse").on("click", function () {
 					$("#content").toggleClass("active");
 					$("#sidebar").toggleClass("active");
+					$("#sidebarCollapse").find("i").toggleClass("fa-minus-square fa-columns");
 				});
 			});
 			// !!End Side Nave

@@ -212,11 +212,25 @@
 </div>
 <script>
     $(document).ready(function () {
+        // Toggle to ClosesideNav if click on <a> in Small Screen
         $('.nav-item a').click(function (event) {
+            if ($("#content").hasClass("active")) {
+                $("#content").toggleClass("active");
+                $("#sidebar").toggleClass("active");
+                $("#sidebarCollapse").find("i").toggleClass("fa-minus-square fa-columns");
+            }
+            else {
+                // $("#content").toggleClass("active");
+                // $("#sidebar").toggleClass("active");
+                // $("#sidebarCollapse").find("i").toggleClass("fa-minus-square fa-columns");
+            }
+            // To load pages(Links)
             var page = $(this).attr('href');
             $("#loadPages").load(page);
             event.preventDefault();
             return false;
+
         })
+
     });
 </script>

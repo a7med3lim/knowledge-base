@@ -1,3 +1,4 @@
+
 // UI Fix  //fix Table Header in modal
 $(document).on('shown.bs.modal', function () {
 
@@ -18,7 +19,7 @@ var dt_CP1 = $('#dt-vertical-scroll-ConsumerProtection').DataTable({
     paging: true,
     "pagingType": "simple_numbers",
     "ajax": {
-        "url": "pages/page_Consumer_protection/tb_consumer_protection.txt",
+        "url": "pages/page_Consumer_protection/data-update/tb_consumer_protection.txt",
         "dataSrc": ""
     },
     "columns": [
@@ -33,7 +34,7 @@ var dt_CP2 = $('#dt-vertical-scroll-OutsideConsumerProtection').DataTable({
     paging: true,
     "pagingType": "simple_numbers",
     "ajax": {
-        "url": "pages/page_Consumer_protection/tb_OutsideConsumer_Protection.txt",
+        "url": "pages/page_Consumer_protection/data-update/tb_OutsideConsumer_Protection.txt",
         "dataSrc": ""
     },
     "columns": [
@@ -49,7 +50,7 @@ var dt_CP3 = $('#dt-vertical-scroll-complaintsExInt').DataTable({
     paging: true,
     "pagingType": "simple_numbers",
     "ajax": {
-        "url": "pages/page_Consumer_protection/tb_complaintsExInt.txt",
+        "url": "pages/page_Consumer_protection/data-update/tb_complaintsExInt.txt",
         "dataSrc": ""
     },
     "columns": [
@@ -65,7 +66,7 @@ var dt_CP4 = $('#dt-vertical-scroll-complaintsOtherPhones').DataTable({
     paging: true,
     "pagingType": "simple_numbers",
     "ajax": {
-        "url": "pages/page_Consumer_protection/tb_complaintsOtherPhones.txt",
+        "url": "pages/page_Consumer_protection/data-update/tb_complaintsOtherPhones.txt",
         "dataSrc": ""
     },
     "columns": [
@@ -107,12 +108,101 @@ $("#dt-vertical-scroll-complaintsOtherPhones").ready(function () {
 //*From Index Page*//
 //check if the URL(Browser) contains a given from index page
 //Open Modal modal_tb_consumer_protection From index page
-if (window.location.href.indexOf("#table_Consumer_Protection") > -1) {
-    $("#modal_tb_consumer_protection").modal("show");
-}
-//Open Modal modal_tb_Outside_consumer_protection From index page
-if (window.location.href.indexOf("#table_Outside_consumer_protection") > -1) {
-    $("#modal_tb__outside_consumer_protection").modal("show");
-}
-/// Active in sideNav
+// if (window.location.href.indexOf("#table_Consumer_Protection") > -1) {
+//     $("#modal_tb_consumer_protection").modal("show");
+// }
+// //Open Modal modal_tb_Outside_consumer_protection From index page
+// if (window.location.href.indexOf("#table_Outside_consumer_protection") > -1) {
+//     $("#modal_tb__outside_consumer_protection").modal("show");
+// }
+$(document).ready(function () {
 
+    $("button").click(function(){
+        $("#div1").load("demo_test.txt", function(responseTxt, statusTxt, xhr){
+          if(statusTxt == "success")
+            alert("External content loaded successfully!");
+          if(statusTxt == "error")
+            alert("Error: " + xhr.status + ": " + xhr.statusText);
+        });
+      })
+
+
+
+
+    // btn openTouristComlaintPopup
+    $('#openTouristComlaintPopup').click(function (e) {
+        $('#modal_FormAjax').modal('show');
+        e.preventDefault();
+        $(".heading").html("Tourist complaint | شكوى سائح")
+        $.ajax({
+            url: "pages/page_Consumer_protection/data-update/openTouristComlaintPopup.txt",
+            success: function (data) {
+                $(".modalBodyFromAjax").html(data);
+                alert(response['response']);
+            },
+            error: function () {
+                alert('Error');
+            }
+        });
+        return false;
+    },
+    );
+    // btn New complaint
+    $('#openNewcCmplaint').click(function (e) {
+        $('#modal_FormAjax').modal('show');
+        e.preventDefault();
+        $(".heading").html("New complaint | شكوى جديدة")
+        $.ajax({
+            url: "pages/page_Consumer_protection/data-update/openNewComplaintPopup.txt",
+            success: function (data) {
+                $(".modalBodyFromAjax").html(data);
+                alert(response['response']);
+            },
+            error: function () {
+                alert('Error');
+            }
+        });
+        return false;
+    },
+    );
+    // btn New complaint
+    $('#followUpComplaint').click(function (e) {
+        $('#modal_FormAjax').modal('show');
+        e.preventDefault();
+        $(".heading").html("Follow up on a complaint | متابعة شكوى")
+        $.ajax({
+            url: "pages/page_Consumer_protection/data-update/followUpComplaintPopup.txt",
+            success: function (data) {
+                $(".modalBodyFromAjax").html(data);
+                alert(response['response']);
+            },
+            error: function () {
+                $(".heading").html("<i class='fas fa-exclamation-triangle' style='color: white;'></i>" + " Error |  خطأ")
+                $(".modalBodyFromAjax").html("There is an error in the file" + " هناك خطأ في الملف");
+            }
+        });
+        return false;
+    },
+    );
+    // btn followUpCRM
+    $('#followUpCRM').click(function (e) {
+        $('#modal_FormAjax').modal('show');
+        e.preventDefault();
+        $(".heading").html(" (CRM Assignment) |  كيفية تخصيص متابعة على النظام")
+        $.ajax({
+            url: "pages/page_Consumer_protection/data-update/followUpCRMPopupX.txt",
+            success: function (data) {
+                $(".modalBodyFromAjax").html(data);
+                alert(response['response']);
+                return true;
+            },
+            error: function () {
+                // alert('Error');
+                $(".heading").html("<i class='fas fa-exclamation-triangle' style='color: white;'></i>" + " Error |  خطأ")
+                $(".modalBodyFromAjax").html("There is an error in the file" + " هناك خطأ في الملف");
+            }
+        });
+        return false;
+    },
+    );
+});

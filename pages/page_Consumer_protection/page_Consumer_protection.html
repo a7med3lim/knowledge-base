@@ -80,7 +80,7 @@
 								<div class="col-auto mb-lg-0 mb-md-1 mb-sm-1 mb-1 mt-2">
 									<div class="card waves-effect rounded">
 										<!-- Card content -->
-										<a href="#" class="">
+										<a id="openTouristComlaintPopup" class="">
 											<div
 												class="card-body d-flex flex-row justify-content-between align-content-center align-items-center p-0">
 												<!-- Title -->
@@ -100,13 +100,12 @@
 								<div class="col-auto mb-lg-0 mb-md-1 mb-sm-1 mb-1 mt-2">
 									<div class="card waves-effect rounded">
 										<!-- Card content -->
-										<a href="#" class="">
+										<a id="openNewcCmplaint" class="">
 											<div
 												class="card-body d-flex flex-row justify-content-between align-content-center align-items-center p-0">
 												<!-- Title -->
 												<h6 class="card-title medium text-primery text-dark m-0 px-4">
-													شكوى
-													جديدة
+													شكوى جديدة
 													<br>
 													New complaint
 												</h6>
@@ -121,7 +120,7 @@
 								<div class="col-auto mb-lg-0 mb-md-1 mb-sm-1 mb-1 mt-2">
 									<div class="card waves-effect rounded">
 										<!-- Card content -->
-										<a href="#" class="">
+										<a  id="followUpComplaint" class="">
 											<div
 												class="card-body d-flex flex-row justify-content-between align-content-center align-items-center p-0">
 												<!-- Title -->
@@ -141,7 +140,7 @@
 								<div class="col-auto mb-lg-0 mb-md-1 mb-sm-1 mb-1 mt-2">
 									<div class="card waves-effect rounded ">
 										<!-- Card content -->
-										<a href="#" class="">
+										<a id="followUpCRM" class="">
 											<div
 												class="card-body d-flex flex-row justify-content-between align-content-center align-items-center p-0">
 												<!-- Title -->
@@ -297,12 +296,14 @@
 	</div>
 	<!--  -->
 </div>
+
+
 <!-- !!End -->
 <!-- Modals -->
 <!-- modal_tb_consumer_protection Modal Medium Success -->
 <div class="modal fade" id="modal_tb_consumer_protection" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-	aria-hidden="true">
-	<div class="modal-dialog modal-success modal-lg" role="document">
+	aria-hidden="true" data-backdrop="static">
+	<div class="modal-dialog modal-success modal-xl modal-dialog-centered" role="document">
 		<!--Content-->
 		<div class="modal-content">
 			<!--Header-->
@@ -334,8 +335,8 @@
 </div>
 <!--  -->
 <div class="modal fade" id="modal_tb__outside_consumer_protection" tabindex="-1" role="dialog"
-	aria-labelledby="myModalLabel" aria-hidden="true">
-	<div class="modal-dialog modal-success modal-lg" role="document">
+	aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static">
+	<div class="modal-dialog modal-success modal-xl w-100" role="document">
 		<!--Content-->
 		<div class="modal-content">
 			<!--Header-->
@@ -374,10 +375,10 @@
 							style="width:100%">
 							<thead>
 								<tr>
-									<th>الجهة</th>
-									<th>الهاتف</th>
-									<th>الملاحظات</th>
-									<th>العنوان</th>
+									<th width="30">الجهة</th>
+									<th width="50">الهاتف</th>
+									<th width="20">الملاحظات</th>
+									<th width="10">العنوان</th>
 								</tr>
 							</thead>
 
@@ -391,10 +392,10 @@
 							style="width:100%">
 							<thead>
 								<tr>
-									<th>الجهة</th>
-									<th>الهاتف</th>
-									<th>الملاحظات</th>
-									<th>العنوان</th>
+									<th width="30">الجهة</th>
+									<th width="50">الهاتف</th>
+									<th width="20">الملاحظات</th>
+									<th width="10">العنوان</th>
 								</tr>
 							</thead>
 
@@ -425,6 +426,8 @@
 		<!--/.Content-->
 	</div>
 </div>
+
+
 <script>
 	// If popup called form dashboard
 	$(document).ready(function () {
