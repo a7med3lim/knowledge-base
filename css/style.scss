@@ -315,6 +315,12 @@ input:empty {
 
             .modal-body {}
         }
+        &.modal-fullscreen{
+            width: 100vw;
+            max-width: none;
+            height: 100%;
+            padding: 10px 25px;
+        }
     }
 }
 
@@ -396,7 +402,7 @@ html[lang="ar"] {
         -webkit-transition: all 0.4s;
         transition: all 0.4s;
         background-color: var(--primary);
-        padding-top: 5rem;
+        padding-top: 6rem;
         overflow-x: hidden;
         overflow: auto;
 
@@ -414,17 +420,18 @@ html[lang="ar"] {
                             padding: 0.84rem 0.86rem;
                             font-size: 14px;
                             font-weight: 500;
-
+                            background-color: var(--primary);
                             i {
                                 color: white;
                             }
                         }
 
                         button[aria-expanded="true"] {
-                            background-color: var(--secondary)!important;
+                            background-color: var(--primary);
                         }
 
                         button[aria-expanded="false"] {
+                            background-color: var(--primary);
                             i {
                                 color: white;
                                 transform: rotate(90deg);

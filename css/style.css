@@ -297,6 +297,13 @@ input:empty {
   opacity: 1;
 }
 
+.modal .modal-dialog.modal-fullscreen {
+  width: 100vw;
+  max-width: none;
+  height: 100%;
+  padding: 10px 25px;
+}
+
 .nav.nav-tabs {
   padding: 0;
   margin-bottom: 1.5rem;
@@ -383,7 +390,7 @@ html[lang="ar"] .vertical-nav {
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
   background-color: var(--primary);
-  padding-top: 5rem;
+  padding-top: 6rem;
   overflow-x: hidden;
   overflow: auto;
 }
@@ -409,6 +416,7 @@ html[lang="ar"] .vertical-nav .accordion.sideNav .mainMenu .mainMenu_name button
   padding: 0.84rem 0.86rem;
   font-size: 14px;
   font-weight: 500;
+  background-color: var(--primary);
 }
 
 html[lang="ar"] .vertical-nav .accordion.sideNav .mainMenu .mainMenu_name button i {
@@ -416,7 +424,11 @@ html[lang="ar"] .vertical-nav .accordion.sideNav .mainMenu .mainMenu_name button
 }
 
 html[lang="ar"] .vertical-nav .accordion.sideNav .mainMenu .mainMenu_name button[aria-expanded="true"] {
-  background-color: var(--secondary) !important;
+  background-color: var(--primary);
+}
+
+html[lang="ar"] .vertical-nav .accordion.sideNav .mainMenu .mainMenu_name button[aria-expanded="false"] {
+  background-color: var(--primary);
 }
 
 html[lang="ar"] .vertical-nav .accordion.sideNav .mainMenu .mainMenu_name button[aria-expanded="false"] i {

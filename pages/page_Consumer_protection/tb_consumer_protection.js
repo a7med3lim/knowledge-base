@@ -127,79 +127,112 @@ $(document).ready(function () {
       })
 
 
-
+      var erorrMsgBody = ("<i class='fas fa-exclamation-triangle' style='color: white; margin-right:10px; margin-left:10px;'></i>" + " <span class='text-large'> Error |  خطأ</span>");
+      var erorrMsgHeader = ("<p>There is an error in download the file</p>" + "<p>هناك خطأ في تحميل الملف</p>");
 
     // btn openTouristComlaintPopup
-    $('#openTouristComlaintPopup').click(function (e) {
-        $('#modal_FormAjax').modal('show');
+    $('#openPopupFromData-TouristComlaintPopup').click(function (e) {
         e.preventDefault();
-        $(".heading").html("Tourist complaint | شكوى سائح")
         $.ajax({
             url: "pages/page_Consumer_protection/data-update/openTouristComlaintPopup.txt",
             success: function (data) {
+                $('#modal_FormAjax').modal('show');
+                $(".heading").html("Tourist complaint | شكوى سائح")
                 $(".modalBodyFromAjax").html(data);
                 alert(response['response']);
             },
             error: function () {
-                alert('Error');
+                $('#errorModal_FormAjax').modal('show');
+                $("#errorModal_FormAjax").find(".heading").html(erorrMsgBody);
+                $("#errorModal_FormAjax").find(".errorModalFormAjax").html(erorrMsgHeader);
+                return true;
             }
         });
-        return false;
-    },
-    );
+    });
     // btn New complaint
-    $('#openNewcCmplaint').click(function (e) {
-        $('#modal_FormAjax').modal('show');
+    $('#openPopupFromData-NewcCmplaint').click(function (e) {
         e.preventDefault();
-        $(".heading").html("New complaint | شكوى جديدة")
         $.ajax({
             url: "pages/page_Consumer_protection/data-update/openNewComplaintPopup.txt",
             success: function (data) {
+                $('#modal_FormAjax').modal('show');
+                $(".heading").html("New complaint | شكوى جديدة")
                 $(".modalBodyFromAjax").html(data);
                 alert(response['response']);
             },
             error: function () {
-                alert('Error');
+                $('#errorModal_FormAjax').modal('show');
+                $("#errorModal_FormAjax").find(".heading").html(erorrMsgBody);
+                $("#errorModal_FormAjax").find(".errorModalFormAjax").html(erorrMsgHeader);
+                return true;
             }
         });
         return false;
     },
     );
     // btn New complaint
-    $('#followUpComplaint').click(function (e) {
-        $('#modal_FormAjax').modal('show');
+    $('#openPopupFromData-followUpComplaint').click(function (e) {
         e.preventDefault();
-        $(".heading").html("Follow up on a complaint | متابعة شكوى")
         $.ajax({
             url: "pages/page_Consumer_protection/data-update/followUpComplaintPopup.txt",
             success: function (data) {
+                $('#modal_FormAjax').modal('show');
+                $(".heading").html("Follow up on a complaint | متابعة شكوى")
                 $(".modalBodyFromAjax").html(data);
                 alert(response['response']);
+                return true;
             },
             error: function () {
-                $(".heading").html("<i class='fas fa-exclamation-triangle' style='color: white;'></i>" + " Error |  خطأ")
-                $(".modalBodyFromAjax").html("There is an error in the file" + " هناك خطأ في الملف");
+                $('#errorModal_FormAjax').modal('show');
+                $("#errorModal_FormAjax").find(".heading").html(erorrMsgBody);
+                $("#errorModal_FormAjax").find(".errorModalFormAjax").html(erorrMsgHeader);
+                return true;
             }
         });
         return false;
     },
     );
     // btn followUpCRM
-    $('#followUpCRM').click(function (e) {
-        $('#modal_FormAjax').modal('show');
+    $('#openPopupFromData-followUpCRM').click(function (e) {
         e.preventDefault();
-        $(".heading").html(" (CRM Assignment) |  كيفية تخصيص متابعة على النظام")
         $.ajax({
-            url: "pages/page_Consumer_protection/data-update/followUpCRMPopupX.txt",
+            url: "pages/page_Consumer_protection/data-update/followUpCRMPopup.txt",
             success: function (data) {
+                $('#modal_FormAjax').modal('show');
+                $(".heading").html(" (CRM Assignment) |  كيفية تخصيص متابعة على النظام")
                 $(".modalBodyFromAjax").html(data);
                 alert(response['response']);
                 return true;
             },
             error: function () {
                 // alert('Error');
-                $(".heading").html("<i class='fas fa-exclamation-triangle' style='color: white;'></i>" + " Error |  خطأ")
-                $(".modalBodyFromAjax").html("There is an error in the file" + " هناك خطأ في الملف");
+                $('#errorModal_FormAjax').modal('show');
+                $("#errorModal_FormAjax").find(".heading").html(erorrMsgBody);
+                $("#errorModal_FormAjax").find(".errorModalFormAjax").html(erorrMsgHeader);
+                return true;
+            }
+        });
+        return false;
+    },
+    );
+      // btn Dealing with the Alternate Inspector
+      $('#openPopupFromData-dealingAlternateInspector').click(function (e) {
+        e.preventDefault();
+        $.ajax({
+            url: "pages/page_Consumer_protection/data-update/dealingAlternateInspectorPopup.txt",
+            success: function (data) {
+                $('#modal_FormAjax').modal('show');
+                $(".heading").html(" Dealing with the Alternate Inspector |  آلية التعامل مع المفتش المناوب")
+                $(".modalBodyFromAjax").html(data);
+                alert(response['response']);
+                return true;
+            },
+            error: function () {
+                // alert('Error');
+                $('#errorModal_FormAjax').modal('show');
+                $("#errorModal_FormAjax").find(".heading").html(erorrMsgBody);
+                $("#errorModal_FormAjax").find(".errorModalFormAjax").html(erorrMsgHeader);
+                return true;
             }
         });
         return false;

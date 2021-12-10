@@ -1,204 +1,49 @@
 <div class="row px-3">
-    <div class="col-md-5 col-sm-12 px-1">
-        <div class="card m-1">
-            <div class="card-body d-flex flex-column justify-content-start align-items-baseline">
-                <p> <i class="fas fa-info-circle"></i> إذا تواصل الشاكي للمتابعة من 4 الى 7 ايام عمل من تاريخ فتح الشكوى
-                    يرجى افادته بان علية الانتظار للانتهاء
-                    من المدة</p>
-                <p>ولا يتم عمل متابعه بالنظام وايضا لا يتم ارسال المتابعة الى السيد/ ايمن الجمل.</p>
-                <article class="hint">عند متابعة رسائل الحل ( التمكين ) المغلقة يجب افادة العميل بتقديم شكوى عادية جديدة
-                </article>
-            </div>
-        </div>
-        <hr />
+    <div class="col-md-12 col-sm-12 px-1 border-bottom mb-3">
         <div>
             <h5 class="font-weight-bold d-flex flex-row justify-content-start align-items-baseline"><i
-                    class="far fa-hand-paper"></i> <span class="px-1">فتح شكوى
-                    جديدة:</span></h5>
+                    class="far fa-hand-paper"></i> <span class="px-1">The Rule For Assignment:</span></h5>
             <ul>
-                <li>
-                    إذا قام المفتش بمحاولة التواصل بالشاكي على مدار يومن عمل متكاملين في اوقات متفرقه خلال اليوم اي
-                    بمجموع 3 مرات متفرقه على مدار يومين عمل، يمكنكم فتح شكوى جديدة. عند المتابعة على شكوى حماية المستهلك
-                    يجب التأكد من سبب الاغلاق
+                <li>When the complaint already assigned to inspector you must assign the case.
                 </li>
+                <li>If the complaint still NEW and is not assigned to inspector yet, follow the steps for the normal
+                    follow up call type your comment in CCCP and normal follow up transaction on CRM then close it
+                    without assignment.</li>
             </ul>
         </div>
-        <hr />
-        <div>
-            <h5 class="font-weight-bold d-flex flex-row justify-content-start align-items-baseline"><i
-                    class="far fa-hand-paper"></i> <span class="px-1">تتم
-                    المتابعة في الحالات التالية:</span></h5>
-            <ul>
-                <li>عدم التزام المشكو ضده بحل المشكلة</li>
-                <li>إذا كان الشاكي يعترض على الاغلاق</li>
-                <li>إذا تم أغلاق الشكوى لعدم الرد في خلال مدة أقل من يومين عمل او عدم تدوين ملاحظات بمحاولة الاتصال
-                    بالشاكي</li>
-                <li>بخصوص شكوى مغلقه وتم توجيه الشاكي الى محاكم دبي لرفضه القرار الذي تم اصدارة من قبل الدائرة وبعد فتره
-                    راجع المشتكي مره اخرى وافاده برضاه عن القرار ويود المتابعة في تلك الحالة يتم وضع ملاحظه بالنظام
-                    وافاده بان علية الانتظار ولا يمكن تحديد المدة حيث سيتم التواصل به من قبل قسم المتابعة وافاده بالأمر
-                    وسيتم المحاولة من قبلهم فقط وذلك لرفض القرار منذ البداية</li>
-            </ul>
-        </div>
-        <hr />
-        <div>
-            <h5 class="font-weight-bold d-flex flex-row justify-content-start align-items-baseline"><i
-                    class="far fa-hand-paper"></i> <span class="px-1">عند تسجيل
-                    أي شكوى متعلقة بالسوق الصيني:</span></h5>
-            <ul>
-                <li>
-                    توضيح اسم المحل / رقم المحل/ السوق الصيني (1 أو 2) بشكل واضح مع العلم بأن أرقام المحلات بالسوق
-                    الصيني تتكون من (حروف وأرقام) يجب أخذها من الشاكي بشكل واضح قبل تسجيل الشكوى.
-                </li>
-                <li>
-                    تسجيل رقم الهاتف أو الموبايل للمشكو ضده (المحل) بتفاصيل الشكوى.
-                </li>
-                <li>
-                    التأكد من اختيار الخانة الصحيحة (السوق الصيني / المركز الرئيسي) قبل حفظ الشكوى.
-                </li>
-            </ul>
-        </div>
-        <hr />
-        <div>
-            <h5 class="font-weight-bold d-flex flex-row justify-content-start align-items-baseline"><i
-                    class="far fa-hand-paper"></i> <span class="px-1">ملاحظة:</span></h5>
-            <ul>
-                <li>
-                    لا يتم قبول حالات تغيير المستهلك رأيه بشكل عام وتشمل تغيير الرأي بسبب وجود أسعار مخفضة في موقع اخر
-                    أو بسبب وجود جودة مختلفة في موقع اخر ويرغم المستهلك بالعدول عن الاتفاق.
-                </li>
-            </ul>
-        </div>
-        <hr />
-        <div>
-            <h5 class="font-weight-bold d-flex flex-row justify-content-start align-items-baseline"><i
-                    class="far fa-hand-paper"></i> <span class="px-1">نقاط
-                    هامة</span></h5>
-            <ul>
-                <li>غير مسموح بوضع أكثر من متابعة على نفس الشكوى بنفس المعنى في نفس اليوم ومسموحة فقط في حال كانت هناك
-                    افادة جديدة</li>
-                <li>من غير المسموح أيضا نسخ متابعات سابقة وخاصة الخاصة بالسيد/أيمن و وضع متابعة توضح افادة المستهلك
-                    بالضبط</li>
-                <li>عند ارسال بريد الكتروني لمتابعة الشكوى يجب توضيح نفس المتابعة الموجودة في نظام الشكاوى CCCP في
-                    الايميل.</li>
-                <li>في حال طلب المستهلك التواصل مع مدراء من ادارة قسم حماية المستهلك لا يتم ذكر أسمائهم داخل المتابعات
-                    (ماهر المرزوقي. أحمد الزعابي...الخ) بل يتم توضيح ان الشاكي يطلب التواصل معه من قبل إدارة القسم
-                    وبعدها يتم ارسال بريد الكتروني للسيد/ أيمن الجمل بطلب التواصل.</li>
-                <li>لا يتم افادة الشاكي اثناء المكالمة بأنه يوجد ارسال للمستندات عن طريق الواتس اب ويتم افادتهم بان
-                    ارسال المستندات يتم عن طريق البريد الالكتروني فقط</li>
-                <li>فى حال اعتراض المشكو ضده على قرار رسالة الحل (الحماية الذكية) يتم افاده بأرسال بريد الكرتوني بسبب
-                    الاعتراض ويتم ارفاق رقم الشكوى وأيضا مع ذكر الاسم ورقم الهاتف</li>
-            </ul>
-        </div>
-        <hr />
-        <div>
-            <h5 class="font-weight-bold d-flex flex-row justify-content-start align-items-baseline"><i
-                    class="far fa-hand-paper"></i> <span class="px-1">قرار
-                    الاغلاق</span></h5>
-            <ul>
-                <li>بخصوص قرار الاغلاق المدون بالشكوى يمكنكم الاطلاع عليه وايضا قراءته بعناية قبل ان يتم عمل اي متابعه
-                    على الشكوى</li>
-                <li>فى حال وجود قرار غير مطابق للإجراء المتخذ يرجى افاده المستهلك بملخص القرار وليس القرار كاملا كما تم
-                    ذكره بالمحتوى وافادتنا برقم الشكوى لكي يتم الاطلاع وافاده اداره القسم المعنى بذلك</li>
-                <li>مثال. الاجراء المطلوب والحل غير مطابق للأغلاق المدون ادناه (يرجى الاطلاع)
-
-                    حيث يمكنكم افادته بالقرار في مثل ذلك الحالة تفاديا لعمل متابعه بدون سبب
-
-                    وايضا في حال تم توجيه المستهلك لجهة اخرى من قبل المفتش وقام بتدوين ذلك بالقرار يمكنكم افاده بان يتم
-                    التوجه للجهة المذكورة بالمحتوى</li>
-                <li> في حال عدم القدرة على تفهم الموضوع او قرار الاغلاق يمكنكم الرجوع الى الأستاذ أيمن الجمل مباشرة قبل
-                    ان يتم افاده المستهلك بأي قرار
-                </li>
-                <li>في حالة وجود ملاحظة من قبل قسم المتابعة بحماية المستهلك (عمر السويدي- مهند العطيات - ميرا العمري -
-                    عائشة البلوشي - طارق زينل) بان ليس للشاكي حق في تقديم الشكوى وعليه مراجعة محاكم دبي والشاكي اعترض
-                    علي قرار المتابعة يرجى توجيه الشاكي الي محاكم دبي وعدم وضع ملاحظة متابعة.
-                </li>
-            </ul>
-        </div>
-        <hr />
-        <div>
-            <h5 class="font-weight-bold d-flex flex-row justify-content-start align-items-baseline"><i
-                    class="far fa-hand-paper"></i> <span class="px-1"> بشأن طلب تواصل بالمدير يرجى اتباع الاتي</span>
-            </h5>
-            <ul>
-                <li> لا يتم عمل مكالمه جماعية مع المفتش او احد المسؤولين من الحماية عن طريق ربط المكالمة( علما بان لا
-                    يوجد لدينا امكانيه ربط المكالمات )</li>
-                <li>في حال المستهلك يود التواصل بالمدير وشديد الانزعاج ولا يود اغلاق الهاتف مطالبا بالتواصل مع مدير من
-                    حمايه المستهلك يتم افاده بان سيتم التواصل من نصف ساعه الى ساعه من قبل الإدارة (ويتم التواصل معي او
-                    ارسال بريد الكرتوني عاجل)</li>
-                <li>في حال مطالبه المستهلك التواصل بالمدير بشكل غير منزعج وبإمكانكم اغلاق المكالمة من خلالكم يتم افاده
-                    بان خلال 24 ساعه سيتم التواصل معكم من قبل إدارة الحماية ( يتم ارسال بريد الكتروني للزميل / أيمن
-                    الجمل بعنوان طلب تواصل بالمدير خلال 24 ساعه</li>
-            </ul>
-        </div>
-
     </div>
-    <!-- table -->
-    <div class="col-md-7 col-sm-12 border-right">
-        <div class="font-weight-bold d-flex flex-row justify-content-start align-items-baseline"><i
-                class="fas fa-users"></i>
-            <p class="px-2">قسم المتابعة</p>
+    <!-- col-1 -->
+    <div class="col-md-6 col-sm-12 px-1">
+        <div>
+            <h5 class="font-weight-bold d-flex flex-row justify-content-start align-items-baseline"><i
+                    class="far fa-hand-paper"></i> <span class="px-1">1-After type the proper description and the
+                    complaint number. press SAVE, press on … as mentioned below and select Assign.</span></h5>
+            <img src="/pages/page_Consumer_protection/data-update/images/followUpCRMPopup1.jpg" alt=""
+                class="img-thumbnail">
         </div>
-        <h5 class="font-weight-bold">وهم (عمر السويدي- مهند العطيات - ميرا العمري - عائشة البلوشي - طارق زينل) ويمكنكم
-            قراءه المتابعة كما هي
-            مدونه كامله</h5>
-        <table class="table table-bordered table-striped">
-            <thead>
-                <tr>
-                    <th scope="col">حالات المتابعة</th>
-                    <th scope="col">المدة</th>
-                    <th scope="col">الإجراء</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th scope="row">بعد ان تم الإغلاق</th>
-                    <td>سيتم التواصل به ما بين 2 الى 3 ايام عمل من ثاني يوم قام بالمتابعة</td>
-                    <td>من قبل قسم ادارة متابعه الشكاوى وليس من قبل المفتش او قسم الحماية حيث ان ذلك هو القسم المختص
-                        بالمتابعة.</td>
-                </tr>
-
-                <tr>
-                    <th scope="row">المتابعة قبل انتهاء المدة الذي تمت افادته بها</th>
-                    <td>خلال 2 ال 3 أيام عمل.</td>
-                    <td>لا يتم عمل متابعه بالنظام ولا يتم ارسال المتابعة الى السيد (ايمن الجمل) ويتم افادته بان عليه
-                        الانتظار لانتهاء المدة</td>
-                </tr>
-
-                <tr>
-                    <th scope="row">بعد المدة المتفق عليها</th>
-                    <td>بعد 2 ال 3 أيام عمل <strong> يوجد ملاحظة من قسم المتابعة</strong></td>
-                    <td>طلاع جيدا وبعنايه على اخر ملاحظة مدون بالنظام موضحا للمستهلك ما تم تدوينه من قبل قسم المتابعة
-                    </td>
-                </tr>
-
-                <tr>
-                    <th scope="row">بعد المدة المتفق عليها</th>
-                    <td>بعد 2 ال 3 أيام عمل <strong>لا يوجد ملاحظة من قسم المتابعة</strong></td>
-                    <td>يتم تدوين الملاحظة بالنظام وارسال بريد الكرتوني الى السيد (ايمن الجمل) موضحا بان الشاكي قام
-                        بالمتابعة بعد انتهاء المدة (يمكنكم تحديد انتهاء المدة من اخر متابعه كانت مذكورة بالنظام
-                        بالتاريخ)</td>
-                </tr>
-
-                <tr>
-                    <th scope="row">مستهلك يود التواصل بمسؤول من الحماية ولا يود اغلاق الهاتف</th>
-                    <td></td>
-                    <td>يمكنكم افادة السيد / ايمن الجمل او السيد/ شعبان رزق ليتم التنسيق مع القسم</td>
-                </tr>
-            </tbody>
-        </table>
-
         <hr />
         <div>
-            <h5 class="font-weight-bold d-flex flex-row"><i class="far fa-sticky-note"></i> <span
-                    class="px-1">ملاحظة</span></h5>
-            <ul>
-                <li>يوجد فرق بين قرار الاغلاق للمفتش وملاحظة من قسم المتابعة ان كان الاعتراض على قرار اغلاق المفتش يتم
-                    وضع متابعة للشكوى اما لو كانت الملاحظة من قسم المتابعة (عمر السويدي- مهند العطيات - ميرا العمري -
-                    عائشة البلوشي - طارق زينل) عندها يتم توجيه الشاكي لمحاكم دبي
-                </li>
-                </li>
-            </ul>
-            <img class="img-thumbnail" src="pages/page_Consumer_protection/data-update/images/FollowUpOnAComplaint1.jpg" alt="" srcset="">
+            <h5 class="font-weight-bold d-flex flex-row justify-content-start align-items-baseline"><i
+                    class="far fa-hand-paper"></i> <span class="px-1">2-Change Assign to status by click one click on Me
+                    to be user or team </span></h5>
+            <img src="/pages/page_Consumer_protection/data-update/images/followUpCRMPopup2.jpg" alt=""
+                class="img-thumbnail">
+        </div>
+    </div>
+    <!-- col2 -->
+    <div class="col-md-6 col-sm-12">
+        <div>
+            <h5 class="font-weight-bold d-flex flex-row justify-content-start align-items-baseline"><i
+                    class="far fa-hand-paper"></i> <span class="px-1">3-In User or team Cell type MUH and press Search or Enter.</span></h5>
+            <img src="/pages/page_Consumer_protection/data-update/images/followUpCRMPopup3.jpg" alt=""
+                class="img-thumbnail">
+        </div>
+        <hr />
+        <div>
+            <h5 class="font-weight-bold d-flex flex-row justify-content-start align-items-baseline"><i
+                    class="far fa-hand-paper"></i> <span class="px-1">4-Select Muhammad Atef and press Assign.</span></h5>
+            <img src="/pages/page_Consumer_protection/data-update/images/followUpCRMPopup4.jpg" alt=""
+                class="img-thumbnail">
         </div>
     </div>
 </div>

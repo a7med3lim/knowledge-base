@@ -26,14 +26,14 @@
 
 <body class="fixed-sn dark-blue-skin h-100">
 	<!-- Empty Modal to load other data -->
-	<!--  -->
-	<div class="modal fade" id="modal_FormAjax" tabindex="-1" role="dialog" aria-labelledby="modal_FormAjax" aria-hidden="true" data-backdrop="static">
+	<div class="modal fade" id="modal_FormAjax" tabindex="-1" role="dialog" aria-labelledby="modal_FormAjax"
+		aria-hidden="true" data-backdrop="static">
 		<div class="modal-dialog modal-notify modal-fullscreen w-100" role="document">
 			<!--Content-->
 			<div class="modal-content">
 				<!--Header-->
-				<div class="modal-header priymary m-0 py-3 px-5">
-					<p class="heading lead m-0 p-0"></p>
+				<div class="modal-header priymary m-0 py-3 px-5 d-flex justify-content-between align-items-center">
+					<p class="heading lead m-0 p-0 d-flex d-flex justify-content-between align-items-center"></p>
 					<button type="button" class="close m-0 p-0" data-dismiss="modal" aria-label="Close">
 						<span aria-hidden="true" class="white-text">&times;</span>
 					</button>
@@ -45,13 +45,33 @@
 			<!--/.Content-->
 		</div>
 	</div>
+	<!-- Error Msg -->
+	<div class="modal fade" id="errorModal_FormAjax" tabindex="-1" role="dialog" aria-labelledby="modal_FormAjax"
+		aria-hidden="true" data-backdrop="static">
+		<div class="modal-dialog modal-notify heartBeat modal-sm w-100" role="document">
+			<!--Content-->
+			<div class="modal-content">
+				<!--Header-->
+				<div
+					class="modal-header default-color-dark m-0 py-3 px-5 d-flex justify-content-between align-items-center">
+					<p class="heading lead m-0 p-0 d-flex d-flex justify-content-between align-items-center"></p>
+					<button type="button" class="close m-0 p-0" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true" class="white-text">&times;</span>
+					</button>
+				</div>
+				<!--Body-->
+				<div class="modal-body errorModalFormAjax text-danger text-center">
+				</div>
+			</div>
+			<!--/.Content-->
+		</div>
+	</div>
 	<!--  -->
 	<!--SideNav  -->
 	<div id="loadSideBar">
 
 	</div>
-
-	<!-- !!End -->
+	<!-- -->
 	<!-- !!End -->
 	<!-- Main Layout -->
 	<div class="page-content h-100" id="content">
@@ -69,9 +89,12 @@
 			<!-- lang -->
 			<div class="mr-auto">
 				<ul class="nav d-flex flex-row-reverse">
-					<li class="nav-item px-3 border-right"><a href="indexEn.html" class="mr-auto"><i class="fas fa-globe-americas"></i> English</a></li>
-					<li class="nav-item px-3"><a href="tel:600545555" class="text-default"><strong>600 545555 <i class="fas fa-phone-alt"></i> </strong></a></li>
-					<li class="nav-item px-1"><a href="tel:971(04)4455555" class="text-default"><strong>971 (04) 44 55555 <i class="fas fa-phone-alt"></i> </strong></a></li>
+					<li class="nav-item px-3 border-right"><a href="indexEn.html" class="mr-auto"><i
+								class="fas fa-globe-americas"></i> English</a></li>
+					<li class="nav-item px-3"><a href="tel:600545555" class="text-default"><strong>600 545555 <i
+									class="fas fa-phone-alt"></i> </strong></a></li>
+					<li class="nav-item px-1"><a href="tel:971(04)4455555" class="text-default"><strong>971 (04) 44
+								55555 <i class="fas fa-phone-alt"></i> </strong></a></li>
 				</ul>
 			</div>
 		</nav>
@@ -83,6 +106,7 @@
 		<!-- !!End -->
 
 	</div>
+	<!-- -->
 	<!-- jQuery -->
 	<script type="text/javascript" src="js/jquery.min.js"></script>
 	<!-- Bootstrap tooltips -->
@@ -113,21 +137,19 @@
 				});
 			});
 			// !!End Side Nave
+			//gotoHome
+			function GoToHomePage() {
+				// if (window.confirm("Do you really want to leave?")) {
+				// 	window.open("exit.html", "Thanks for Visiting!");
+				// }
+				window.location = 'index.html';
+			}
+			// set Main Page
 			$("#loadSideBar").load("pages/components/sideNav/sidenav.html");
-			$("#loadPages").load("pages/dashboard/dashboard.html");
-			// $("#loadPages").load("pages/page_BRL_Required_Documents/page_BRL_Required_Documents.html");
+			// $("#loadPages").load("pages/dashboard/dashboard.html");
+			$("#loadPages").load("pages/page_Consumer_protection/page_Consumer_protection.html");
 		});
 	</script>
-	<script>
-		//gotoHome
-		function GoToHomePage() {
-			// if (window.confirm("Do you really want to leave?")) {
-			// 	window.open("exit.html", "Thanks for Visiting!");
-			// }
-			window.location = 'index.html';
-		}
-	</script>
-
 </body>
 
 </html>
