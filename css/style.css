@@ -290,9 +290,10 @@ input:empty {
 .modal .modal-dialog .modal-content .modal-header {
   background-color: var(--primary);
   color: var(--white);
-  position: fixed;
+  position: -webkit-sticky;
+  position: sticky;
   z-index: 999;
-  width: 100%;
+  top: 0;
   -webkit-box-shadow: var(--primary) 0px 0px 10px;
           box-shadow: var(--primary) 0px 0px 10px;
 }
@@ -300,10 +301,6 @@ input:empty {
 .modal .modal-dialog .modal-content .modal-header button {
   color: var(--white) !important;
   opacity: 1;
-}
-
-.modal .modal-dialog .modal-content .modal-body {
-  padding-top: 5rem;
 }
 
 .modal .modal-dialog.modal-fullscreen {

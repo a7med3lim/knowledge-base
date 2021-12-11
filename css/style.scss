@@ -306,9 +306,9 @@ input:empty {
             .modal-header {
                 background-color: var(--primary);
                 color: var(--white);
-                position: fixed;
+                position: sticky;
                 z-index: 999;
-                width: 100%;
+                top: 0;
                 box-shadow: var(--primary) 0px 0px 10px;
                 button {
                     color: var(--white) !important;
@@ -317,7 +317,7 @@ input:empty {
             }
 
             .modal-body {
-                padding-top: 5rem;
+                // padding-top: calc(9rem - 50px);
             }
         }
         &.modal-fullscreen{
