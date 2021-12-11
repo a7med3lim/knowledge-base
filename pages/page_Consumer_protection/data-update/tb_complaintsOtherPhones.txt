@@ -1,20 +1,30 @@
 [
   {
-    "theSide": "1",
-    "phone": "+9715016546",
-    "notes": "We-egypt",
-    "address": "address1"
+    "theEmirate": "أبو ظبي (العين) | Abu Dhabi (Al Ain)",
+    "phone": "800555"
   },
-    {
-    "theSide": "1",
-    "phone": "+9715016546",
-    "notes": "Du",
-    "address": "address1"
-  },
-    {
-    "theSide": "1",
-    "phone": "+9715016546",
-    "notes": "Vodafone",
-    "address": "address1"
+   {
+    "theEmirate": "الشارقة | Sharjah",
+    "phone": "80080000"
+  }
+  ,
+   {
+    "theEmirate": "عجمان | Ajman",
+    "phone": "80070"
+  }
+  ,
+   {
+    "theEmirate": "رأس الخيمة | Ras Al Khaimah",
+    "phone": "8007333"
+  }
+   ,
+   {
+    "theEmirate": "الفجيرة | Fujairah",
+    "phone": "600522225"
+  }
+    ,
+   {
+    "theEmirate": "أم القوين | Um Al Quwain",
+    "phone": "067653322"
   }
 ]

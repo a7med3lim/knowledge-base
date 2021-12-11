@@ -18,17 +18,13 @@
 	<link rel="stylesheet" href="css/mdb.min.css" />
 	<!-- Your custom styles (optional) -->
 	<link rel="stylesheet" href="css/style.css" />
-	<script>
-
-			//
-	</script>
 </head>
 
 <body class="fixed-sn dark-blue-skin h-100">
 	<!-- Empty Modal to load other data -->
-	<div class="modal fade" id="modal_FormAjax" tabindex="-1" role="dialog" aria-labelledby="modal_FormAjax"
-		aria-hidden="true" data-backdrop="static">
-		<div class="modal-dialog modal-notify modal-fullscreen w-100" role="document">
+	<div class="modal fade top " id="modal_FormAjax" tabindex="-1" role="dialog" aria-labelledby="modal_FormAjax"
+		aria-hidden="false" data-backdrop="static">
+		<div class="modal-dialog modal-frame modal-top  w-100" role="document">
 			<!--Content-->
 			<div class="modal-content">
 				<!--Header-->
@@ -109,10 +105,12 @@
 	<!-- -->
 	<!-- jQuery -->
 	<script type="text/javascript" src="js/jquery.min.js"></script>
+	
 	<!-- Bootstrap tooltips -->
 	<script type="text/javascript" src="js/popper.min.js"></script>
 	<!-- Bootstrap core JavaScript -->
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
 	<!-- MDB core JavaScript -->
 	<script type="text/javascript" src="js/mdb.min.js"></script>
 	<script type="text/javascript" src="js/addons/jquery.zmd.hierarchical-display.min.js"></script>
@@ -128,6 +126,9 @@
 
 	<script>
 		$(document).ready(function () {
+
+		});
+		$(document).ready(function () {
 			// For Side Nave
 			$(function () {
 				$('html').find("#sidebarCollapse").on("click", function () {
@@ -137,17 +138,11 @@
 				});
 			});
 			// !!End Side Nave
-			//gotoHome
-			function GoToHomePage() {
-				// if (window.confirm("Do you really want to leave?")) {
-				// 	window.open("exit.html", "Thanks for Visiting!");
-				// }
-				window.location = 'index.html';
-			}
 			// set Main Page
 			$("#loadSideBar").load("pages/components/sideNav/sidenav.html");
 			// $("#loadPages").load("pages/dashboard/dashboard.html");
-			$("#loadPages").load("pages/page_Consumer_protection/page_Consumer_protection.html");
+			$("#loadPages").load("pages/page_Consumer_protection/page_Business_Protection.html");
+
 		});
 	</script>
 </body>

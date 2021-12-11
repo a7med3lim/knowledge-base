@@ -1,6 +1,6 @@
 <div class="vertical-nav" id="sidebar">
     <!-- Toggle btn For Mobile -->
-    <a onclick="javascript:GoToHomePage()" href="javascript:void(0)"
+    <a id="gotoHome""
         class="btn btn-DEDprimary text-white font-weight-bold text-uppercase px-3 small pb-4">الصفحةالرئيسية<br>Dashboard</a>
     <!-- !!End -->
     <!-- Menus -->
@@ -21,7 +21,7 @@
                             <br>Consumer protection </a>
                     </li>
                     <li class="nav-item activeX waves-effect">
-                        <a href="" class="">
+                        <a href="pages\page_Consumer_protection\page_Business_Protection.html" class="">
                             حماية الأعمال
                             <br>
                             Business Protection
@@ -210,8 +210,11 @@
     </div>
     <!-- !!End -->
 </div>
-<script>
+<script> 
     $(document).ready(function () {
+        $('#gotoHome').click(function(){
+            $("#loadPages").load("pages/dashboard/dashboard.html");
+        })
         // Toggle to ClosesideNav if click on <a> in Small Screen
         $('.nav-item a').click(function (event) {
             if ($("#content").hasClass("active")) {

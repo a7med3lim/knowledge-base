@@ -1,0 +1,40 @@
+<table id="dt-vertical-scroll-ConsumerProtection"
+    class="table table-striped table-bordered table-sm table-light tbl_ConsumerProtection" style="width:100%">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>الاختصاص</th>
+            <th>الملاحظات</th>
+        </tr>
+    </thead>
+
+</table>
+<script>
+    // UI Fix  //fix Table Header in modal
+    $(document).on('shown.bs.modal', function () {
+        dt_CP1.columns.adjust();
+    });
+
+    // //call Data ConsumerProtection
+    var dt_CP1 = $('#dt-vertical-scroll-ConsumerProtection').DataTable({
+        scrollY: 400,
+        paging: true,
+        "pagingType": "simple_numbers",
+        "ajax": {
+            "url": "pages/page_Consumer_protection/data-update/tb_consumer_protection.txt",
+            "dataSrc": ""
+        },
+        "columns": [
+            { "data": "number" },
+            { "data": "position" },
+            { "data": "notes" }
+        ]
+    });
+    // UI Fix // set layout Table ConsumerProtection
+    $("#dt-vertical-scroll-ConsumerProtection").ready(function () {
+        $("#dt-vertical-scroll-ConsumerProtection_wrapper").find(".row .col:nth-child(2)").addClass('col-2');
+        $("#dt-vertical-scroll-ConsumerProtection_wrapper").find(".form-control").css("height", "41px")
+        $("#dt-vertical-scroll-ConsumerProtection_wrapper").find(".form-control").attr("placeholder", "اكتب هنا كلمات المراد البحث عنها");
+        $("#dt-vertical-scroll-ConsumerProtection_wrapper").find(".form-control").focus();
+    });
+</script>
