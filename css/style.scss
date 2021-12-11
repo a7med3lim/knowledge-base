@@ -465,7 +465,7 @@ html[lang="ar"] {
                                         display: inline-block;
                                         position: absolute;
                                         width: 3px;
-                                        height: 100px;
+                                        height: 100vh;
                                         right: -14px;
                                         top: -6px;
                                         background-color: white;
@@ -584,6 +584,8 @@ html[lang="ar"] {
 
     table {
         direction: rtl;
+        td{
+        }
     }
 }
 

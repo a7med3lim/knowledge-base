@@ -1,0 +1,103 @@
+<div class="container-fluid mt-5">
+	<!-- Page Location -->
+	<div class="row">
+		<div class="col-md-12 mt-4 px-0 m-0">
+			<div class="pageLocation py-4">
+				<ul>
+					<li class=""><a href="#">حماية المستهلك</a></li>
+					<li class="current"><a href="#">مراكز الخدمة الخاصة بالتفتيش
+							(مخالفات الرقابة التجارية)</a></li>
+					<!-- <li><a href="../index.html"></a></li> -->
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- Main Grid 2 Col -->
+	<div class="row ">
+		<div class="col-md-6 col-sm-12 mt-3">
+			<div class="card p-0">
+				<div class="card-body">
+					<h5 class="font-weight-bold d-flex flex-row justify-content-start align-items-baseline">
+						<i class="far fa-hand-paper"></i> <span class="px-1">قبل توجيه الشاكي لتسجيل الشكوى يجب الفروع
+							الخارجية التي تقدم خدمات قطاع الرقابة التجارية والتفتيش مثال</span>
+					</h5>
+					<ul>
+						<li>(الاعتراض على المخالفات/ تخفيض المخالفات /طباعة لائحة بتقرير المخالفات/إصدار إذن دفع
+							لمخالفة)</li>
+					</ul>
+				</div>
+			</div>
+			<div class="card p-0 mt-3">
+				<div class="card-body">
+					<h5 class="font-weight-bold d-flex flex-row justify-content-start align-items-baseline">
+						<i class="far fa-hand-paper"></i> <span class="px-1">يمكن طلب لائحة بتقارير التفتيش</span>
+					</h5>
+					<ul>
+						<li>يحق للمتعامل الاستفسار اوالاعتراض على المخالفات المتواجدة بالرخصة عن طريق موقع <a
+								href="https://consumerrights.ae/ar/Pages/Paperless.aspx" target="_blank">حماية
+								المستهلك</a> </li>
+						<li>وذلك بناء على قرار قسم التفتيش ( فاطمه الفلاسي)</li>
+						<li>
+							<img src="/pages/page_Consumer_protection/data-updatePage_Inspection_centers/images/image002.jpg"
+								class="img-thumbnail m-2" alt="">
+							<img src="/pages/page_Consumer_protection/data-updatePage_Inspection_centers/images/image004.jpg"
+								class="img-thumbnail m-2" alt="">
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-6 col-sm-12 mt-3">
+			<div class="card p-0">
+				<div class="card-body">
+					<table id="dt-vertical-scroll-Inspection_centers"
+						class="table table-striped table-bordered table-sm table-light tbl_OutsideConsumerProtection"
+						style="width:100%">
+						<thead>
+							<tr>
+								<th>المركز</th>
+								<th>العنوان</th>
+							</tr>
+						</thead>
+
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--  -->
+</div>
+
+
+<!-- !!End -->
+
+<script>
+	/******************************************************* */
+	// //call Data ConsumerProtection
+	var dt_CP5 = $('#dt-vertical-scroll-Inspection_centers').DataTable({
+		scrollY: 400,
+		paging: true,
+		 language: {
+        searchPlaceholder: "اكتب هنا كلمات المراد البحث عنها",
+        search: "",
+      },
+		"pagingType": "simple_numbers",
+		"ajax": {
+			"url": "pages/page_Consumer_protection/data-updatePage_Inspection_centers/tb_Inspection_centers.txt",
+			"dataSrc": ""
+		},
+		"columns": [
+			{ "data": "theSide" },
+			{ "data": "phone" }
+		]
+	});
+	/******************************************************* */
+	// UI Fix // set layout Table OutsideConsumerProtection
+	$("#dt-vertical-scroll-Inspection_centers").ready(function () {
+		$("#dt-vertical-scroll-Inspection_centers_wrapper").find(".row .col:nth-child(2)").addClass('col-2');
+		$("#dt-vertical-scroll-Inspection_centers_wrapper").find(".form-control").css("height", "41px")
+		// $("#dt-vertical-scroll-Inspection_centers_wrapper").find(".form-control").attr("placeholder", "اكتب هنا كلمات المراد البحث عنها");
+		$("#dt-vertical-scroll-Inspection_centers_wrapper").find(".form-control").focus();
+	});
+
+</script>

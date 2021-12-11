@@ -466,7 +466,7 @@ html[lang="ar"] .vertical-nav .accordion.sideNav .mainMenu .mainMenu_links ul li
   display: inline-block;
   position: absolute;
   width: 3px;
-  height: 100px;
+  height: 100vh;
   right: -14px;
   top: -6px;
   background-color: white;
