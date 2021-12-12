@@ -163,6 +163,8 @@
 					fill="none" stroke="#fbfbfb" stroke-miterlimit="10" stroke-width="2" />
 			</g>
 		</svg>
+		<div class="loadingSucess" style="display: none;"></div>
+		<div class="loadingUnloaded" style="display: none;"></div>
 	</div>
 	<!-- Empty Modal to load other data -->
 	<div class="modal fade top " id="modal_FormAjax" tabindex="-1" role="dialog" aria-labelledby="modal_FormAjax"
@@ -269,9 +271,28 @@
 
 	<script>
 		$(document).ready(function () {
-			setTimeout(function () {
-				$(".logoSVG").fadeOut('slow');
-			}, 9890);
+
+			$(function () {
+				$("#loadPages").load("pages/dashboard/dashboard.html", function (response, status, http) {
+				// $("#loadPages").load("pages/page_FDI/page_FDI.html", function (response, status, http) {
+					if (status == "success") {
+						// alert("Content loaded successfully!");
+						$("#loadSideBar").load("pages/components/sideNav/sidenav.html");
+						setTimeout(function () {
+							$(".logoSVG").fadeOut('slow');
+						}, 5000);
+						// $(".logoSVG").hide();
+						$(".loadingSucess").text("Loading | تحميل").show().show();
+					}
+					if (status == "error") {
+						// alert("Error: " + http.status + ": " + http.statusText);
+						setTimeout(function () {
+							$(".logoSVG").show('slow');
+							$(".loadingUnloaded").text("Error: " + http.status + ": " + http.statusText).show();
+						});
+					}
+				})
+			});
 		});
 		$(document).ready(function () {
 			// For Side Nave
@@ -284,8 +305,8 @@
 			});
 			// !!End Side Nave
 			// set Main Page
-			$("#loadSideBar").load("pages/components/sideNav/sidenav.html");
-			$("#loadPages").load("pages/dashboard/dashboard.html");
+			// $("#loadSideBar").load("pages/components/sideNav/sidenav.html");
+			// $("#loadPages").load("pages/dashboard/dashboard.html");
 			// $("#loadPages").load("pages/page_Consumer_protection/page_Precautionary_measures.html");
 
 		});

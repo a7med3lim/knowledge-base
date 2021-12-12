@@ -1,10 +1,9 @@
 $(document).ready(function () {
-
     var erorrMsgBody = ("<i class='fas fa-exclamation-triangle' style='color: white; margin-right:10px; margin-left:10px;'></i>" + " <span class='text-large'> Error |  خطأ</span>");
     var erorrMsgHeader = ("<p>There is an error in download the file</p>" + "<p>هناك خطأ في تحميل الملف</p>");
 
-     // open Modal Outside Consumer Portection
-     $('#modal_tb_consumer_protection').click(function (e) {
+    // open Modal Outside Consumer Portection
+    $('#modal_tb_consumer_protection').click(function (e) {
         e.preventDefault();
         $.ajax({
             url: "pages/page_Consumer_protection/data-update/modalTableConsumerProtection.html",

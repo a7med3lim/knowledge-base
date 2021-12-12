@@ -310,6 +310,7 @@ input:empty {
                 z-index: 999;
                 top: 0;
                 box-shadow: var(--primary) 0px 0px 10px;
+
                 button {
                     color: var(--white) !important;
                     opacity: 1;
@@ -320,7 +321,8 @@ input:empty {
                 // padding-top: calc(9rem - 50px);
             }
         }
-        &.modal-fullscreen{
+
+        &.modal-fullscreen {
             width: 100vw;
             max-width: none;
             height: 100%;
@@ -345,7 +347,7 @@ input:empty {
                 box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075) !important;
                 font-weight: 500;
                 font-size: small !important;
-                
+
                 &.active {
                     color: var(--white);
                     background-color: var(--secondary);
@@ -369,9 +371,14 @@ input:empty {
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
     transition: all;
 }
+
 /*************/
 
 .logoSVG {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: 100vh;
     background-color: #00909A;
@@ -404,7 +411,7 @@ input:empty {
 
             &#Path_10,
             &#Path_13,
-            &#Path_12 {
+            &#Path_12,&#Path_8 {
                 stroke-dasharray: 572;
                 stroke-dashoffset: 572;
                 animation: linear-anim 2s ease forwards 0.4s;
@@ -438,12 +445,6 @@ input:empty {
                 stroke-dasharray: 572;
                 stroke-dashoffset: 572;
                 animation: linear-anim 2s ease forwards 1.4s;
-            }
-
-            &#Path_8 {
-                stroke-dasharray: 572;
-                stroke-dashoffset: 572;
-                animation: linear-anim 2s ease forwards 2.4s;
             }
 
             &#Path_14 {
@@ -521,7 +522,16 @@ input:empty {
         }
     }
 
+    .loadingSucess,.loadingUnloaded {
+        color: white;
+        position: absolute;
+        bottom: 30%;
+        z-index: 9999;
+        font-weight: bolder;
+        font-size: 20px;
+    }
 }
+
 /*************/
 body,
 #loadPages div {
@@ -579,17 +589,19 @@ html[lang="ar"] {
                             font-size: 14px;
                             font-weight: 500;
                             background-color: var(--primary);
+
                             i {
                                 color: white;
                             }
                         }
 
                         button[aria-expanded="true"] {
-                            background-color: var(--primary);
+                            background-color: var(--secondary);
                         }
 
                         button[aria-expanded="false"] {
                             background-color: var(--primary);
+
                             i {
                                 color: white;
                                 transform: rotate(90deg);
@@ -640,7 +652,7 @@ html[lang="ar"] {
                                 }
 
                                 &.active {
-                                    background: var(--primary);
+                                    background: var(--gray-dark);
                                 }
 
                                 &:hover {
@@ -737,8 +749,8 @@ html[lang="ar"] {
 
     table {
         direction: rtl;
-        td{
-        }
+
+        td {}
     }
 }
 
