@@ -1,0 +1,218 @@
+[
+  {
+    "nameAr": "دبي الجنوب",
+    "nameEn": "Dubai south",
+    "number":"800-76884",
+    "workingHours":"7am - 3pm",
+    "workingDays":"7am - 3pm",
+    "pOBoxs":"282228",
+    "email":"Info@dubaisouth.ae"
+  },
+  {
+    "nameAr": "المنطقة الحرة لجبل علي",
+    "nameEn": "Jafza -Jabil Ali free zone authority",
+    "number":"80052392 /+9714445 3270",
+    "workingHours":"7:30am -  3:30pm",
+    "workingDays":"Sunday – Thursday",
+    "pOBoxs":"17000",
+    "email":"Mktg@jafza.ae"
+  },
+  {
+    "nameAr": "مدينة دبي للانترنت ( تابعة لمجموعة تيكوم",
+    "nameEn": "Dubai internet city ( tecom group )",
+    "number":"+97143911111",
+    "workingHours":"",
+    "workingDays":"",
+    "pOBoxs":"73000",
+    "email":"Customercare@tecomgroup.ae"
+  },
+  {
+    "nameAr": "المنطقة الحرة لمطار دبي الدولي",
+    "nameEn": "Dafza Dubai airport free zone authority",
+    "number":"+97142995555",
+    "workingHours":"7.30 am-  2.30 pm",
+    "workingDays":"Sunday to Thursday",
+    "pOBoxs":"491",
+    "email":"Invest@dafza.gov.ae"
+  },
+  {
+    "nameAr": "مدينة دبي الطبية",
+    "nameEn": "Dubai Healthcare City",
+    "number":"800432584/+9714324 5555",
+    "workingHours":"",
+    "workingDays":"",
+    "pOBoxs":"66566",
+    "email":"Info@dhcc.ae"
+  },
+  {
+    "nameAr": "سلطة واحة دبي للسيليكون",
+    "nameEn": "Dubai Silicon Oasis Authority",
+    "number":"+9714501 5000/+9714501 5555",
+    "workingHours":"",
+    "workingDays":"",
+    "pOBoxs":"6009",
+    "email":" Inquiries@dso.ae"
+  },
+  {
+    "nameAr": "مركز دبي للسلع المتعددة أبراج بحيرات الجميرا",
+    "nameEn": "DMCC -Dubai Multi Commodities Centre JLT – Jumeirah Lake Tower",
+    "number":"600543622/+9714424 9600",
+    "workingHours":"8 am – 4 pm",
+    "workingDays":"Sunday to Thursday",
+    "pOBoxs":"48800",
+    "email":"Customercare@dmcc.ae"
+  },
+  {
+    "nameAr": "مركز دبي المالي العالمي",
+    "nameEn": "Dubai International Financial Centre (DIFC)",
+    "number":"+9714362 2222",
+    "workingHours":"8am  -  3pm",
+    "workingDays":"Sunday to Thursday",
+    "pOBoxs":"74777",
+    "email":"Info@difc.ae"
+  },
+  {
+    "nameAr": "مدينة دبي للأعلام",
+    "nameEn": "Dubai media city",
+    "number":"+9714391 4555",
+    "workingHours":"7:30am - 4:30pm",
+    "workingDays":"Sunday-Thursday",
+    "pOBoxs":"53777",
+    "email":"Info@dmc.ae"
+  },
+  {
+    "nameAr": "مجمع الذهب و الألماس",
+    "nameEn": "Gold & Diamond Park",
+    "number":"+9714362 7777",
+    "workingHours":"8:00 am – 5:30 pm",
+    "workingDays":"Sunday – Thursday",
+    "pOBoxs":"",
+    "email":"GDP@emaar.ae"
+  },
+  {
+    "nameAr": "مدينة دبي للأستوديوهات",
+    "nameEn": "Dubai Studio City",
+    "number":"+9714391 4555",
+    "workingHours":"",
+    "workingDays":"",
+    "pOBoxs":"",
+    "email":"Info@dubaistudiocity.ae"
+  },
+  {
+    "nameAr": "مدينة دبي للإنتاج",
+    "nameEn": "Dubai Production City",
+    "number":"+9714391 1122",
+    "workingHours":"7:30am  -  4:30pm",
+    "workingDays":"Sunday-Thursday",
+    "pOBoxs":"485055",
+    "email":"Info@productioncity.ae"
+  },
+  {
+    "nameAr": "مدينة دبي الاكاديمية العالمية",
+    "nameEn": "Dubai International Academic City",
+    "number":"+9714360 2060",
+    "workingHours":"",
+    "workingDays":"",
+    "pOBoxs":"73000",
+    "email":"Info@diacedu.ae"
+  },
+  {
+    "nameAr": "قرية دبي للمعرفة",
+    "nameEn": "Dubai Knowledge Park",
+    "number":"+97143901111",
+    "workingHours":"",
+    "workingDays":"",
+    "pOBoxs":"73000",
+    "email":"Info@dkp.ae"
+  },
+  {
+    "nameAr": "منطقة دبي للتعهيد",
+    "nameEn": "Dubai Outsource City",
+    "number":"+97143676666",
+    "workingHours":"",
+    "workingDays":"",
+    "pOBoxs":"500500",
+    "email":"Ask@outsourcecity.ae"
+  },
+  {
+    "nameAr": "المدينة العالمية للخدمات الأنسانية",
+    "nameEn": "International Humanitarian City",
+    "number":"+9714368 0202",
+    "workingHours":"",
+    "workingDays":"",
+    "pOBoxs":"506030",
+    "email":"Info@ihc.ae"
+  },
+  {
+    "nameAr": "قرية دبي للعلوم",
+    "nameEn": "Dubai Science Park",
+    "number":"+9714390 2222",
+    "workingHours":"",
+    "workingDays":"",
+    "pOBoxs":"500767",
+    "email":"Info@dsp.ae"
+  },
+  {
+    "nameAr": "مدينة دبي الملاحية",
+    "nameEn": "Dubai Maritime City",
+    "number":"+9714367 1771",
+    "workingHours":"7:30 AM – 3:30 PM",
+    "workingDays":"",
+    "pOBoxs":"32111",
+    "email":"Dmc.property@dubaimaritimecity.ae"
+  },
+  {
+    "nameAr": "مركز دبي التجاري العالمي",
+    "nameEn": "Dubai World Trade Centre",
+    "number":"+97143321000",
+    "workingHours":"",
+    "workingDays":"",
+    "pOBoxs":"",
+    "email":"Info@dwtc.com"
+  },
+  {
+    "nameAr": "حي دبي للتصميم",
+    "nameEn": "Dubai Design District",
+    "number":"+97144333000",
+    "workingHours":"",
+    "workingDays":"",
+    "pOBoxs":"",
+    "email":""
+  },
+  {
+    "nameAr": "مجمع الصناعات الوطنية",
+    "nameEn": "National Industrial Park -Techno Park",
+    "number":"800-87",
+    "workingHours":"",
+    "workingDays":"",
+    "pOBoxs":"",
+    "email":""
+  },
+  {
+    "nameAr": "منطقة دبي للسيارات والآليات",
+    "nameEn": "Dubai Auto Zone and Mechanics",
+    "number":"+971 4 3245630",
+    "workingHours":"",
+    "workingDays":"",
+    "pOBoxs":"",
+    "email":"info@uaefreezones.com"
+  },
+  {
+    "nameAr": "تكنوبارك",
+    "nameEn": "Dubai Techno Park Free Zone",
+    "number":"+971 4 3867444",
+    "workingHours":"",
+    "workingDays":"",
+    "pOBoxs":"",
+    "email":"info@commitbiz.com"
+  },
+  {
+    "nameAr": "المنطقة الحرة ميدان",
+    "nameEn": "Meydan Free zone",
+    "number":"+971 4 327 0000",
+    "workingHours":"",
+    "workingDays":"",
+    "pOBoxs":"",
+    "email":"info@meydan.ae"
+  }
+]

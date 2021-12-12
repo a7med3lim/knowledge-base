@@ -1,0 +1,38 @@
+[
+  {
+    "nameAr": "",
+    "nameEn": "Business Bay",
+    "number":"",
+    "workingHours":"",
+    "workingDays":"",
+    "pOBoxs":"",
+    "email":""
+  },
+    {
+    "nameAr": "مجمع دبي للاستثمار",
+    "nameEn": "Dubai investment park",
+    "number":"04-8851188",
+    "workingHours":"",
+    "workingDays":"",
+    "pOBoxs":"",
+    "email":""
+  },
+    {
+    "nameAr": "",
+    "nameEn": "Dubai Sports City",
+    "number":"",
+    "workingHours":"",
+    "workingDays":"",
+    "pOBoxs":"",
+    "email":""
+  },
+    {
+    "nameAr": "",
+    "nameEn": "Motor City",
+    "number":"",
+    "workingHours":"",
+    "workingDays":"",
+    "pOBoxs":"",
+    "email":""
+  }
+]

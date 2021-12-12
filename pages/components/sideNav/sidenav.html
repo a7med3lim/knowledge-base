@@ -217,14 +217,14 @@
                 data-parent="#accordionExample">
                 <ul class="nav flex-column">
                     <li class="nav-item  waves-effect">
-                        <a href="#" class=""> المناطق الحرة في دبي
+                        <a href="pages\page_DubaiFreeZones\page_Dubai_Free_Zones.html" class=""> المناطق الحرة في دبي
                             <br>Dubai Free Zones </a>
                     </li>
 
                 </ul>
             </div>
         </div>
-        <button type="button"
+        <button type="button" id="openMap"
             class="btn btn-DEDprimary waves-ripple text-white font-weight-bold text-uppercase px-3 small pb-4">خريطة
             المواقع<br>Location Map
         </button>
@@ -236,7 +236,7 @@
         $('#gotoHome').click(function () {
             $("#loadPages").load("pages/dashboard/dashboard.html");
         })
-        
+
         // Toggle to ClosesideNav if click on <a> in Small Screen
         $('.nav-item a').click(function (event) {
             if ($("#content").hasClass("active")) {
@@ -256,12 +256,35 @@
             return false;
 
         })
-        
+
         //Active <a> if selected
         $(".mainMenu_links a").on("click", function (event) {
             $("li.active").removeClass("active");
             // adding classname 'active' to current click li 
             $(this).parent().addClass("active");
         });
+        // openMap
+        $('#openMap').click(function (e) {
+            e.preventDefault();
+            $.ajax({
+                url: "pages/page_Map/page_Map.html",
+                success: function (data) {
+                    $('#modal_FormAjax').modal('show');
+                    $(".heading").html(" Location Map | خريطة المواقع ")
+                    $(".modalBodyFromAjax").html(data);
+                    alert(response['response']);
+                    return true;
+                },
+                error: function () {
+                    // alert('Error');
+                    $('#errorModal_FormAjax').modal('show');
+                    $("#errorModal_FormAjax").find(".heading").html(erorrMsgBody);
+                    $("#errorModal_FormAjax").find(".errorModalFormAjax").html(erorrMsgHeader);
+                    return true;
+                }
+            });
+            return false;
+        },
+        );
     });
 </script>

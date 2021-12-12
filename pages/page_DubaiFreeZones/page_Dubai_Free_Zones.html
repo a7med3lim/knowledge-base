@@ -1,0 +1,147 @@
+<div class="container-fluid mt-5">
+	<!-- Page Location -->
+	<div class="row">
+		<div class="col-md-12 mt-4 px-0 m-0">
+			<div class="pageLocation py-4">
+				<ul>
+					<li class=""><a href="#">المناطق الحرة في دبي</a></li>
+					<li class="current"><a href="#">المناطق الحرة في دبي</a></li>
+					<!-- <li><a href="../index.html"></a></li> -->
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- Main Grid 2 Col -->
+	<div class="row ">
+		<div class="col-md-12 col-sml12">
+			<div class="card mt-4">
+				<div class="card-body">
+					<h5 class="font-weight-bold d-flex flex-row justify-content-start align-items-baseline">
+						<i class="far fa-hand-paper"></i> <span class="px-1">في حال رغبة العميل اصدار رخصة تجارية تابعة
+							لاقتصادية دبي لكن <q class="text-muted px-1">بمنطقة تيكوم</q> يتم إعطائه رقم السيد نبيل الشيخ 043911111 لإفادته بكافة
+							إجراءات اصدار الرخصة.</span>
+					</h5>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-6 col-sm-12 mt-3">
+			<div class="card p-0">
+				<div class="card-body">
+					<h5>Areas under DED</h5>
+					<hr/>
+					<table id="dt-vertical-scroll-Dubai_Free_ZonesInside"
+						class="table table-striped table-bordered table-sm table-light tb_page_Dubai_Free_ZonesInside"
+						style="width:100%">
+						<thead class="">
+							<tr class="">
+								<th>الاسم بالعربي</th>
+								<th>الاسم English</th>
+								<th>الهاتف | Phone</th>
+								<th>ساعات العمل | Working Hours</th>
+								<th>ايام العمل | Working Days</th>
+								<th>صندوق بريد | Working Hours</th>
+								<th>البريد الالكتروني | Email</th>
+							</tr>
+						</thead>
+
+					</table>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-6 col-sm-12 mt-3">
+			<div class="card p-0">
+				<div class="card-body">
+					<h5>Dubai Free Zone (not under DED)</h5>
+					<hr/>
+					<table id="dt-vertical-scroll-Dubai_Free_ZonesOutside"
+						class="table table-striped table-bordered table-sm table-light tbl_OutsideConsumerProtection"
+						style="width:100%">
+						<thead class="">
+							<tr class="">
+								<th>الاسم بالعربي</th>
+								<th>الاسم English</th>
+								<th>الهاتف | Phone</th>
+								<th>ساعات العمل | Working Hours</th>
+								<th>ايام العمل | Working Days</th>
+								<th>صندوق بريد | Working Hours</th>
+								<th>البريد الالكتروني | Email</th>
+							</tr>
+						</thead>
+
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--  -->
+</div>
+
+
+<!-- !!End -->
+
+<script>
+	/******************************************************* */
+	// //call Data ConsumerProtection
+	var dt_CP6 = $('#dt-vertical-scroll-Dubai_Free_ZonesInside').DataTable({
+		scrollY: 400,
+		paging: true,
+		language: {
+			searchPlaceholder: "اكتب هنا كلمات المراد البحث عنها",
+			search: "",
+		},
+		"pagingType": "simple_numbers",
+		"ajax": {
+			"url": "pages/page_DubaiFreeZones/data-updatePage_Dubai_Free_Zones/tb_page_Dubai_Free_ZonesInside.txt",
+			"dataSrc": ""
+		},
+		"columns": [
+			{ "data": "nameAr" },
+			{ "data": "nameEn" },
+			{ "data": "number" },
+			{ "data": "workingHours" },
+			{ "data": "workingDays" },
+			{ "data": "pOBoxs" },
+			{ "data": "email" }
+
+		]
+	});
+	// //call Data ConsumerProtection
+	var dt_CP7 = $('#dt-vertical-scroll-Dubai_Free_ZonesOutside').DataTable({
+		scrollY: 400,
+		paging: true,
+		language: {
+			searchPlaceholder: "اكتب هنا كلمات المراد البحث عنها",
+			search: "",
+		},
+		"pagingType": "simple_numbers",
+		"ajax": {
+			"url": "pages/page_DubaiFreeZones/data-updatePage_Dubai_Free_Zones/tb_page_Dubai_Free_ZonesOutside.txt",
+			"dataSrc": ""
+		},
+		"columns": [
+			{ "data": "nameAr" },
+			{ "data": "nameEn" },
+			{ "data": "number" },
+			{ "data": "workingHours" },
+			{ "data": "workingDays" },
+			{ "data": "pOBoxs" },
+			{ "data": "email" }
+
+		]
+	});
+	/******************************************************* */
+	// UI Fix // set layout Table OutsideConsumerProtection
+	$("#dt-vertical-scroll-Dubai_Free_ZonesInside").ready(function () {
+		$("#dt-vertical-scroll-Dubai_Free_ZonesInside_wrapper").find(".row .col:nth-child(2)").addClass('col-2');
+		$("#dt-vertical-scroll-Dubai_Free_ZonesInside_wrapper").find(".form-control").css("height", "41px")
+		// $("#dt-vertical-scroll-Dubai_Free_ZonesInside_wrapper").find(".form-control").attr("placeholder", "اكتب هنا كلمات المراد البحث عنها");
+		$("#dt-vertical-scroll-Dubai_Free_ZonesInside_wrapper").find(".form-control").focus();
+	});
+	$("#dt-vertical-scroll-Dubai_Free_ZonesOutside").ready(function () {
+		$("#dt-vertical-scroll-Dubai_Free_ZonesOutside_wrapper").find(".row .col:nth-child(2)").addClass('col-2');
+		$("#dt-vertical-scroll-Dubai_Free_ZonesOutside_wrapper").find(".form-control").css("height", "41px")
+		// $("#dt-vertical-scroll-Dubai_Free_ZonesInside_wrapper").find(".form-control").attr("placeholder", "اكتب هنا كلمات المراد البحث عنها");
+		$("#dt-vertical-scroll-Dubai_Free_ZonesOutside_wrapper").find(".form-control").focus();
+	});
+
+</script>

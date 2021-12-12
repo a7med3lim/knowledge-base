@@ -278,10 +278,10 @@
 					if (status == "success") {
 						// alert("Content loaded successfully!");
 						$("#loadSideBar").load("pages/components/sideNav/sidenav.html");
-						setTimeout(function () {
-							$(".logoSVG").fadeOut('slow');
-						}, 5000);
-						// $(".logoSVG").hide();
+						// setTimeout(function () {
+						// 	$(".logoSVG").fadeOut('slow');
+						// }, 5000);
+						$(".logoSVG").hide();
 						$(".loadingSucess").text("Loading | تحميل").show().show();
 					}
 					if (status == "error") {
