@@ -238,7 +238,7 @@
         })
 
         // Toggle to ClosesideNav if click on <a> in Small Screen
-        $('.nav-item a').click(function (event) {
+        $('#sidebar a').click(function (event) {
             if ($("#content").hasClass("active")) {
                 $("#content").toggleClass("active");
                 $("#sidebar").toggleClass("active");
@@ -252,9 +252,10 @@
             // To load pages(Links)
             var page = $(this).attr('href');
             $("#loadPages").load(page);
+            $("html, body").animate({scrollTop: 0}, 1000);//Back to top when page scroll down when press on page to load
             event.preventDefault();
             return false;
-
+            
         })
 
         //Active <a> if selected

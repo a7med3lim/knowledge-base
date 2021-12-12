@@ -271,18 +271,18 @@
 
 	<script>
 		$(document).ready(function () {
-
 			$(function () {
 				$("#loadPages").load("pages/dashboard/dashboard.html", function (response, status, http) {
-				// $("#loadPages").load("pages/page_FDI/page_FDI.html", function (response, status, http) {
+					// $("#loadPages").load("pages/page_FDI/page_FDI.html", function (response, status, http) {
 					if (status == "success") {
 						// alert("Content loaded successfully!");
 						$("#loadSideBar").load("pages/components/sideNav/sidenav.html");
 						setTimeout(function () {
 							$(".logoSVG").fadeOut('slow');
-						}, 5000);
+						}, 4000);
 						// $(".logoSVG").hide();
 						$(".loadingSucess").text("Loading | تحميل").show().show();
+						
 					}
 					if (status == "error") {
 						// alert("Error: " + http.status + ": " + http.statusText);
@@ -293,8 +293,7 @@
 					}
 				})
 			});
-		});
-		$(document).ready(function () {
+		
 			// For Side Nave
 			$(function () {
 				$('html').find("#sidebarCollapse").on("click", function () {
@@ -302,14 +301,17 @@
 					$("#sidebar").toggleClass("active");
 					$("#sidebarCollapse").find("i").toggleClass("fa-minus-square fa-columns");
 				});
+
 			});
-			// !!End Side Nave
-			// set Main Page
-			// $("#loadSideBar").load("pages/components/sideNav/sidenav.html");
-			// $("#loadPages").load("pages/dashboard/dashboard.html");
-			// $("#loadPages").load("pages/page_Consumer_protection/page_Precautionary_measures.html");
+		
+			
+			//Local Storge
+			// localStorage.content = $("#loadPages").load("pages/page_FDI/page_FDI.html");
+			// $("#loadPages").html(localStorage.content);
+			// console.log(localStorage.content)
 
 		});
+
 	</script>
 </body>
 
