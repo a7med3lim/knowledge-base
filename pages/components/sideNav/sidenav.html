@@ -72,11 +72,11 @@
                 data-parent="#accordionExample">
                 <ul class="nav flex-column">
                     <li class="nav-item  waves-effect">
-                        <a href="" class=""> الترتيب الرقمي للأنشطة
+                        <a href="pages/page_BRL_Required_Documents/page_BRL_Activity_Book.html" class=""> الترتيب الرقمي للأنشطة
                             <br>Activity Book </a>
                     </li>
                     <li class="nav-item  waves-effect">
-                        <a href="" class="">
+                        <a href="#" class="">
                             الأنشطة المحدثة
                             <br>
                             Updated Activity
@@ -233,12 +233,7 @@
 </div>
 <script>
     $(document).ready(function () {
-        // If href not linked
-        $('a[href*="#"]').on('click', function () {
-            $('#errorModal_FormAjax').modal('show');
-            $(".heading").html(" Error | خطأ ")
-            $(".errorModalFormAjax").html('Page not found | لا يوجد صفحة');
-        });
+
         //Goto Home page
         $('#gotoHome').click(function () {
             $("#loadPages").load("pages/dashboard/dashboard.html");
@@ -292,5 +287,13 @@
             return false;
         },
         );
+        // If href not linked
+        $('#sidebar a[href*="#"]').on('click', function (e) {
+            $('#errorModal_FormAjax').modal('show');
+            $(".heading").html(" Error | خطأ ")
+            $(".errorModalFormAjax").html('Page not found | لا يوجد صفحة');
+            e.preventDefault();
+            return false;
+        });
     });
 </script>
