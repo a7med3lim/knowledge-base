@@ -233,10 +233,16 @@
 </div>
 <script>
     $(document).ready(function () {
+        // If href not linked
+        $('a[href*="#"]').on('click', function () {
+            $('#errorModal_FormAjax').modal('show');
+            $(".heading").html(" Error | خطأ ")
+            $(".errorModalFormAjax").html('Page not found | لا يوجد صفحة');
+        });
+        //Goto Home page
         $('#gotoHome').click(function () {
             $("#loadPages").load("pages/dashboard/dashboard.html");
         })
-
         // Toggle to ClosesideNav if click on <a> in Small Screen
         $('#sidebar a').click(function (event) {
             if ($("#content").hasClass("active")) {
@@ -252,12 +258,11 @@
             // To load pages(Links)
             var page = $(this).attr('href');
             $("#loadPages").load(page);
-            $("html, body").animate({scrollTop: 0}, 1000);//Back to top when page scroll down when press on page to load
+            $("html, body").animate({ scrollTop: 0 }, 1000);//Back to top when page scroll down when press on page to load
             event.preventDefault();
             return false;
-            
-        })
 
+        })
         //Active <a> if selected
         $(".mainMenu_links a").on("click", function (event) {
             $("li.active").removeClass("active");

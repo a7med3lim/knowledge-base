@@ -271,6 +271,7 @@
 
 	<script>
 		$(document).ready(function () {
+		
 			$(function () {
 				$("#loadPages").load("pages/dashboard/dashboard.html", function (response, status, http) {
 					// $("#loadPages").load("pages/page_FDI/page_FDI.html", function (response, status, http) {
@@ -282,7 +283,7 @@
 						}, 4000);
 						// $(".logoSVG").hide();
 						$(".loadingSucess").text("Loading | تحميل").show().show();
-						
+
 					}
 					if (status == "error") {
 						// alert("Error: " + http.status + ": " + http.statusText);
@@ -293,7 +294,7 @@
 					}
 				})
 			});
-		
+
 			// For Side Nave
 			$(function () {
 				$('html').find("#sidebarCollapse").on("click", function () {
@@ -303,8 +304,8 @@
 				});
 
 			});
+
 		
-			
 			//Local Storge
 			// localStorage.content = $("#loadPages").load("pages/page_FDI/page_FDI.html");
 			// $("#loadPages").html(localStorage.content);
