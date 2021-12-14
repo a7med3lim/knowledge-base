@@ -46,7 +46,7 @@ var dt_BRL1 = $('#dt-vertical-scroll-BRL-Req-Doc-CreateBusiness').DataTable({
 	filter: true,
 	"pagingType": "simple_numbers",
 	"ajax": {
-		"url": "pages/page_BRL_Required_Documents/data-page_BRL_Required_Documents/tb_BRL_Req_Doc_CreateBusiness.txt",
+		"url": "pages/page_BRL_Required_Documents/data-page_BRL_Required_Documents/tb_BRL_Req_Doc_CreateBusiness.json",
 		"dataSrc": ""
 	},
 	"columns": [
@@ -61,7 +61,7 @@ var dt_BRL2 = $('#dt-vertical-scroll-BRL-Req-Doc-editRegistrationLicensing').Dat
 	paging: true,
 	filter: true,
 	"ajax": {
-		"url": "pages/page_BRL_Required_Documents/data-page_BRL_Required_Documents/tb_BRL_Req_Doc_editRegistrationLicensing.txt",
+		"url": "pages/page_BRL_Required_Documents/data-page_BRL_Required_Documents/tb_BRL_Req_Doc_editRegistrationLicensing.json",
 		"dataSrc": ""
 	},
 	"columns": [
@@ -74,7 +74,7 @@ var dt_BRL3 = $('#dt-vertical-scroll-BRL-Req-Doc-cancelRegistrationLicensing').D
 	paging: true,
 	filter: true,
 	"ajax": {
-		"url": "pages/page_BRL_Required_Documents/data-page_BRL_Required_Documents/tb_BRL_Req_Doc_editRegistrationLicensing.txt",
+		"url": "pages/page_BRL_Required_Documents/data-page_BRL_Required_Documents/tb_BRL_Req_Doc_editRegistrationLicensing.json",
 		"dataSrc": ""
 	},
 	"columns": [
@@ -88,7 +88,7 @@ var dt_BRL4 = $('#dt-vertical-scroll-BRL-additionalInformation').DataTable({
 	paging: true,
 	filter: true,
 	"ajax": {
-		"url": "pages/page_BRL_Required_Documents/data-page_BRL_Required_Documents/tb_BRL_Req_Doc_editRegistrationLicensing.txt",
+		"url": "pages/page_BRL_Required_Documents/data-page_BRL_Required_Documents/tb_BRL_Req_Doc_editRegistrationLicensing.json",
 		"dataSrc": ""
 	},
 	"columns": [
@@ -101,7 +101,7 @@ var dt_BRL5 = $('#dt-vertical-scroll-licensingProcessFees').DataTable({
 	paging: true,
 	filter: true,
 	"ajax": {
-		"url": "pages/page_BRL_Required_Documents/data-page_BRL_Required_Documents/tb_BRL_Req_Doc_editRegistrationLicensing.txt",
+		"url": "pages/page_BRL_Required_Documents/data-page_BRL_Required_Documents/tb_BRL_Req_Doc_editRegistrationLicensing.json",
 		"dataSrc": ""
 	},
 	"columns": [
@@ -114,7 +114,7 @@ var dt_BRL6 = $('#dt-vertical-scroll-notes').DataTable({
 	paging: true,
 	filter: true,
 	"ajax": {
-		"url": "pages/page_BRL_Required_Documents/data-page_BRL_Required_Documents/tb_BRL_Req_Doc_editRegistrationLicensing.txt",
+		"url": "pages/page_BRL_Required_Documents/data-page_BRL_Required_Documents/tb_BRL_Req_Doc_editRegistrationLicensing.json",
 		"dataSrc": ""
 	},
 	"columns": [
