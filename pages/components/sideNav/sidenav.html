@@ -5,7 +5,7 @@
         pb-4">الصفحةالرئيسية<br>Dashboard</a>
     <!-- !!End -->
     <!-- Menus -->
-    <div class="accordion sideNav" id="accordionExample">
+    <div class="accordion sideNav" id="accordionExampleSideNav">
         <div class="mainMenu">
             <div class="mainMenu_name" id="heading_1">
                 <button class="btn btn-DEDprimary" type="button" data-toggle="collapse" data-target="#collapseOne"
@@ -13,8 +13,8 @@
                     حماية المستهلك <br>Consumer protection <i class='fas fa-angle-down'></i>
                 </button>
             </div>
-            <div id="collapseOne" class="collapse mainMenu_links" aria-labelledby="heading_1"
-                data-parent="#accordionExample">
+            <div id="collapseOne" class="collapse mainMenu_links" aria-labelledby="accordionExampleSideNav"
+                data-parent="#accordionExampleSideNav">
                 <ul class="nav flex-column">
                     <li class="nav-item waves-effect">
                         <a href="pages\page_Consumer_protection\page_Consumer_protection.html" class=""> حماية
@@ -68,22 +68,23 @@
                     الرخص التجارية <br>BRL <i class='fas fa-angle-down'></i>
                 </button>
             </div>
-            <div id="collapse_2" class="collapse mainMenu_links" aria-labelledby="heading_2"
-                data-parent="#accordionExample">
+            <div id="collapse_2" class="collapse mainMenu_links" aria-labelledby="accordionExampleSideNav"
+                data-parent="#accordionExampleSideNav">
                 <ul class="nav flex-column">
                     <li class="nav-item  waves-effect">
-                        <a href="pages/page_BRL_Required_Documents/page_BRL_Activity_Book.html" class=""> الترتيب الرقمي للأنشطة
+                        <a href="pages/page_BRL/page_BRL_Activity_Book.html" class=""> الترتيب الرقمي
+                            للأنشطة
                             <br>Activity Book </a>
                     </li>
                     <li class="nav-item  waves-effect">
-                        <a href="#" class="">
+                        <a a href="pages/page_BRL/page_BRL_Activity_Book.html" class="">
                             الأنشطة المحدثة
                             <br>
                             Updated Activity
                         </a>
                     </li>
                     <li class="nav-item  waves-effect">
-                        <a href="pages/page_BRL_Required_Documents/page_BRL_Required_Documents.html" class="">
+                        <a href="pages/page_BRL/page_BRL.html" class="">
                             الأوراق المطلوبة
                             <br>
                             Required Documents
@@ -156,8 +157,8 @@
                     مؤسسة دبي لتنمية الاستثمار <br>Dubai FDI <i class='fas fa-angle-down'></i>
                 </button>
             </div>
-            <div id="collapse_3" class="collapse mainMenu_links" aria-labelledby="heading_3"
-                data-parent="#accordionExample">
+            <div id="collapse_3" class="collapse mainMenu_links" aria-labelledby="accordionExampleSideNav"
+                data-parent="#accordionExampleSideNav">
                 <ul class="nav flex-column">
                     <li class="nav-item  waves-effect">
                         <a href="pages\page_FDI\page_FDI.html" class=""> مؤسسة دبي لتنمية الاستثمار
@@ -175,8 +176,8 @@
                     مؤسسة محمد بن راشد <br>SME <i class='fas fa-angle-down'></i>
                 </button>
             </div>
-            <div id="collapse_6" class="collapse mainMenu_links" aria-labelledby="heading_6"
-                data-parent="#accordionExample">
+            <div id="collapse_6" class="collapse mainMenu_links" aria-labelledby="accordionExampleSideNav"
+                data-parent="#accordionExampleSideNav">
                 <ul class="nav flex-column">
                     <li class="nav-item  waves-effect">
                         <a href="#" class=""> مؤسسة محمد بن راشد
@@ -194,8 +195,8 @@
                     مؤسسة دبي لتنمية الصادرات <br>Dubai Exports <i class='fas fa-angle-down'></i>
                 </button>
             </div>
-            <div id="collapse_4" class="collapse mainMenu_links" aria-labelledby="heading_4"
-                data-parent="#accordionExample">
+            <div id="collapse_4" class="collapse mainMenu_links" aria-labelledby="accordionExampleSideNav"
+                data-parent="#accordionExampleSideNav">
                 <ul class="nav flex-column">
                     <li class="nav-item  waves-effect">
                         <a href="#" class=""> مؤسسة دبي لتنمية الصادرات
@@ -213,8 +214,8 @@
                     المناطق الحرة في دبي <br>Dubai Free Zones <i class='fas fa-angle-down'></i>
                 </button>
             </div>
-            <div id="collapse_5" class="collapse mainMenu_links" aria-labelledby="heading_5"
-                data-parent="#accordionExample">
+            <div id="collapse_5" class="collapse mainMenu_links" aria-labelledby="accordionExampleSideNav"
+                data-parent="#accordionExampleSideNav">
                 <ul class="nav flex-column">
                     <li class="nav-item  waves-effect">
                         <a href="pages\page_DubaiFreeZones\page_Dubai_Free_Zones.html" class=""> المناطق الحرة في دبي
@@ -229,6 +230,8 @@
             المواقع<br>Location Map
         </button>
     </div>
+
+
     <!-- !!End -->
 </div>
 <script>
@@ -291,7 +294,12 @@
         $('#sidebar a[href*="#"]').on('click', function (e) {
             $('#errorModal_FormAjax').modal('show');
             $(".heading").html(" Error | خطأ ")
-            $(".errorModalFormAjax").html('Page not found | لا يوجد صفحة');
+            $(".errorModalFormAjax").css("height:200px","padding-top:1rem")
+            $(".errorModalFormAjax").html('Page not found | لا يوجد صفحة').append('<a class="reloadPage btn btn-blue-grey p-2">Please reload page  <br/> من مفضل اعد تحميل الصفحة</a>');
+            $(".reloadPage , .close").on("click", function (e) {
+                location.reload();
+            })
+
             e.preventDefault();
             return false;
         });
