@@ -5,7 +5,7 @@
 			<div class="pageLocation py-4">
 				<ul>
 					<li class=""><a href="#">الرخص التجارية (BRL) </a></li>
-					<li class="current"><a href="#"> الاوراق الترتيب الرقمي للأنشطة | Activity Book </a></li>
+					<li class="current"><a href="#"> الأنشطة المحدثة | Updated Activity </a></li>
 					<!-- <li><a href="../index.html"></a></li> -->
 				</ul>
 			</div>
@@ -17,22 +17,21 @@
 		<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 mt-3">
 			<div class="card">
 				<div class="card-body">
-					<table id="dt-vertical-scroll-BRL-Activity_Book"
-						class="table table-striped  table-sm tbl_Activity_Book" style="width:100%">
+					<table id="dt-vertical-scroll-BRL-Activity_Update"
+						class="table table-striped  table-sm tbl_Activity_Update" style="width:100%">
 						<thead>
 							<tr>
 								<th>#</th>
-								<th>عنوان القسم</th>
-								<th> #</th>
-								<th>عنوان الباب</th>
-								<th>#</th>
-								<th>عنوان النشاط</th>
-								<th>#</th>
-								<th>القسم/ الباب/ النشاط</th>
-								<th>نوع الرخصة</th>
-								<th>الموافقات الخارجية المطلوبة للاصدار</th>
-								<th>الموافقات الخارجية المطلوبة للتجديد
-								</th>
+								<th>Activity Code</th>
+								<th> إسم النشاط</th>
+								<th>Activity Name</th>
+								<th>وصف النشاط</th>
+								<th>Activity Description</th>
+								<th>مجموعة النشاط</th>
+								<th>Activity Group</th>
+								<th>Activity Remark</th>
+								<th>فئة النشاط</th>
+								<th>Activity Category</th>
 							</tr>
 						</thead>
 					</table>
@@ -47,54 +46,42 @@
 <script>
 	$(document).ready(function () {
 		// //call Data ConsumerProtection
-		var dt_BRL7 = $('#dt-vertical-scroll-BRL-Activity_Book').DataTable({
+		var dt_BRL8 = $('#dt-vertical-scroll-BRL-Activity_Update').DataTable({
 			// scrollY: 340,
 			paging: true,
 			// filter: true,
 			"pagingType": "simple_numbers",
 			"ajax": {
-				"url": "pages/page_BRL_Required_Documents/data-page_BRL_Activity_Book/tb_BRL_Activity_Book.json",
+				"url": "pages/page_BRL/data-page_BRL_Activity_Update/tb_BRL_Activity_Update.json",
 				"dataSrc": ""
 			},
 			'columns': [
-				{ data: 'numberIndex' },
-				{ data: 'titleOfIndex' },
-				{ data: 'numberSubIndex' },
-				{ data: 'titleSubIndex' },
-				{ data: 'numberOfDivision' },
-				{ data: 'titleOfDivision' },
-				{ data: 'numberOfSubDivision' },
-				{ data: 'departmentNameSectionActivity' },
-				{ data: 'typeOfLicense' },
-				{ data: 'externalApprovalsRelease' },
-				{ data: 'externalApprovalsRenew' }
+				{ data: 'No' },
+				{ data: 'activityCode' },
+				{ data: 'activityNameAR' },
+				{ data: 'activityName' },
+				{ data: 'activityDescriptionAR' },
+				{ data: 'activityDescription' },
+				{ data: 'activityGroupAR' },
+				{ data: 'activityGroup' },
+				{ data: 'activityRemark' },
+				{ data: 'activityCategoryAR' },
+				{ data: 'activityCategory' }
 			],
-			"columnDefs": [
-				{
-					"targets": [0, 1],
-					"visible": false,
-					// "searchable": false
-				}
-			],
-			order: [[1, 'asc']],
-			rowGroup: {
-				dataSrc: ['numberIndex', 'titleOfIndex'],
-				rowGroup: true
-			},
 			'responsive': {
 				details: false
 			}
 		});
 		// UI Fix // set layout Table ConsumerProtection
-		$("#dt-vertical-scroll-BRL-Activity_Book").ready(function () {
-			$("#dt-vertical-scroll-BRL-Activity_Book_wrapper").find(".row .col:nth-child(2)").addClass('col-2');
-			$("#dt-vertical-scroll-BRL-Activity_Book_wrapper").find(".form-control").css("height", "41px")
-			$("#dt-vertical-scroll-BRL-Activity_Book_wrapper").find(".form-control").attr("placeholder", "اكتب هنا كلمات المراد البحث عنها");
-			$("#dt-vertical-scroll-BRL-Activity_Book_wrapper").find(".form-control").focus();
+		$("#dt-vertical-scroll-BRL-Activity_Update").ready(function () {
+			$("#dt-vertical-scroll-BRL-Activity_Update_wrapper").find(".row .col:nth-child(2)").addClass('col-2');
+			$("#dt-vertical-scroll-BRL-Activity_Update_wrapper").find(".form-control").css("height", "41px")
+			$("#dt-vertical-scroll-BRL-Activity_Update_wrapper").find(".form-control").attr("placeholder", "اكتب هنا كلمات المراد البحث عنها");
+			$("#dt-vertical-scroll-BRL-Activity_Update_wrapper").find(".form-control").focus();
 			//Set footer table UI
-			$("#dt-vertical-scroll-BRL-Activity_Book_wrapper").find(".dataTables_scroll").css('position', 'relative');
-			$("#dt-vertical-scroll-BRL-Activity_Book_wrapper").find(".dataTables_scrollHead").css('margin-top', '5rem');
-			$("#dt-vertical-scroll-BRL-Activity_Book_wrapper").find(".dataTables_scrollFoot").css({ "position": "absolute", "top": "-75px" });
+			$("#dt-vertical-scroll-BRL-Activity_Update_wrapper").find(".dataTables_scroll").css('position', 'relative');
+			$("#dt-vertical-scroll-BRL-Activity_Update_wrapper").find(".dataTables_scrollHead").css('margin-top', '5rem');
+			$("#dt-vertical-scroll-BRL-Activity_Update_wrapper").find(".dataTables_scrollFoot").css({ "position": "absolute", "top": "-75px" });
 		});
 	});
 </script>
