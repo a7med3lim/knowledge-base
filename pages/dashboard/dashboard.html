@@ -27,7 +27,9 @@
                             <div class="col mb-lg-0 mb-md-1 mb-sm-1 mb-1">
                                 <div class="card waves-effect rounded h-100">
                                     <!-- Card content -->
-                                    <a class="h-100 openModal_tb_consumer_protection" aria-labelledby="modal_tb_consumer_protection" id="modal_tb_consumer_protection">
+                                    <a class="h-100 openModal_tb_consumer_protection"
+                                        aria-labelledby="modal_tb_consumer_protection"
+                                        id="modal_tb_consumer_protection">
                                         <div class="card-body d-flex flex-column h-100 justify-content-between">
                                             <!-- Title -->
                                             <h5 class="card-title medium text-primery text-dark">اختصاص حماية
@@ -51,7 +53,8 @@
                             <div class="col mb-lg-0 mb-md-1 mb-sm-1 mb-1">
                                 <div class="card waves-effect rounded h-100">
                                     <!-- Card content -->
-                                    <a class="h-100 openModal_tb_consumer_protectionOutside" id="modal_tb__outside_consumer_protection">
+                                    <a class="h-100 openModal_tb_consumer_protectionOutside"
+                                        id="modal_tb__outside_consumer_protection">
                                         <div class="card-body d-flex flex-column h-100 justify-content-between">
                                             <!-- Title -->
                                             <h5 class="card-title medium text-primery text-dark">خارج اختصاص حماية
@@ -352,28 +355,37 @@
     $(document).ready(function () {
 
         // Table
+        // Set a dataTable
+        $('#dt-vertical-scroll-Dashboard').dataTable({
+            searchHighlight: true,
+            filter: true,
+            paging: true,
+            "pagingType": "simple_numbers",
+            "fnInitComplete": function () {
+                var myCustomScrollbar = document.querySelector('#dt-vertical-scroll_wrapper .dataTables_scrollBody');
+                var ps = new PerfectScrollbar(myCustomScrollbar);
+            },
+            "scrollY": 420,
+            language: {
+                searchPlaceholder: "اكتب هنا كلمات المراد البحث عنها",
+                search: "",
+            },
+            'responsive': {
+                details: true
+            }
+        });
         // set layout Table Dashboard
         $(".tblDashBoard").ready(function () {
             $("#dt-vertical-scroll-Dashboard_wrapper").find(".row .col:nth-child(2)").addClass('d-none');
             $("#dt-vertical-scroll-Dashboard_wrapper").find(".form-control").css("height", "41px")
-            $("#dt-vertical-scroll-Dashboard_wrapper").find(".form-control").attr("placeholder", "اكتب هنا كلمات المراد البحث عنها");
+            // $("#dt-vertical-scroll-Dashboard_wrapper").find(".form-control").attr("placeholder", "اكتب هنا كلمات المراد البحث عنها");
             $("#dt-vertical-scroll-Dashboard_wrapper").find(".form-control").focus();
         });
         // Add href to tr in table 
         $('tr[data-href]').on("click", function () {
             document.location = $(this).data('href');
         });
-        // Set a dataTable
-        $('#dt-vertical-scroll-Dashboard').dataTable({
-            "paging": false,
-            "fnInitComplete": function () {
-                var myCustomScrollbar = document.querySelector('#dt-vertical-scroll_wrapper .dataTables_scrollBody');
-                var ps = new PerfectScrollbar(myCustomScrollbar);
-            },
-            "scrollY": 420,
-        },
 
-        );
         // 
     });
 </script>

@@ -47,6 +47,7 @@
 	$(document).ready(function () {
 		// //call Data ConsumerProtection
 		var dt_BRL8 = $('#dt-vertical-scroll-BRL-Activity_Update').DataTable({
+			searchHighlight: true,
 			scrollY: '47vh',
 			paging: true,
 			// filter: true,
@@ -79,9 +80,9 @@
 			$("#dt-vertical-scroll-BRL-Activity_Update_wrapper").find(".form-control").attr("placeholder", "اكتب هنا كلمات المراد البحث عنها");
 			$("#dt-vertical-scroll-BRL-Activity_Update_wrapper").find(".form-control").focus();
 			//Set footer table UI
-			$("#dt-vertical-scroll-BRL-Activity_Update_wrapper").find(".dataTables_scroll").css('position', 'relative');
-			$("#dt-vertical-scroll-BRL-Activity_Update_wrapper").find(".dataTables_scrollHead").css('margin-top', '5rem');
-			$("#dt-vertical-scroll-BRL-Activity_Update_wrapper").find(".dataTables_scrollFoot").css({ "position": "absolute", "top": "-75px" });
+			// $("#dt-vertical-scroll-BRL-Activity_Update_wrapper").find(".dataTables_scroll").css('position', 'relative');
+			// $("#dt-vertical-scroll-BRL-Activity_Update_wrapper").find(".dataTables_scrollHead").css('margin-top', '5rem');
+			// $("#dt-vertical-scroll-BRL-Activity_Update_wrapper").find(".dataTables_scrollFoot").css({ "position": "absolute", "top": "-75px" });
 		});
 	});
 </script>

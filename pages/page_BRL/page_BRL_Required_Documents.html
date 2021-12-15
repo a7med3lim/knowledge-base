@@ -177,6 +177,7 @@
 	/******************************************************* */
 	// //call Data ConsumerProtection
 	var dt_BRL1 = $('#dt-vertical-scroll-BRL-Req-Doc-CreateBusiness').DataTable({
+		searchHighlight: true,
 		initComplete: function () {
 			this.api().columns().every(function () {
 				var column = this;
@@ -213,6 +214,7 @@
 		]
 	});
 	var dt_BRL2 = $('#dt-vertical-scroll-BRL-Req-Doc-editRegistrationLicensing').DataTable({
+		searchHighlight: true,
 		scrollY: 340,
 		paging: true,
 		filter: true,
@@ -226,6 +228,7 @@
 		]
 	});
 	var dt_BRL3 = $('#dt-vertical-scroll-BRL-Req-Doc-cancelRegistrationLicensing').DataTable({
+		searchHighlight: true,
 		scrollY: 340,
 		paging: true,
 		filter: true,
@@ -240,6 +243,7 @@
 	});
 	//
 	var dt_BRL4 = $('#dt-vertical-scroll-BRL-additionalInformation').DataTable({
+		searchHighlight: true,
 		scrollY: 340,
 		paging: true,
 		filter: true,
@@ -253,6 +257,7 @@
 		]
 	});
 	var dt_BRL5 = $('#dt-vertical-scroll-licensingProcessFees').DataTable({
+		searchHighlight: true,
 		scrollY: 340,
 		paging: true,
 		filter: true,
@@ -266,6 +271,7 @@
 		]
 	});
 	var dt_BRL6 = $('#dt-vertical-scroll-notes').DataTable({
+		searchHighlight: true,
 		scrollY: 340,
 		paging: true,
 		filter: true,
