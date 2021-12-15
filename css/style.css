@@ -589,6 +589,12 @@ html[lang="ar"] .vertical-nav .accordion.sideNav .mainMenu .mainMenu_name button
   background-color: var(--secondary);
 }
 
+html[lang="ar"] .vertical-nav .accordion.sideNav .mainMenu .mainMenu_name button[aria-expanded="true"] i {
+  color: white;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
 html[lang="ar"] .vertical-nav .accordion.sideNav .mainMenu .mainMenu_name button[aria-expanded="false"] {
   background-color: var(--primary);
 }
