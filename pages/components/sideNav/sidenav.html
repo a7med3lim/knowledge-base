@@ -76,19 +76,21 @@
                             للأنشطة
                             <br>Activity Book </a>
                     </li>
-                    <li class="nav-item  waves-effect">
+                    <!-- <li class="nav-item  waves-effect">
                         <a a href="pages/page_BRL/page_BRL_Activity_Update.html" class="">
                             الأنشطة المحدثة
                             <br>
                             Updated Activity
                         </a>
-                    </li>
+                    </li> -->
                     <li class="nav-item  waves-effect">
-                        <a href="pages/page_BRL/page_BRL_Required_Documents.html" class="">
+                        <!-- <a href="pages/page_BRL/page_BRL_Required_Documents.html" class=""> -->
+                        <a href="#" class="">
                             الأوراق المطلوبة
                             <br>
                             Required Documents
                         </a>
+                        
                     </li>
                     <li class="nav-item  waves-effect">
                         <a href="#" class="">
@@ -96,49 +98,36 @@
                             <br>
                             Contact Center Extensions
                         </a>
+
                     </li>
                     <li class="nav-item  waves-effect">
-                        <a href="#" class="">
-                            المعايير الصديقة للمستهلك
-                            <br>
-                            Friendly Standards
-                        </a>
-                    </li>
-                    <li class="nav-item  waves-effect">
-                        <a href="#" class="">
+                        <a href="pages/page_BRL/page_BRL_Authorized_Service_Centers.html" class="">
                             مراكز الخدمة المعتمدة
                             <br>
-                            Permit
+                            Authorized Service Centers
                         </a>
                     </li>
                     <li class="nav-item  waves-effect">
-                        <a href="#" class="">
+                        <a href="pages/page_BRL/page_BRL_ElinkDepartment.html" class="">
                             الدوائر المربوطة إلكترونيا
                             <br>
-                            E- link Department
+                            E-link Department
                         </a>
                     </li>
                     <li class="nav-item  waves-effect">
                         <a href="#" class="">
-                            الأسماء التجارية
+                            شروط الأسماء التجارية
                             <br>
-                            Trade name
+                            Trade Name Terms 
                         </a>
                     </li>
-                    <li class="nav-item  waves-effect">
-                        <a href="#" class="">
-                            المناطق الحرة
-                            <br>
-                            Free Zone
-                        </a>
-                    </li>
-                    <li class="nav-item  waves-effect">
+                    <!-- <li class="nav-item  waves-effect">
                         <a href="#" class="">
                             (Warehouse Activities)أنشطة المستودع
                             <br>
                             DED Certified Offices
                         </a>
-                    </li>
+                    </li> -->
                     <li class="nav-item  waves-effect">
                         <a href="#" class="">
                             الأنشطة السياحية(سابقا)
@@ -291,17 +280,19 @@
         },
         );
         // If href not linked
-        $('#sidebar a[href*="#"]').on('click', function (e) {
+        $('#sidebar a[href*="#"]').on('click',function (e) {
             $('#errorModal_FormAjax').modal('show');
-            $(".heading").html(" Error | خطأ ")
-            $(".errorModalFormAjax").css("height:200px","padding-top:1rem")
-            $(".errorModalFormAjax").html('Page not found | لا يوجد صفحة').append('<a class="reloadPage btn btn-blue-grey p-2">Please reload page  <br/> من مفضل اعد تحميل الصفحة</a>');
-            $(".reloadPage , .close").on("click", function (e) {
-                location.reload();
-            })
-
-            e.preventDefault();
-            return false;
+                $(".heading").html(" Error | خطأ ")
+                $(".errorModalFormAjax").css("height:200px", "padding-top:1rem")
+                $(".errorModalFormAjax").html('Page not found | لا يوجد صفحة').append('<a class="reloadPage btn btn-blue-grey p-2">Please reload page  <br/> من مفضل اعد تحميل الصفحة</a>');
+                $(".reloadPage , .close").on("click", function (e) {
+                    location.reload();
+                })
+                e.preventDefault();
+                return false;
         });
+        // To find link without page
+        $('#sidebar').find('li a[href*="#"]').append('<span class="badge warm-flame-gradient">Page Not Found</span>');
+
     });
 </script>

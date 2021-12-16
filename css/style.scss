@@ -794,3 +794,11 @@ html[lang="en"] {
     //     font-size: inherit !important;
     // }
 }
+/****** Datatable Fix Some issue ******/
+.dataTables_wrapper .dataTables_filter{
+    float:unset !important;
+}
+.dataTables_wrapper .dataTables_length select{
+    padding:0px 15px !important;
+    text-align: center;
+}

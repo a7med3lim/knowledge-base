@@ -1,0 +1,34 @@
+[
+  {
+    "No": "1",
+    "serviceCentersAr": "تسهيل - البرشاء",
+    "serviceCentersEn": "TASSHEEL - AL BARSHA",
+    "workingDateFrom": "السبت",
+    "workingDateTo": "الخميس",
+    "workingHoursFrom": "8:00 AM",
+    "workingHoursTo": "8:00 PM",
+    "serviceCentersLocation": "البرشاء - البرشاء مول - الطابق الأول",
+    "serviceCentersLocationMap": "https://goo.gl/maps/uSg9vQr6znQtDhzPA",
+    "serviceCentersSupport": "جميع الخدمات",
+    "serviceCentersIncome": "نعم",
+    "serviceCentersInspection": "نعم",
+    "serviceCentersLicense": "نعم",
+    "serviceCentersStatus": "نعم"
+  },
+  {
+    "No": "6",
+    "serviceCentersAr": "مركز خدمتي للخدمات الحكومية",
+    "serviceCentersEn": "KHIDMATY GOVERNMENT SERVICES CENTER",
+    "workingDateFrom": "الأحد",
+    "workingDateTo": "الخميس",
+    "workingHoursFrom": "8:00 AM",
+    "workingHoursTo": "8:00 PM",
+    "serviceCentersLocation": "ديرة - أبوهيل - شرق هور العنز",
+    "serviceCentersLocationMap": "https://goo.gl/maps/sxMo7EtmXDKK29SH8",
+    "serviceCentersSupport": "جميع الخدمات",
+    "serviceCentersIncome": "نعم",
+    "serviceCentersInspection": "نعم",
+    "serviceCentersLicense": "نعم",
+    "serviceCentersStatus": "<span class='bg-danger text-light px-3'>لا</span>"
+  }
+]

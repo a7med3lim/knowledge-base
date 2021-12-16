@@ -1,0 +1,162 @@
+<div class="container-fluid mt-5 h-100">
+	<!-- Page Location -->
+	<div class="row">
+		<div class="col-md-12 mt-4 px-0 m-0">
+			<div class="pageLocation py-4">
+				<ul>
+					<li class=""><a href="#">الرخص التجارية (BRL) </a></li>
+					<li class="current"><a href="#"> مراكز الخدمة المعتمدة | Authorized Service Centers </a></li>
+					<!-- <li><a href="../index.html"></a></li> -->
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- Main Grid 2 Col -->
+	<div class="row">
+		<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 mt-1">
+			<div class="card mt-3">
+				<div class="card-body">
+					<h5 class="font-weight-bold d-flex flex-row justify-content-start align-items-baseline">
+						<i class="far fa-hand-paper"></i> <span class="px-1">
+							يمكن للعميل زيارة مراكز الخدمة لعقد التأسيس الالكتروني بجميع أوقات العمل اما قسم الإيرادات
+							الزيارة بالأوقات الصباحية فقط قبل الساعة 2.30
+						</span>
+					</h5>
+				</div>
+			</div>
+		</div>
+		<!-- right (Top Links & Table Dashboard) -->
+		<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 mt-1">
+			<div class="card">
+				<div class="card-body">
+					<table id="dt-vertical-scroll-BRL-Authorized_Service_Centers"
+						class="table table-striped  table-sm tbl_Authorized_Service_Centers" style="width:100%">
+						<!-- <tfoot>
+							<th width="30" style="display: none;">#</th>
+							<th width="30">اسم مركز الخدمة باللغة العربية</th>
+							<th width="30">اسم المركز باللغة الإنجليزية</th>
+							<th width="30" style="display: none;"> أيام العمل من</th>
+							<th width="30" style="display: none;"> أيام العمل الي</th>
+							<th width="30" style="display: none;">ساعات العمل من</th>
+							<th width="30" style="display: none;">ساعات العمل الي</th>
+							<th width="10" style="display: none;">موقع المركز</th>
+							<th width="10" style="display: none;">الموقع الالكتروني للمركز</th>
+							<th width="10">الخدمات</th>
+							<th width="40">الايرادات</th>
+							<th width="40">التفتيش</th>
+							<th width="50">رخصة تاجر</th>
+							<th width="50">الحالة</th>
+						</tfoot> -->
+						<thead>
+							<tr>
+								<th width="30">#</th>
+								<th width="30">اسم مركز الخدمة باللغة العربية</th>
+								<th width="30">اسم المركز باللغة الإنجليزية</th>
+								<th width="30"> أيام العمل من</th>
+								<th width="30"> أيام العمل الي</th>
+								<th width="30">ساعات العمل من</th>
+								<th width="30">ساعات العمل الي</th>
+								<th width="10">موقع المركز</th>
+								<th width="10">الموقع الالكتروني للمركز</th>
+								<th width="10">الخدمات</th>
+								<th width="40">الايرادات</th>
+								<th width="40">التفتيش</th>
+								<th width="50">رخصة تاجر</th>
+								<th width="50">الحالة</th>
+							</tr>
+						</thead>
+					</table>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<!--  -->
+</div>
+
+<script>
+	$(document).ready(function () {
+		// //call Data ConsumerProtection
+		var dt_BRL9 = $('#dt-vertical-scroll-BRL-Authorized_Service_Centers').DataTable({
+			searchHighlight: true,
+			initComplete: function () {
+				this.api().columns().every(function () {
+					var column = this;
+					var colTitle = this.footer().innerHTML;
+					var select = $('<select  class="browser-default custom-select form-control-sm"><option value="" selected>' + colTitle + '</option></select>')
+						.appendTo($(column.footer()).empty())
+						.on('change', function () {
+							var val = $.fn.dataTable.util.escapeRegex(
+								$(this).val()
+							);
+							column
+								.search(val ? '^' + val + '$' : '', true, false)
+								.draw();
+						});
+
+					column.data().unique().sort().each(function (d, j) {
+						select.append('<option value="' + d + '">' + d + '</option>')
+					});
+				});
+			},
+			language: {
+				searchPlaceholder: "اكتب هنا كلمات المراد البحث عنها",
+				search: "",
+			},
+			"search": {
+				"search": ""
+			},
+			scrollY: '43vh',
+			paging: true,
+			// filter: true,
+			"pagingType": "simple_numbers",
+			"ajax": {
+				"url": "pages/page_BRL/data-page_BRL_Authorized_Service_Centers/tb_BRL_Authorized_Service_Centers.json",
+				"dataSrc": ""
+			},
+			'columns': [
+				{ data: 'No' },
+				{ data: 'serviceCentersAr' },
+				{ data: 'serviceCentersEn' },
+				{ data: 'workingDateFrom' },
+				{ data: 'workingDateTo' },
+				{ data: 'workingHoursFrom' },
+				{ data: 'workingHoursTo' },
+				{ data: 'serviceCentersLocation' },
+				{ data: 'serviceCentersLocationMap' },
+				{ data: 'serviceCentersSupport' },
+				{ data: 'serviceCentersIncome' },
+				{ data: 'serviceCentersInspection' },
+				{ data: 'serviceCentersLicense' },
+				{ data: 'serviceCentersStatus' }
+			],
+			"columnDefs": [
+				{
+					"targets": [2],
+					"visible": false,
+					"searchable": false
+				}
+			],
+			// // order: [[1, 'asc']],
+			// rowGroup: {
+			// 	dataSrc: ['activityCode'],
+			// 	rowGroup: true
+			// },
+			'responsive': {
+				details: true
+			}
+		});
+
+		// UI Fix // set layout Table ConsumerProtection
+		$("#dt-vertical-scroll-BRL-Authorized_Service_Centers").ready(function () {
+			$("#dt-vertical-scroll-BRL-Authorized_Service_Centers_wrapper").find(".row .col:nth-child(2)").addClass('col-2');
+			$("#dt-vertical-scroll-BRL-Authorized_Service_Centers_wrapper").find(".form-control").css("height", "41px")
+			// $("#dt-vertical-scroll-BRL-Authorized_Service_Centers_wrapper").find(".form-control").attr("placeholder", "اكتب هنا كلمات المراد البحث عنها");
+			$("#dt-vertical-scroll-BRL-Authorized_Service_Centers_wrapper").find(".form-control").focus();
+			//Set footer table UI
+			// $("#dt-vertical-scroll-BRL-Authorized_Service_Centers_wrapper").find(".dataTables_scroll").css('position', 'relative');
+			// $("#dt-vertical-scroll-BRL-Authorized_Service_Centers_wrapper").find(".dataTables_scrollHead").css('margin-top', '5rem');
+			// $("#dt-vertical-scroll-BRL-Authorized_Service_Centers_wrapper").find(".dataTables_scrollFoot").css({ "position": "absolute", "top": "-75px" });
+		});
+	});
+</script>
