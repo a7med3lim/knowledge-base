@@ -29,6 +29,6 @@
     "serviceCentersIncome": "نعم",
     "serviceCentersInspection": "نعم",
     "serviceCentersLicense": "نعم",
-    "serviceCentersStatus": "<span class='bg-danger text-light px-3'>لا</span>"
+    "serviceCentersStatus": "لا"
   }
 ]
