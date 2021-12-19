@@ -28,41 +28,25 @@
 		<!-- right (Top Links & Table Dashboard) -->
 		<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 mt-1">
 			<div class="card">
-				<div class="card-body">
+				<div class="card-body table-responsive">
 					<table id="dt-vertical-scroll-BRL-Authorized_Service_Centers"
-						class="table table-striped  table-sm tbl_Authorized_Service_Centers" style="width:100%">
-						<!-- <tfoot>
-							<th width="30" style="display: none;">#</th>
-							<th width="30">اسم مركز الخدمة باللغة العربية</th>
-							<th width="30">اسم المركز باللغة الإنجليزية</th>
-							<th width="30" style="display: none;"> أيام العمل من</th>
-							<th width="30" style="display: none;"> أيام العمل الي</th>
-							<th width="30" style="display: none;">ساعات العمل من</th>
-							<th width="30" style="display: none;">ساعات العمل الي</th>
-							<th width="10" style="display: none;">موقع المركز</th>
-							<th width="10" style="display: none;">الموقع الالكتروني للمركز</th>
-							<th width="10">الخدمات</th>
-							<th width="40">الايرادات</th>
-							<th width="40">التفتيش</th>
-							<th width="50">رخصة تاجر</th>
-							<th width="50">الحالة</th>
-						</tfoot> -->
+						class="table table-striped table-hover display wrap overflow" cellspacing="0">
 						<thead>
 							<tr>
-								<th width="30">#</th>
-								<th width="30">اسم مركز الخدمة باللغة العربية</th>
-								<th width="30">اسم المركز باللغة الإنجليزية</th>
-								<th width="30"> أيام العمل من</th>
-								<th width="30"> أيام العمل الي</th>
-								<th width="30">ساعات العمل من</th>
-								<th width="30">ساعات العمل الي</th>
-								<th width="10">موقع المركز</th>
-								<th width="10">الموقع الالكتروني للمركز</th>
-								<th width="10">الخدمات</th>
-								<th width="40">الايرادات</th>
-								<th width="40">التفتيش</th>
-								<th width="50">رخصة تاجر</th>
-								<th width="50">الحالة</th>
+								<th>#</th>
+								<th>اسم مركز الخدمة</th>
+								<th>اسم المركز باللغة الإنجليزية</th>
+								<th> أيام العمل من</th>
+								<th> أيام العمل الي</th>
+								<th>ساعات العمل من</th>
+								<th>ساعات العمل الي</th>
+								<th>Location</th>
+								<th>Map</th>
+								<th>الخدمات</th>
+								<th>الايرادات</th>
+								<th>التفتيش</th>
+								<th>رخصة تاجر</th>
+								<th>الحالة</th>
 							</tr>
 						</thead>
 					</table>
@@ -76,10 +60,12 @@
 
 <script>
 	$(document).ready(function () {
+		
 		// //call Data ConsumerProtection
 		var dt_BRL9 = $('#dt-vertical-scroll-BRL-Authorized_Service_Centers').DataTable({
 			searchHighlight: true,
 			initComplete: function () {
+				
 				this.api().columns().every(function () {
 					var column = this;
 					var colTitle = this.footer().innerHTML;
@@ -108,31 +94,31 @@
 			},
 			scrollY: '43vh',
 			paging: true,
-			// filter: true,
+			filter: true,
 			"pagingType": "simple_numbers",
 			"ajax": {
 				"url": "pages/page_BRL/data-page_BRL_Authorized_Service_Centers/tb_BRL_Authorized_Service_Centers.json",
 				"dataSrc": ""
 			},
 			'columns': [
-				{ data: 'No' },
-				{ data: 'serviceCentersAr' },
-				{ data: 'serviceCentersEn' },
-				{ data: 'workingDateFrom' },
-				{ data: 'workingDateTo' },
-				{ data: 'workingHoursFrom' },
-				{ data: 'workingHoursTo' },
-				{ data: 'serviceCentersLocation' },
-				{ data: 'serviceCentersLocationMap' },
-				{ data: 'serviceCentersSupport' },
-				{ data: 'serviceCentersIncome' },
-				{ data: 'serviceCentersInspection' },
-				{ data: 'serviceCentersLicense' },
-				{ data: 'serviceCentersStatus' }
+				{ data: 'No','autoWidth': true },
+				{ data: 'serviceCentersAr'},
+				{ data: 'serviceCentersEn'},
+				{ data: 'workingDateFrom'},
+				{ data: 'workingDateTo'},
+				{ data: 'workingHoursFrom'},
+				{ data: 'workingHoursTo'},
+				{ data: 'serviceCentersLocation'},
+				{ data: 'serviceCentersLocationMap'},
+				{ data: 'serviceCentersSupport'},
+				{ data: 'serviceCentersIncome'},
+				{ data: 'serviceCentersInspection'},
+				{ data: 'serviceCentersLicense'},
+				{ data: 'serviceCentersStatus'}
 			],
 			"columnDefs": [
 				{
-					"targets": [2],
+					"targets": [0,2,8],
 					"visible": false,
 					"searchable": false
 				}
@@ -146,7 +132,6 @@
 				details: true
 			}
 		});
-
 		// UI Fix // set layout Table ConsumerProtection
 		$("#dt-vertical-scroll-BRL-Authorized_Service_Centers").ready(function () {
 			$("#dt-vertical-scroll-BRL-Authorized_Service_Centers_wrapper").find(".row .col:nth-child(2)").addClass('col-2');
@@ -157,6 +142,8 @@
 			// $("#dt-vertical-scroll-BRL-Authorized_Service_Centers_wrapper").find(".dataTables_scroll").css('position', 'relative');
 			// $("#dt-vertical-scroll-BRL-Authorized_Service_Centers_wrapper").find(".dataTables_scrollHead").css('margin-top', '5rem');
 			// $("#dt-vertical-scroll-BRL-Authorized_Service_Centers_wrapper").find(".dataTables_scrollFoot").css({ "position": "absolute", "top": "-75px" });
+			
 		});
+		// dt_BRL9.adjust();
 	});
 </script>
