@@ -1,54 +1,35 @@
 [
   {
-    "No": "1",
-    "ministryAr": " التنظيم العقاري",
-    "ministryEn": "Real Estate and Regulatory Agency"
+    "name": " اسم تجاري عادي  ( النجوم المضيئة , المرايا ... الخ )",
+    "fees": "لا يوجد رسوم إضافية"
   },
   {
-    "No": "2",
-    "ministryAr": "الجمارك",
-    "ministryEn": " Dubai Customs"
+    "name": " اسم تجاري مختصر (الإسم التجاري يحتوي كلمات مختصرة مثل أ.ع.د التجارية)",
+    "fees": "2000 درهم"
   }
   ,
   {
-    "No": "3",
-    "ministryAr": "شرطة دبي – نظم الحماية",
-    "ministryEn": " Dubai police -Security Section"
+    "name":"اسم تجاري معرب  (أسماء تجارية تحتوي على كلمات أجنبية لا يمكن ترجمتها ,مثل )platinum",
+    "fees": "1000 درهم"
   }
   ,
   {
-    "No": "4",
-    "ministryAr": "بلدية دبي – حماية البيئة",
-    "ministryEn": "DM – Protection section"
+    "name":"اسم تجاري يحتوي على أرقام  (الاسم التجاري يحتوي على أرقام مثل الصين 2000 للتجارة.تكتب الارقام على هيئة حروف. مثل الصين واحد)",
+    "fees": "2000 درهم"
   }
   ,
   {
-    "No": "5",
-    "ministryAr": " بلدية دبي- النفايات",
-    "ministryEn": "DM-waste Disposal"
+    "name":"كلمات أجنبية  (الاسم التجاري يحتوي على كلمات اجنبيه)",
+    "fees": "2000 درهم"
   }
   ,
   {
-    "No": "6",
-    "ministryAr": " بلدية دبي – تأهيل و دراسات البناء",
-    "ministryEn": "DM-Building Studies and Prequalification Section"
+    "name":"اسم لعلامة تجارية – امتياز  (جزء من الاسم التجاري علامه تجاريه)",
+    "fees": "1000 درهم"
   }
   ,
   {
-    "No": "7",
-    "ministryAr": " دبي الملاحية",
-    "ministryEn": "Dubai maritime"
-  }
-  ,
-  {
-    "No": "8",
-    "ministryAr": " قرية الشحن",
-    "ministryEn": "Dubai Cargo"
-  }
-  ,
-  {
-    "No": "9",
-    "ministryAr": "هيئة تنظيم الاتصالات",
-    "ministryEn": "Telecommunications Regulatory Authority"
+    "name":"اسم تجارى دال على النطاق  (الاسم التجاري يتضمن الكلمات الآتية): (الشرق - الغرب - العالمية - الأمريكية - الأوروبية)",
+    "fees": "1000 درهم"
   }
 ]
