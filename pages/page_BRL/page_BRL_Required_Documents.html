@@ -41,20 +41,20 @@
 						style="width:100%">
 						<tfoot>
 							<tr>
-								<th>legal Form</th>
-								<th>Activities</th>
-								<th>Nationality</th>
-								<th>SME Support</th>
-								<th>Number of partners</th>
+								<th>الشكل القانوني</th>
+								<th>النشاط</th>
+								<th>الجنسية</th>
+								<th>يدعم SME</th>
+								<th>عدد الشركاء</th>
 							</tr>
 						</tfoot>
 						<thead>
 							<tr>
-								<th>legal Form</th>
-								<th>Activities</th>
-								<th>Nationality</th>
-								<th>SME Support</th>
-								<th>Number of partners</th>
+								<th>الشكل القانوني</th>
+								<th>النشاط</th>
+								<th>الجنسية</th>
+								<th>يدعم SME</th>
+								<th>عدد الشركاء</th>
 								<th></th>
 							</tr>
 						</thead>
@@ -159,6 +159,8 @@
 <!-- <script type="text/javascript" src="pages/page_BRL_Required_Documents/tb_BRL_Requird_Documents.js"></script> -->
 <script>
 
+
+
 	// UI Fix  //fix Table Header in modal
 	$(document).on('shown.bs.modal', function () {
 		// dt.columns.adjust();
@@ -175,6 +177,7 @@
 			dt_BRL5.columns.adjust();
 			dt_BRL6.columns.adjust();
 		})
+
 	})
 
 	/******************************************************* */
@@ -184,7 +187,8 @@
 		initComplete: function () {
 			this.api().columns().every(function () {
 				var column = this;
-				var select = $('<select  class="browser-default custom-select form-control-sm"><option value="" selected>Search</option></select>')
+				var colTitle = this.footer().innerHTML;
+				var select = $('<select  class="browser-default custom-select form-control-sm"><option value="" selected>' + colTitle + '</option></select>')
 					.appendTo($(column.footer()).empty())
 					.on('change', function () {
 						var val = $.fn.dataTable.util.escapeRegex(
@@ -201,8 +205,11 @@
 				});
 			});
 		},
-		scrollY: 340,
-		paging: true,
+		scrollY: '53vh',
+		scrollX: true,
+		scrollCollapse: true,
+		paging: false,
+		autoFill: true,
 		filter: true,
 		"pagingType": "simple_numbers",
 		"ajax": {
@@ -301,6 +308,7 @@
 		$("#dt-vertical-scroll-BRL-Req-Doc-CreateBusiness_wrapper").find(".dataTables_scroll").css('position', 'relative');
 		$("#dt-vertical-scroll-BRL-Req-Doc-CreateBusiness_wrapper").find(".dataTables_scrollHead").css('margin-top', '5rem');
 		$("#dt-vertical-scroll-BRL-Req-Doc-CreateBusiness_wrapper").find(".dataTables_scrollFoot").css({ "position": "absolute", "top": "-75px" });
+
 	});
 	$("#dt-vertical-scroll-BRL-Req-Doc-editRegistrationLicensing").ready(function () {
 		$("#dt-vertical-scroll-BRL-Req-Doc-editRegistrationLicensing_wrapper").find(".row .col:nth-child(2)").addClass('col-2');
@@ -344,6 +352,52 @@
 		$("#dt-vertical-scroll-notes_wrapper").find(".dataTables_scroll").css('position', 'relative');
 	});
 
-
+	/***********************/
+	$(document).ready(function () {
+		var soleEstablishment = $("a[data-name='soleEstablishment']");
+		soleEstablishment.click(function (e) {
+			e.preventDefault();
+			$.ajax({
+				url: "pages/page_BRL/data-page_BRL_Required_Documents/data-BRL-CreatBussiness/page-SoleEstablishment.html",
+				success: function (data) {
+					$('#modal_FormAjax').modal('show');
+					$(".heading").html('منشئة فردية | Sole Establishment')
+					$(".modalBodyFromAjax").html(data);
+					alert(response['response']);
+					return false;
+				},
+				error: function () {
+					// alert('Error');
+					$('#errorModal_FormAjax').modal('show');
+					$("#errorModal_FormAjax").find(".heading").html(erorrMsgBody);
+					$("#errorModal_FormAjax").find(".errorModalFormAjax").html(erorrMsgHeader);
+					return false;
+				}
+			});
+			return false;
+		});
+		var instantlicense = $("a[data-name='instantlicense']")
+		instantlicense.click(function (e) {
+			e.preventDefault();
+			$.ajax({
+				url: "pages/page_BRL/data-page_BRL_Required_Documents/data-BRL-CreatBussiness/page-instantlicense.html",
+				success: function (data) {
+					$('#modal_FormAjax').modal('show');
+					$(".heading").html('الرخصة الفورية | instant license')
+					$(".modalBodyFromAjax").html(data);
+					alert(response['response']);
+					return false;
+				},
+				error: function () {
+					// alert('Error');
+					$('#errorModal_FormAjax').modal('show');
+					$("#errorModal_FormAjax").find(".heading").html(erorrMsgBody);
+					$("#errorModal_FormAjax").find(".errorModalFormAjax").html(erorrMsgHeader);
+					return false;
+				}
+			});
+			return false;
+		});
+	})
 
 </script>
