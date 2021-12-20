@@ -5,7 +5,7 @@
    "Nationality": "اماراتي",
    "SME Support": "Yes",
    "Number of partners": "1",
-   "openPopUpData": "<a data-name='soleEstablishment'><i class='far fa-window-maximize'></i></a>"
+   "openPopUpData": "<a onclick='soleEstablishment(this)'><i class='far fa-window-maximize'></i></a>"
   },
   {
    "legal Form": "شركة تضامنية",

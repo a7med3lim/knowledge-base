@@ -353,51 +353,55 @@
 	});
 
 	/***********************/
-	$(document).ready(function () {
-		var soleEstablishment = $("a[data-name='soleEstablishment']");
-		soleEstablishment.click(function (e) {
-			e.preventDefault();
-			$.ajax({
-				url: "pages/page_BRL/data-page_BRL_Required_Documents/data-BRL-CreatBussiness/page-SoleEstablishment.html",
-				success: function (data) {
-					$('#modal_FormAjax').modal('show');
-					$(".heading").html('منشئة فردية | Sole Establishment')
-					$(".modalBodyFromAjax").html(data);
-					alert(response['response']);
-					return false;
-				},
-				error: function () {
-					// alert('Error');
-					$('#errorModal_FormAjax').modal('show');
-					$("#errorModal_FormAjax").find(".heading").html(erorrMsgBody);
-					$("#errorModal_FormAjax").find(".errorModalFormAjax").html(erorrMsgHeader);
-					return false;
-				}
-			});
-			return false;
+	//function of button in table open modal as a popup
+	//المؤسسة الفردية
+	function soleEstablishment(me) {
+		$.ajax({
+			url: "pages/page_BRL/data-page_BRL_Required_Documents/data-BRL-CreatBussiness/page-SoleEstablishment.html",
+			success: function (data) {
+				$('#modal_FormAjax').modal('show');
+				$(".heading").html('منشئة فردية | Sole Establishment')
+				$(".modalBodyFromAjax").html(data);
+				// alert(response['response']);
+				return false;
+			},
+			error: function () {
+				// alert('Error');
+				$('#errorModal_FormAjax').modal('show');
+				$("#errorModal_FormAjax").find(".heading").html(erorrMsgBody);
+				$("#errorModal_FormAjax").find(".errorModalFormAjax").html(erorrMsgHeader);
+				return false;
+			}
 		});
-		var instantlicense = $("a[data-name='instantlicense']")
-		instantlicense.click(function (e) {
-			e.preventDefault();
-			$.ajax({
-				url: "pages/page_BRL/data-page_BRL_Required_Documents/data-BRL-CreatBussiness/page-instantlicense.html",
-				success: function (data) {
-					$('#modal_FormAjax').modal('show');
-					$(".heading").html('الرخصة الفورية | instant license')
-					$(".modalBodyFromAjax").html(data);
-					alert(response['response']);
-					return false;
-				},
-				error: function () {
-					// alert('Error');
-					$('#errorModal_FormAjax').modal('show');
-					$("#errorModal_FormAjax").find(".heading").html(erorrMsgBody);
-					$("#errorModal_FormAjax").find(".errorModalFormAjax").html(erorrMsgHeader);
-					return false;
-				}
-			});
-			return false;
+	};
+	//!End
+	//الرخصة الفورية
+	function instantlicense(me) {
+		$.ajax({
+			url: "pages/page_BRL/data-page_BRL_Required_Documents/data-BRL-CreatBussiness/page-instantlicense.html",
+			success: function (data) {
+				$('#modal_FormAjax').modal('show');
+				$(".heading").html('الرخصة الفورية | instant license')
+				$(".modalBodyFromAjax").html(data);
+				alert(response['response']);
+				return false;
+			},
+			error: function () {
+				// alert('Error');
+				$('#errorModal_FormAjax').modal('show');
+				$("#errorModal_FormAjax").find(".heading").html(erorrMsgBody);
+				$("#errorModal_FormAjax").find(".errorModalFormAjax").html(erorrMsgHeader);
+				return false;
+			}
 		});
-	})
+	};
+//!End
+
+//رخصة تاجر الكتروني
+//!End
+//شركة اعمال مدنية
+//!End
+
+
 
 </script>
