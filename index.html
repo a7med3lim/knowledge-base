@@ -21,7 +21,8 @@
 	<link rel="stylesheet"
 		href="https://cdn.datatables.net/plug-ins/1.11.3/features/searchHighlight/dataTables.searchHighlight.css" />
 	<link rel="stylesheet" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css" />
-	<link href="https://cdn.datatables.net/buttons/1.2.1/css/buttons.dataTables.min.css" rel="stylesheet" type="text/css">
+	<link href="https://cdn.datatables.net/buttons/1.2.1/css/buttons.dataTables.min.css" rel="stylesheet"
+		type="text/css">
 
 </head>
 
@@ -284,10 +285,10 @@
 
 	<script>
 		$(document).ready(function () {
-		
+			var erorrMsgBody = ("<i class='fas fa-exclamation-triangle' style='color: white; margin-right:10px; margin-left:10px;'></i>" + " <span class='text-large'> Error |  خطأ</span>");
+			var erorrMsgHeader = ("<p>There is an error in download the file</p>" + "<p>هناك خطأ في تحميل الملف</p>");
 			$(function () {
-				// $("#loadPages").load("pages/dashboard/dashboard.html", function (response, status, http) {
-				$("#loadPages").load("pages/page_BRL/page_BRL_Required_Documents.html", function (response, status, http) {
+				$("#loadPages").load("pages/dashboard/dashboard.html", function (response, status, http) {
 					if (status == "success") {
 						// alert("Content loaded successfully!");
 						$("#loadSideBar").load("pages/components/sideNav/sidenav.html");
@@ -329,7 +330,7 @@
 
 
 	</script>
-	
+
 </body>
 
 </html>

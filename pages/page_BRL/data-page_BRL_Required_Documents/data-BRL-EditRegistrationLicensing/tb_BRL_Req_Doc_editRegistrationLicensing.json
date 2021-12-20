@@ -1,0 +1,90 @@
+[
+  {
+    "legalForm": "تجديد الترخيص",
+    "popup": "<a onclick='LicenseRenewal(this)'><i class='far fa-window-maximize'></i></a>"
+  },
+   {
+    "legalForm": "تغيير الاسم التجاري",
+    "popup": "<a onclick='ChangeTrade(this)'><i class='far fa-window-maximize'></i></a>"
+  },
+   {
+    "legalForm": "تغيير/إضافة/حذف نشاط ينطبق على كافة أنواع الرخص",
+    "popup": "<a onclick='ChangeAddDelete(this)'><i class='far fa-window-maximize'></i></a>"
+  },
+  {
+   "legalForm": "تغيير الوكيل /وكيل الخدمات المحلي",
+    "popup": "<a onclick=''><i class='far fa-window-maximize'></i></a>"
+ },
+ {
+  "legalForm": "تغيير موقع مزاولة النشاط",
+   "popup": "<a onclick=''><i class='far fa-window-maximize'></i></a>"
+},
+{
+ "legalForm": "بيع محل تجاري",
+  "popup": "<a onclick=''><i class='far fa-window-maximize'></i></a>"
+},
+{
+ "legalForm": "تغيير/ادخال مدير",
+  "popup": "<a onclick=''><i class='far fa-window-maximize'></i></a>"
+},
+{
+ "legalForm": "إحلال ورثة",
+  "popup": "<a onclick=''><i class='far fa-window-maximize'></i></a>"
+},
+{
+ "legalForm": "أيلولة رخصة",
+  "popup": "<a onclick=''><i class='far fa-window-maximize'></i></a>"
+},
+{
+ "legalForm": "إضافة / انسحاب شريك",
+  "popup": "<a onclick=''><i class='far fa-window-maximize'></i></a>"
+},
+{
+ "legalForm": "تعديل رأس المال",
+  "popup": "<a onclick=''><i class='far fa-window-maximize'></i></a>"
+},
+{
+ "legalForm": "باقات الأنشطة المركبة",
+  "popup": "<a onclick=''><i class='far fa-window-maximize'></i></a>"
+},
+{
+ "legalForm": "تعديل بيانات",
+  "popup": "<a onclick=''><i class='far fa-window-maximize'></i></a>"
+},
+{
+ "legalForm": "رهن الرخص",
+  "popup": "<a onclick=''><i class='far fa-window-maximize'></i></a>"
+},
+{
+ "legalForm": "دمج شركات",
+  "popup": "<a onclick=''><i class='far fa-window-maximize'></i></a>"
+},
+{
+ "legalForm": "تجميد الرخصة",
+  "popup": "<a onclick=''><i class='far fa-window-maximize'></i></a>"
+},
+{
+ "legalForm": "تغيير الشكل القانوني",
+  "popup": "<a onclick=''><i class='far fa-window-maximize'></i></a>"
+},
+{
+ "legalForm": "عقود التأسيس والتعديلات الالكترونية",
+  "popup": "<a onclick=''><i class='far fa-window-maximize'></i></a>"
+},
+{
+ "legalForm": "تحويلات الفروع",
+  "popup": "<a onclick=''><i class='far fa-window-maximize'></i></a>"
+},
+{
+ "legalForm": "قرارات الشيخ حمدان بشأن حزمة الحوافز الاقتصادية",
+  "popup": "<a onclick=''><i class='far fa-window-maximize'></i></a>"
+},
+{
+ "legalForm": "إجراءات التقسيط",
+  "popup": "<a onclick=''><i class='far fa-window-maximize'></i></a>"
+},
+{
+ "legalForm": "اجراءات التخفيض الخاصة بالدائرة",
+  "popup": "<a onclick=''><i class='far fa-window-maximize'></i></a>"
+}
+]

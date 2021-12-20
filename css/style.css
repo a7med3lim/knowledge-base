@@ -494,13 +494,47 @@ input:empty {
   }
 }
 
-.logoSVG .loadingSucess, .logoSVG .loadingUnloaded {
+.logoSVG .loadingSucess,
+.logoSVG .loadingUnloaded {
   color: white;
   position: absolute;
   bottom: 30%;
   z-index: 9999;
   font-weight: bolder;
   font-size: 20px;
+}
+
+.underConstruction {
+  margin-top: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.underConstruction img {
+  margin: auto 0 0 -380px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 600px;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+.underConstruction h4 {
+  color: var(--primary);
+  font-weight: 900;
+  font-size: 35px;
 }
 
 /*************/
@@ -611,7 +645,7 @@ html[lang="ar"] .vertical-nav .accordion.sideNav .mainMenu .mainMenu_links ul {
 }
 
 html[lang="ar"] .vertical-nav .accordion.sideNav .mainMenu .mainMenu_links ul li {
-  padding: 0.25rem 2.5rem;
+  padding: 0;
 }
 
 html[lang="ar"] .vertical-nav .accordion.sideNav .mainMenu .mainMenu_links ul li a {
@@ -620,7 +654,7 @@ html[lang="ar"] .vertical-nav .accordion.sideNav .mainMenu .mainMenu_links ul li
   font-size: 14px;
   font-weight: 400;
   display: block;
-  width: 100%;
+  padding: 0.25rem 1.5rem;
 }
 
 html[lang="ar"] .vertical-nav .accordion.sideNav .mainMenu .mainMenu_links ul li a::after {
@@ -629,7 +663,7 @@ html[lang="ar"] .vertical-nav .accordion.sideNav .mainMenu .mainMenu_links ul li
   position: absolute;
   width: 3px;
   height: 100vh;
-  right: -14px;
+  right: 14px;
   top: -6px;
   background-color: white;
 }
@@ -641,7 +675,7 @@ html[lang="ar"] .vertical-nav .accordion.sideNav .mainMenu .mainMenu_links ul li
   width: 11px;
   height: 11px;
   border: 2px solid var(--primary);
-  right: -18px;
+  right: 10px;
   top: 16px;
   background-color: white;
   z-index: 2;

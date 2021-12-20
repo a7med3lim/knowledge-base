@@ -1,7 +1,7 @@
 <div class="vertical-nav" id="sidebar">
     <!-- Toggle btn For Mobile -->
-    <a id="gotoHome""
-        class=" btn btn-DEDprimary text-white font-weight-bold text-uppercase px-3 small
+    <!-- <a id="gotoHome" onclick="gotoHome()" -->
+    <a onclick="gotoHome()" class=" btn btn-DEDprimary text-white font-weight-bold text-uppercase px-3 small
         pb-4">الصفحةالرئيسية<br>Dashboard</a>
     <!-- !!End -->
     <!-- Menus -->
@@ -89,13 +89,13 @@
                             <br>
                             Required Documents
                         </a>
-                        
+
                     </li>
                     <li class="nav-item  waves-effect">
-                        <a href="#" class="">
+                        <a href="pages/page_BRL/page_BRL_Permit.html" class="">
                             التصاريح
                             <br>
-                            Contact Center Extensions
+                            Permit
                         </a>
 
                     </li>
@@ -117,7 +117,7 @@
                         <a href="pages/page_BRL/page_BRL_TradeName.html" class="">
                             شروط الأسماء التجارية
                             <br>
-                            Trade Name Terms 
+                            Trade Name Terms
                         </a>
                     </li>
                     <!-- <li class="nav-item  waves-effect">
@@ -128,7 +128,7 @@
                         </a>
                     </li> -->
                     <li class="nav-item  waves-effect">
-                        <a href="#" class="">
+                        <a href="pages/page_BRL/page_BRL_TourismActivities.html" class="">
                             الأنشطة السياحية(سابقا)
                             <br>
                             (Previous) Tourism Activities
@@ -168,7 +168,7 @@
                 data-parent="#accordionExampleSideNav">
                 <ul class="nav flex-column">
                     <li class="nav-item  waves-effect">
-                        <a href="#" class=""> مؤسسة محمد بن راشد
+                        <a href="pages/page_SME/page_SME.html" class=""> مؤسسة محمد بن راشد
                             <br>SME </a>
                     </li>
 
@@ -187,7 +187,7 @@
                 data-parent="#accordionExampleSideNav">
                 <ul class="nav flex-column">
                     <li class="nav-item  waves-effect">
-                        <a href="#" class=""> مؤسسة دبي لتنمية الصادرات
+                        <a href="pages/page_Dubai_Exports/page_dubaiExports.html" class=""> مؤسسة دبي لتنمية الصادرات
                             <br>Dubai Exports </a>
                     </li>
 
@@ -223,12 +223,15 @@
     <!-- !!End -->
 </div>
 <script>
-    $(document).ready(function () {
+    //Goto Home page
+    function gotoHome() {
+        $("#loadPages").load("pages/dashboard/dashboard.html");
+    }
 
-        //Goto Home page
-        $('#gotoHome').click(function () {
-            $("#loadPages").load("pages/dashboard/dashboard.html");
-        })
+    $(document).ready(function () {
+        // $('#gotoHome').click(function () {
+        //     $("#loadPages").load("pages/dashboard/dashboard.html");
+        // })
         // Toggle to ClosesideNav if click on <a> in Small Screen
         $('#sidebar a').click(function (event) {
             if ($("#content").hasClass("active")) {
@@ -279,16 +282,16 @@
         },
         );
         // If a not have link
-        $('#sidebar a[href*="#"]').on('click',function (e) {
+        $('#sidebar a[href*="#"]').on('click', function (e) {
             $('#errorModal_FormAjax').modal('show');
-                $(".heading").html(" Error | خطأ ")
-                $(".errorModalFormAjax").css("height:200px", "padding-top:1rem")
-                $(".errorModalFormAjax").html('Page not found | لا يوجد صفحة').append('<a class="reloadPage btn btn-blue-grey p-2">Please reload page  <br/> من مفضل اعد تحميل الصفحة</a>');
-                $(".reloadPage , .close").on("click", function (e) {
-                    location.reload();
-                })
-                e.preventDefault();
-                return false;
+            $(".heading").html(" Error | خطأ ")
+            $(".errorModalFormAjax").css("height:200px", "padding-top:1rem")
+            $(".errorModalFormAjax").html('Page not found | لا يوجد صفحة').append('<a class="reloadPage btn btn-blue-grey p-2">Please reload page  <br/> من مفضل اعد تحميل الصفحة</a>');
+            $(".reloadPage , .close").on("click", function (e) {
+                location.reload();
+            })
+            e.preventDefault();
+            return false;
         });
         // To find link without page
         $('#sidebar').find('li a[href*="#"]').append('<span class="badge warm-flame-gradient">Page Not Found</span>');

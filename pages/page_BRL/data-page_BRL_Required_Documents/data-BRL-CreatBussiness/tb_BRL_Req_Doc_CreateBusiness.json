@@ -61,7 +61,7 @@
    "Nationality": "اماراتي",
    "SME Support": "Yes",
    "Number of partners": "12:50",
-   "openPopUpData": "<a data-name='instantlicense'><i class='far fa-window-maximize'></i></a>"
+   "openPopUpData": "<a  onclick='instantlicense(this)'><i class='far fa-window-maximize'></i></a>"
   },
   {
    "legal Form": "مؤسسة فردية",
@@ -93,7 +93,7 @@
    "Nationality": "اماراتي",
    "SME Support": "Yes",
    "Number of partners": "1:2",
-   "openPopUpData": "<a data-name=''><i class='far fa-window-maximize'></i></a>"
+   "openPopUpData": "<a  onclick='instantlicense(this)'><i class='far fa-window-maximize'></i></a>"
   },
   {
    "legal Form": "مؤسسة فردية",
@@ -149,7 +149,7 @@
    "Nationality": "اماراتي",
    "SME Support": "Yes",
    "Number of partners": "12:50",
-   "openPopUpData": "<a data-name=''><i class='far fa-window-maximize'></i></a>"
+   "openPopUpData": "<a  onclick='instantlicense(this)'><i class='far fa-window-maximize'></i></a>"
   },
   {
    "legal Form": "مؤسسة فردية",
@@ -213,7 +213,7 @@
    "Nationality": "مجلس تعاون",
    "SME Support": "Yes",
    "Number of partners": "12:50",
-   "openPopUpData": "<a data-name=''><i class='far fa-window-maximize'></i></a>"
+   "openPopUpData": "<a  onclick='instantlicense(this)'><i class='far fa-window-maximize'></i></a>"
   },
   {
    "legal Form": "مؤسسة فردية",
@@ -245,7 +245,7 @@
    "Nationality": "مجلس تعاون",
    "SME Support": "Yes",
    "Number of partners": "1:2",
-   "openPopUpData": "<a data-name=''><i class='far fa-window-maximize'></i></a>"
+   "openPopUpData": "<a  onclick='instantlicense(this)'><i class='far fa-window-maximize'></i></a>"
   },
   {
    "legal Form": "مؤسسة فردية",
@@ -301,7 +301,7 @@
    "Nationality": "مجلس تعاون",
    "SME Support": "Yes",
    "Number of partners": "12:50",
-   "openPopUpData": "<a data-name=''><i class='far fa-window-maximize'></i></a>"
+   "openPopUpData": "<a  onclick='instantlicense(this)'><i class='far fa-window-maximize'></i></a>"
   },
   {
    "legal Form": "مؤسسة فردية",
@@ -365,7 +365,7 @@
    "Nationality": "جنسيات اخرى",
    "SME Support": "No",
    "Number of partners": "12:50",
-   "openPopUpData": "<a data-name=''><i class='far fa-window-maximize'></i></a>"
+   "openPopUpData": "<a  onclick='instantlicense(this)'><i class='far fa-window-maximize'></i></a>"
   },
   {
    "legal Form": "مؤسسة فردية",
@@ -397,7 +397,7 @@
    "Nationality": "جنسيات اخرى",
    "SME Support": "No",
    "Number of partners": "1:2",
-   "openPopUpData": "<a data-name=''><i class='far fa-window-maximize'></i></a>"
+   "openPopUpData": "<a  onclick='instantlicense(this)'><i class='far fa-window-maximize'></i></a>"
   },
   {
    "legal Form": "مؤسسة فردية",
@@ -453,6 +453,6 @@
    "Nationality": "جنسيات اخرى",
    "SME Support": "No",
    "Number of partners": "12:50",
-   "openPopUpData": "<a data-name=''><i class='far fa-window-maximize'></i></a>"
+   "openPopUpData": "<a  onclick='instantlicense(this)'><i class='far fa-window-maximize'></i></a>"
   }
  ]

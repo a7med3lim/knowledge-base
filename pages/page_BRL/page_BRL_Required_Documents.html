@@ -208,12 +208,12 @@
 		scrollY: '53vh',
 		scrollX: true,
 		scrollCollapse: true,
-		paging: false,
+		paging: true,
 		autoFill: true,
 		filter: true,
 		"pagingType": "simple_numbers",
 		"ajax": {
-			"url": "pages/page_BRL/data-page_BRL_Required_Documents/tb_BRL_Req_Doc_CreateBusiness.json",
+			"url": "pages/page_BRL/data-page_BRL_Required_Documents/data-BRL-CreatBussiness/tb_BRL_Req_Doc_CreateBusiness.json",
 			"dataSrc": ""
 		},
 		"columns": [
@@ -227,11 +227,14 @@
 	});
 	var dt_BRL2 = $('#dt-vertical-scroll-BRL-Req-Doc-editRegistrationLicensing').DataTable({
 		searchHighlight: true,
-		scrollY: 340,
+		scrollY: '53vh',
+		scrollX: true,
+		scrollCollapse: true,
 		paging: true,
+		autoFill: true,
 		filter: true,
 		"ajax": {
-			"url": "pages/page_BRL/data-page_BRL_Required_Documents/tb_BRL_Req_Doc_editRegistrationLicensing.json",
+			"url": "pages/page_BRL/data-page_BRL_Required_Documents/data-BRL-EditRegistrationLicensing/tb_BRL_Req_Doc_editRegistrationLicensing.json",
 			"dataSrc": ""
 		},
 		"columns": [
@@ -239,63 +242,63 @@
 			{ "data": "popup" }
 		]
 	});
-	var dt_BRL3 = $('#dt-vertical-scroll-BRL-Req-Doc-cancelRegistrationLicensing').DataTable({
-		searchHighlight: true,
-		scrollY: 340,
-		paging: true,
-		filter: true,
-		"ajax": {
-			"url": "pages/page_BRL/data-page_BRL_Required_Documents/tb_BRL_Req_Doc_editRegistrationLicensing.json",
-			"dataSrc": ""
-		},
-		"columns": [
-			{ "data": "legalForm" },
-			{ "data": "popup" }
-		]
-	});
-	//
-	var dt_BRL4 = $('#dt-vertical-scroll-BRL-additionalInformation').DataTable({
-		searchHighlight: true,
-		scrollY: 340,
-		paging: true,
-		filter: true,
-		"ajax": {
-			"url": "pages/page_BRL/data-page_BRL_Required_Documents/tb_BRL_Req_Doc_editRegistrationLicensing.json",
-			"dataSrc": ""
-		},
-		"columns": [
-			{ "data": "legalForm" },
-			{ "data": "popup" }
-		]
-	});
-	var dt_BRL5 = $('#dt-vertical-scroll-licensingProcessFees').DataTable({
-		searchHighlight: true,
-		scrollY: 340,
-		paging: true,
-		filter: true,
-		"ajax": {
-			"url": "pages/page_BRL/data-page_BRL_Required_Documents/tb_BRL_Req_Doc_editRegistrationLicensing.json",
-			"dataSrc": ""
-		},
-		"columns": [
-			{ "data": "legalForm" },
-			{ "data": "popup" }
-		]
-	});
-	var dt_BRL6 = $('#dt-vertical-scroll-notes').DataTable({
-		searchHighlight: true,
-		scrollY: 340,
-		paging: true,
-		filter: true,
-		"ajax": {
-			"url": "pages/page_BRL/data-page_BRL_Required_Documents/tb_BRL_Req_Doc_editRegistrationLicensing.json",
-			"dataSrc": ""
-		},
-		"columns": [
-			{ "data": "legalForm" },
-			{ "data": "popup" }
-		]
-	});
+	// var dt_BRL3 = $('#dt-vertical-scroll-BRL-Req-Doc-cancelRegistrationLicensing').DataTable({
+	// 	searchHighlight: true,
+	// 	scrollY: 340,
+	// 	paging: true,
+	// 	filter: true,
+	// 	"ajax": {
+	// 		"url": "pages/page_BRL/data-page_BRL_Required_Documents/",
+	// 		"dataSrc": ""
+	// 	},
+	// 	"columns": [
+	// 		{ "data": "" },
+	// 		{ "data": "" }
+	// 	]
+	// });
+	// //
+	// var dt_BRL4 = $('#dt-vertical-scroll-BRL-additionalInformation').DataTable({
+	// 	searchHighlight: true,
+	// 	scrollY: 340,
+	// 	paging: true,
+	// 	filter: true,
+	// 	"ajax": {
+	// 		"url": "pages/page_BRL/data-page_BRL_Required_Documents/",
+	// 		"dataSrc": ""
+	// 	},
+	// 	"columns": [
+	// 		{ "data": "" },
+	// 		{ "data": "" }
+	// 	]
+	// });
+	// var dt_BRL5 = $('#dt-vertical-scroll-licensingProcessFees').DataTable({
+	// 	searchHighlight: true,
+	// 	scrollY: 340,
+	// 	paging: true,
+	// 	filter: true,
+	// 	"ajax": {
+	// 		"url": "pages/page_BRL/data-page_BRL_Required_Documents/",
+	// 		"dataSrc": ""
+	// 	},
+	// 	"columns": [
+	// 		{ "data": "" },
+	// 		{ "data": "" }
+	// 	]
+	// });
+	// var dt_BRL6 = $('#dt-vertical-scroll-notes').DataTable({
+	// 	searchHighlight: true,
+	// 	scrollY: 340,
+	// 	paging: true,
+	// 	filter: true,
+	// 	"ajax": {
+	// 		"url": "pages/page_BRL/data-page_BRL_Required_Documents/",
+	// 		"dataSrc": ""
+	// 	},
+	// 	"columns": [
+	// 		{ "data": "" },
+	// 		{ "data": "" }
+	// 	]
+	// });
 
 	/******************************************************* */
 	// UI Fix // set layout Table ConsumerProtection
@@ -354,6 +357,8 @@
 
 	/***********************/
 	//function of button in table open modal as a popup
+    var erorrMsgBody = ("<i class='fas fa-exclamation-triangle' style='color: white; margin-right:10px; margin-left:10px;'></i>" + " <span class='text-large'> Error |  خطأ</span>");
+    var erorrMsgHeader = ("<p>There is an error in download the file</p>" + "<p>هناك خطأ في تحميل الملف</p>");
 	//المؤسسة الفردية
 	function soleEstablishment(me) {
 		$.ajax({
@@ -401,7 +406,67 @@
 //!End
 //شركة اعمال مدنية
 //!End
-
-
+/****************************/
+//تعديل التسجيل/ الرخص
+//تجديد الرخصة
+function LicenseRenewal (editRegistrationLicensing){
+	$.ajax({
+			url: "pages/page_BRL/data-page_BRL_Required_Documents/data-BRL-EditRegistrationLicensing/page-LicenseRenewal.html",
+			success: function (data) {
+				$('#modal_FormAjax').modal('show');
+				$(".heading").html('تجديد الترخيص | License renewal ')
+				$(".modalBodyFromAjax").html(data);
+				alert(response['response']);
+				return false;
+			},
+			error: function () {
+				// alert('Error');
+				$('#errorModal_FormAjax').modal('show');
+				$("#errorModal_FormAjax").find(".heading").html(erorrMsgBody);
+				$("#errorModal_FormAjax").find(".errorModalFormAjax").html(erorrMsgHeader);
+				return false;
+			}
+		});
+}
+//تغيير الاسم التجاري
+function ChangeTrade (editRegistrationLicensing){
+	$.ajax({
+			url: "pages/page_BRL/data-page_BRL_Required_Documents/data-BRL-EditRegistrationLicensing/page-ChangeTrade.html",
+			success: function (data) {
+				$('#modal_FormAjax').modal('show');
+				$(".heading").html('تغيير الاسم التجاري | Change of trade name ')
+				$(".modalBodyFromAjax").html(data);
+				alert(response['response']);
+				return false;
+			},
+			error: function () {
+				// alert('Error');
+				$('#errorModal_FormAjax').modal('show');
+				$("#errorModal_FormAjax").find(".heading").html(erorrMsgBody);
+				$("#errorModal_FormAjax").find(".errorModalFormAjax").html(erorrMsgHeader);
+				return false;
+			}
+		});
+}
+//تغيير/إضافة/حذف نشاط ينطبق على كافة أنواع الرخص
+function ChangeAddDelete (editRegistrationLicensing){
+	$.ajax({
+			url: "pages/page_BRL/data-page_BRL_Required_Documents/data-BRL-EditRegistrationLicensing/page-ChangeAddDelete.html",
+			success: function (data) {
+				$('#modal_FormAjax').modal('show');
+				$(".heading").html('تغيير/إضافة/حذف نشاط ينطبق على كافة أنواع الرخص | Change/Add/Delete an activity that applies to all types of licenses  ')
+				$(".modalBodyFromAjax").html(data);
+				alert(response['response']);
+				return false;
+			},
+			error: function () {
+				// alert('Error');
+				$('#errorModal_FormAjax').modal('show');
+				$("#errorModal_FormAjax").find(".heading").html(erorrMsgBody);
+				$("#errorModal_FormAjax").find(".errorModalFormAjax").html(erorrMsgHeader);
+				return false;
+			}
+		});
+}
 
 </script>

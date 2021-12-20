@@ -271,9 +271,10 @@ input:empty {
 
         button[aria-expanded="false"] {
             background-color: transparent !important;
-            i{
+
+            i {
                 transform: rotate(90deg);
-               }
+            }
         }
     }
 
@@ -410,7 +411,8 @@ input:empty {
 
             &#Path_10,
             &#Path_13,
-            &#Path_12,&#Path_8 {
+            &#Path_12,
+            &#Path_8 {
                 stroke-dasharray: 572;
                 stroke-dashoffset: 572;
                 animation: linear-anim 2s ease forwards 0.4s;
@@ -521,13 +523,35 @@ input:empty {
         }
     }
 
-    .loadingSucess,.loadingUnloaded {
+    .loadingSucess,
+    .loadingUnloaded {
         color: white;
         position: absolute;
         bottom: 30%;
         z-index: 9999;
         font-weight: bolder;
         font-size: 20px;
+    }
+}
+
+.underConstruction {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        margin: auto 0 0 -380px;
+        display: flex;
+       max-width: 600px;
+       align-self: center;
+    }
+
+    h4 {
+        color: var(--primary);
+        font-weight: 900;
+        font-size: 35px;
     }
 }
 
@@ -588,7 +612,7 @@ html[lang="ar"] {
                             font-size: 14px;
                             font-weight: 500;
                             background-color: var(--primary);
-                            
+
                             i {
                                 color: white;
                             }
@@ -596,6 +620,7 @@ html[lang="ar"] {
 
                         button[aria-expanded="true"] {
                             background-color: var(--secondary);
+
                             i {
                                 color: white;
                                 transform: rotate(0deg);
@@ -604,6 +629,7 @@ html[lang="ar"] {
 
                         button[aria-expanded="false"] {
                             background-color: var(--primary);
+
                             i {
                                 color: white;
                                 transform: rotate(90deg);
@@ -617,7 +643,7 @@ html[lang="ar"] {
                             padding: 0;
 
                             li {
-                                padding: 0.25rem 2.5rem;
+                                padding: 0;
 
                                 a {
                                     color: var(--white);
@@ -625,7 +651,7 @@ html[lang="ar"] {
                                     font-size: 14px;
                                     font-weight: 400;
                                     display: block;
-                                    width: 100%;
+                                    padding: 0.25rem 1.5rem;
 
                                     &::after {
                                         content: '';
@@ -633,7 +659,7 @@ html[lang="ar"] {
                                         position: absolute;
                                         width: 3px;
                                         height: 100vh;
-                                        right: -14px;
+                                        right: 14px;
                                         top: -6px;
                                         background-color: white;
                                     }
@@ -645,7 +671,7 @@ html[lang="ar"] {
                                         width: 11px;
                                         height: 11px;
                                         border: 2px solid var(--primary);
-                                        right: -18px;
+                                        right: 10px;
                                         top: 16px;
                                         background-color: white;
                                         z-index: 2;
@@ -794,11 +820,13 @@ html[lang="en"] {
     //     font-size: inherit !important;
     // }
 }
+
 /****** Datatable Fix Some issue ******/
-.dataTables_wrapper .dataTables_filter{
-    float:unset !important;
+.dataTables_wrapper .dataTables_filter {
+    float: unset !important;
 }
-.dataTables_wrapper .dataTables_length select{
-    padding:0px 15px !important;
+
+.dataTables_wrapper .dataTables_length select {
+    padding: 0px 15px !important;
     text-align: center;
 }
