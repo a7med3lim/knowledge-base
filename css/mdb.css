@@ -2404,8 +2404,8 @@ strong {
     margin-top: -50px;
     margin-left: -50px;
     pointer-events: none;
-    background: rgba(0, 0, 0, 0.2);
-    background: radial-gradient(rgba(0, 0, 0, 0.2) 0, rgba(0, 0, 0, 0.3) 40%, rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 0.5) 60%, rgba(255, 255, 255, 0) 70%);
+    background: rgb(55, 0, 255);
+    background: radial-gradient(rgba(255, 0, 0, 0.2) 0, rgba(255, 0, 0, 0.3) 40%rgba(255, 0, 0, 0.4)4) 50%, rgba(255, 0, 0, 0.5) 60%, rgba(255, 0, 0, 0) 70%);
     border-radius: 50%;
     opacity: 0;
     -webkit-transition-property: -webkit-transform, opacity;
@@ -2420,8 +2420,8 @@ strong {
 }
 
 .waves-effect.waves-light .waves-ripple {
-    background: rgba(255, 255, 255, 0.4);
-    background: radial-gradient(rgba(255, 255, 255, 0.2) 0, rgba(255, 255, 255, 0.3) 40%, rgba(255, 255, 255, 0.4) 50%, rgba(255, 255, 255, 0.5) 60%, rgba(255, 255, 255, 0) 70%)
+    background: rgba(255, 0, 200, 0.4);
+    /* background: radial-gradient(rgba(255, 255, 255, 0.2) 0, rgba(255, 255, 255, 0.3) 40%, rgba(255, 255, 255, 0.4) 50%, rgba(255, 255, 255, 0.5) 60%, rgba(255, 255, 255, 0) 70%) */
 }
 
 .waves-effect.waves-classic .waves-ripple {
@@ -2441,7 +2441,7 @@ strong {
 .waves-circle {
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
-    -webkit-mask-image: -webkit-radial-gradient(circle, #fff 100%, #000 100%)
+    -webkit-mask-image: -webkit-radial-gradient(circle, #fff 100%, #555 100%)
 }
 
 .waves-button,

@@ -554,7 +554,12 @@ input:empty {
         font-size: 35px;
     }
 }
-
+.waves-effect{
+    &.waves-ripple{
+        background-color: violet !important;
+        z-index: 9999;
+    }
+}
 /*************/
 body,
 #loadPages div {
