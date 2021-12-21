@@ -1,33 +1,3 @@
-:root {
-    --blue: #007bff;
-    --indigo: #6610f2;
-    --purple: #6f42c1;
-    --pink: #e83e8c;
-    --red: #dc3545;
-    --orange: #fd7e14;
-    --yellow: #ffc107;
-    --green: #28a745;
-    --teal: #20c997;
-    --cyan: #17a2b8;
-    --white: #fff;
-    --gray: #626262;
-    --gray-dark: #343a40;
-    --primary: #00909a;
-    --secondary: #295960;
-    --success: #00603F;
-    --info: #F5F5F5;
-    --warning: #ffc107;
-    --danger: #dc3545;
-    --light: #ffff;
-    --dark: #343a40;
-    --breakpoint-xs: 0;
-    --breakpoint-sm: 576px;
-    --breakpoint-md: 768px;
-    --breakpoint-lg: 992px;
-    --breakpoint-xl: 1200px;
-    --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-}
 
 @font-face {
     font-family: "DubaiFont-R";
@@ -76,6 +46,9 @@ span {
 /*Set Some Value*/
 .bg-light {
     background-color: var(--light) !important;
+    i{
+color: var(--primary);
+    }
 }
 
 .btn-DEDprimary {
@@ -87,6 +60,7 @@ span {
 }
 
 .card {
+    background-color: var(--white);
     &.rounded {
         border-radius: 0.65rem !important;
     }
@@ -365,7 +339,7 @@ input:empty {
     padding-left: 0.5rem;
     padding-bottom: 0.5rem;
     padding-top: 1rem;
-    background: white;
+    background: var(--white);
     border-radius: 1rem;
     -webkit-box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
@@ -581,7 +555,7 @@ html[lang="ar"] {
     body {
         direction: rtl;
         text-align: start;
-        background-color: #F5F5F5;
+        background-color: var(--bgLightMode);
         overflow: scroll;
         overflow-x: hidden;
     }

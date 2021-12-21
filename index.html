@@ -23,10 +23,11 @@
 	<link rel="stylesheet" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css" />
 	<link href="https://cdn.datatables.net/buttons/1.2.1/css/buttons.dataTables.min.css" rel="stylesheet"
 		type="text/css">
+	<link rel="stylesheet" href="css/colors.css">
 
 </head>
 
-<body class="fixed-sn dark-blue-skin h-100">
+<body class="fixed-sn lightMode h-100">
 	<div class="logoSVG">
 		<svg xmlns="http://www.w3.org/2000/svg" id="logoDED" width="270.1" height="173.1" viewBox="0 0 270.1 173.1">
 			<g id="Group_1" data-name="Group 1" transform="translate(0.6 0.6)">
@@ -225,7 +226,8 @@
 		<!-- Header -->
 		<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
 			<!-- Toggle button Side Nav -->
-			<button id="sidebarCollapse" type="button" class="btn-Ded rounded-pill shadow-sm d-lg-noneX d-md-noneX" style="outline: none;border: 0;background: transparent;box-shadow: none !important;">
+			<button id="sidebarCollapse" type="button" class="btn-Ded rounded-pill shadow-sm d-lg-noneX d-md-noneX"
+				style="outline: none;border: 0;background: transparent;box-shadow: none !important;">
 				<!-- <i class="fa fa-caret-square-o-right" aria-hidden="true"></i> -->
 				<i class="fas fa-minus-square"></i>
 			</button>
@@ -242,6 +244,13 @@
 									class="fas fa-phone-alt"></i> </strong></a></li>
 					<li class="nav-item px-1"><a href="tel:971(04)4455555" class="text-default"><strong>971 (04) 44
 								55555 <i class="fas fa-phone-alt"></i> </strong></a></li>
+				<!-- DarkMode -->
+				<!-- <li class="border-left px-3 ml-3">
+					<div class="custom-control custom-switch" id="themeSwitch">
+						<input type="checkbox" class="custom-control-input" id="customSwitch1">
+						<label class="custom-control-label" for="customSwitch1"><i class="fas fa-moon"></i></label>
+					</div>
+				</li> -->
 				</ul>
 			</div>
 		</nav>
@@ -282,6 +291,12 @@
 	<script type="text/javascript" src="js/addons/rating.min.js"></script>
 
 	<!-- Your custom scripts (optional) -->
+	<!-- //DarkMode -->
+	<script>
+		document.getElementById('themeSwitch').addEventListener('change', function (event) {
+			(event.target.checked) ? document.body.setAttribute('data-theme', 'dark') : document.body.removeAttribute('data-theme');
+		});
+	</script>
 
 	<script>
 		$(document).ready(function () {
