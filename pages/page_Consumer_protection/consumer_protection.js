@@ -6,7 +6,7 @@ $(document).ready(function () {
     $('#modal_tb_consumer_protection').click(function (e) {
         e.preventDefault();
         $.ajax({
-            url: "pages/page_Consumer_protection/data-update/modalTableConsumerProtection.html",
+            url: "pages/page_Consumer_protection/data-updatePage_Consumer_Protection/modalTableConsumerProtection.html",
             success: function (data) {
                 $('#modal_FormAjax').modal('show');
                 $(".heading").html("Outside of consumer protection | اختصاص حماية المستهلك")
@@ -25,7 +25,7 @@ $(document).ready(function () {
     $('#modal_tb__outside_consumer_protection').click(function (e) {
         e.preventDefault();
         $.ajax({
-            url: "pages/page_Consumer_protection/data-update/modalTableOutsideConsumerProtection.html",
+            url: "pages/page_Consumer_protection/data-updatePage_Consumer_Protection/modalTableOutsideConsumerProtection.html",
             success: function (data) {
                 $('#modal_FormAjax').modal('show');
                 $(".heading").html("Outside of consumer protection | خارج اختصاص حمايةالمستهلك")
@@ -44,7 +44,7 @@ $(document).ready(function () {
     $('#openPopupFromData-TouristComlaintPopup').click(function (e) {
         e.preventDefault();
         $.ajax({
-            url: "pages/page_Consumer_protection/data-update/openTouristComlaintPopup.html",
+            url: "pages/page_Consumer_protection/data-updatePage_Consumer_Protection/openTouristComlaintPopup.html",
             success: function (data) {
                 $('#modal_FormAjax').modal('show');
                 $(".heading").html("Tourist complaint | شكوى سائح")
@@ -63,7 +63,7 @@ $(document).ready(function () {
     $('#openPopupFromData-NewcCmplaint').click(function (e) {
         e.preventDefault();
         $.ajax({
-            url: "pages/page_Consumer_protection/data-update/openNewComplaintPopup.html",
+            url: "pages/page_Consumer_protection/data-updatePage_Consumer_Protection/openNewComplaintPopup.html",
             success: function (data) {
                 $('#modal_FormAjax').modal('show');
                 $(".heading").html("New complaint | شكوى جديدة")
@@ -84,7 +84,7 @@ $(document).ready(function () {
     $('#openPopupFromData-followUpComplaint').click(function (e) {
         e.preventDefault();
         $.ajax({
-            url: "pages/page_Consumer_protection/data-update/followUpComplaintPopup.html",
+            url: "pages/page_Consumer_protection/data-updatePage_Consumer_Protection/followUpComplaintPopup.html",
             success: function (data) {
                 $('#modal_FormAjax').modal('show');
                 $(".heading").html("Follow up on a complaint | متابعة شكوى")
@@ -106,7 +106,7 @@ $(document).ready(function () {
     $('#openPopupFromData-followUpCRM').click(function (e) {
         e.preventDefault();
         $.ajax({
-            url: "pages/page_Consumer_protection/data-update/followUpCRMPopup.html",
+            url: "pages/page_Consumer_protection/data-updatePage_Consumer_Protection/followUpCRMPopup.html",
             success: function (data) {
                 $('#modal_FormAjax').modal('show');
                 $(".heading").html(" (CRM Assignment) |  كيفية تخصيص متابعة على النظام")
@@ -128,7 +128,7 @@ $(document).ready(function () {
     $('#openPopupFromData-dealingAlternateInspector').click(function (e) {
         e.preventDefault();
         $.ajax({
-            url: "pages/page_Consumer_protection/data-update/dealingAlternateInspectorPopup.html",
+            url: "pages/page_Consumer_protection/data-updatePage_Consumer_Protection/dealingAlternateInspectorPopup.html",
             success: function (data) {
                 $('#modal_FormAjax').modal('show');
                 $(".heading").html(" Dealing with the Alternate Inspector |  آلية التعامل مع المفتش المناوب")
@@ -151,7 +151,7 @@ $(document).ready(function () {
     $('#openPopupFromData-blueBook').click(function (e) {
         e.preventDefault();
         $.ajax({
-            url: "pages/page_Consumer_protection/data-update/blueBookPopup.html",
+            url: "pages/page_Consumer_protection/data-updatePage_Consumer_Protection/blueBookPopup.html",
             success: function (data) {
                 $('#modal_FormAjax').modal('show');
                 $(".heading").html(" Blue Book / Consumer rights Law | قوانين حماية المستهلك")
@@ -174,7 +174,7 @@ $(document).ready(function () {
     $('#openPopupFromData-consumerRights').click(function (e) {
         e.preventDefault();
         $.ajax({
-            url: "pages/page_Consumer_protection/data-update/consumerRightsPopup.html",
+            url: "pages/page_Consumer_protection/data-updatePage_Consumer_Protection/consumerRightsPopup.html",
             success: function (data) {
                 $('#modal_FormAjax').modal('show');
                 $(".heading").html(" Consumer Rights | المعايير الصديقة للمستهلك")
@@ -197,7 +197,7 @@ $(document).ready(function () {
     $('#openPopupFromData-PriceListApproval_ReviewTerms').click(function (e) {
         e.preventDefault();
         $.ajax({
-            url: "pages/page_Consumer_protection/data-update/data-PriceListApproval_ReviewTermsPopup.html",
+            url: "pages/page_Consumer_protection/data-updatePage_Consumer_Protection/data-PriceListApproval_ReviewTermsPopup.html",
             success: function (data) {
                 $('#modal_FormAjax').modal('show');
                 $(".heading").html(" Price list Approval / Review Terms & Conditions | اعتماد قائمة الأسعار/ مراجعة الشروط والاحكام")
