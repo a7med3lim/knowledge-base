@@ -454,5 +454,13 @@
    "SME Support": "No",
    "Number of partners": "12:50",
    "openPopUpData": "<a  onclick='instantlicense(this)'><i class='far fa-window-maximize'></i></a>"
+  },
+  {
+   "legal Form": "11111",
+   "Activities": "تجاري",
+   "Nationality": "جنسيات اخرى",
+   "SME Support": "No",
+   "Number of partners": "12:50",
+   "openPopUpData": "<a  onclick='instantlicense(this)'><i class='far fa-window-maximize'></i></a>"
   }
  ]
