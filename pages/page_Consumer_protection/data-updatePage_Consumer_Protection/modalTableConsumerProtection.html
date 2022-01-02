@@ -10,6 +10,8 @@
 
 </table>
 <script>
+  
+   
     // UI Fix  //fix Table Header in modal
     $(document).on('shown.bs.modal', function () {
         dt_CP1.columns.adjust();
@@ -17,6 +19,10 @@
 
     // //call Data ConsumerProtection
     var dt_CP1 = $('#dt-vertical-scroll-ConsumerProtection').DataTable({
+        dom: 'Bfrtip',
+        buttons: [
+            'excel',
+        ],
         scrollY: 400,
         paging: true,
         "pagingType": "simple_numbers",

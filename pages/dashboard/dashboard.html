@@ -127,7 +127,47 @@
                             <div class="card-header"> Quick Search | البحث السريع</div>
                             <div class="card-body">
                                 <div class="container tblDashBoard">
-                                    <table id="dt-vertical-scroll-Dashboard" class="table table-striped table-inverse"
+                                    <div id="customForm">
+                                        <fieldset class="name">
+                                            <legend>Name</legend>
+                                            <div data-editor-template="first_name"></div>
+                                            <div data-editor-template="last_name"></div>
+                                        </fieldset>
+                                        <fieldset class="office">
+                                            <legend>Office</legend>
+                                            <div data-editor-template="office"></div>
+                                            <div data-editor-template="extn"></div>
+                                        </fieldset>
+                                        <fieldset class="hr">
+                                            <legend>HR info</legend>
+                                            <div data-editor-template="position"></div>
+                                            <div data-editor-template="salary"></div>
+                                            <div data-editor-template="start_date"></div>
+                                        </fieldset>
+                                    </div>
+                                    <table id="example" class="display" style="width:100%">
+                                        <thead>
+                                            <tr>
+                                                <th>Name</th>
+                                                <th>Position</th>
+                                                <th>Office</th>
+                                                <th>Extn.</th>
+                                                <th>Start date</th>
+                                                <th>Salary</th>
+                                            </tr>
+                                        </thead>
+                                        <tfoot>
+                                            <tr>
+                                                <th>Name</th>
+                                                <th>Position</th>
+                                                <th>Office</th>
+                                                <th>Extn.</th>
+                                                <th>Start date</th>
+                                                <th>Salary</th>
+                                            </tr>
+                                        </tfoot>
+                                    </table>
+                                    <!-- <table id="dt-vertical-scroll-Dashboard" class="table table-striped table-inverse"
                                         cellspacing="0" width="100%">
                                         <thead>
                                             <tr>
@@ -141,7 +181,7 @@
                                         </thead>
                                         <tbody>
                                         </tbody>
-                                    </table>
+                                    </table> -->
                                 </div>
                             </div>
                         </div>
@@ -268,40 +308,102 @@
 
 <script src="pages/page_Consumer_protection/tb_consumer_protection.js"></script>
 <script>
-    $(document).ready(function () {
+  
+  var editor; // use a global for the submit and return data rendering in the examples
+ 
+ $(document).ready(function() {
+    //  editor = new $.fn.dataTable.Editor( {
+    //      ajax: "pages/dashboard/data-dashboard.ajax",
+    //      table: "#example",
+    //      template: '#customForm',
+    //      fields: [ {
+    //              label: "First name:",
+    //              name: "first_name"
+    //          }, {
+    //              label: "Last name:",
+    //              name: "last_name"
+    //          }, {
+    //              label: "Position:",
+    //              name: "position"
+    //          }, {
+    //              label: "Office:",
+    //              name: "office"
+    //          }, {
+    //              label: "Extension:",
+    //              name: "extn"
+    //          }, {
+    //              label: "Start date:",
+    //              name: "start_date",
+    //              type: "datetime"
+    //          }, {
+    //              label: "Salary:",
+    //              name: "salary"
+    //          }
+    //      ]
+    //  } );
+  
+     $('#example').DataTable( {
+         dom: "Bfrtip",
+         ajax: "pages/dashboard/data-dashboard.ajax",
+         columns: [
+             { data: null, render: function ( data, type, row ) {
+                 // Combine the first and last names into a single table field
+                 return data.first_name+' '+data.last_name;
+             } },
+             { data: "position" },
+             { data: "office" },
+             { data: "extn" },
+             { data: "start_date" },
+             { data: "salary", render: $.fn.dataTable.render.number( ',', '.', 0, '$' ) }
+         ],
+         select: true,
+         buttons: [
+             { extend: "create", editor: editor },
+             { extend: "edit",   editor: editor },
+             { extend: "remove", editor: editor }
+         ]
+     } );
+ } );
 
-        // Table
-        // Set a dataTable
-        $('#dt-vertical-scroll-Dashboard').dataTable({
-            searchHighlight: true,
-            filter: true,
-            paging: true,
-            "pagingType": "simple_numbers",
-            "fnInitComplete": function () {
-                var myCustomScrollbar = document.querySelector('#dt-vertical-scroll_wrapper .dataTables_scrollBody');
-                var ps = new PerfectScrollbar(myCustomScrollbar);
-            },
-            "scrollY": 420,
-            language: {
-                searchPlaceholder: "اكتب هنا كلمات المراد البحث عنها",
-                search: "",
-            },
-            'responsive': {
-                details: true
-            }
-        });
-        // set layout Table Dashboard
-        $(".tblDashBoard").ready(function () {
-            $("#dt-vertical-scroll-Dashboard_wrapper").find(".row .col:nth-child(2)").addClass('d-none');
-            $("#dt-vertical-scroll-Dashboard_wrapper").find(".form-control").css("height", "41px")
-            // $("#dt-vertical-scroll-Dashboard_wrapper").find(".form-control").attr("placeholder", "اكتب هنا كلمات المراد البحث عنها");
-            $("#dt-vertical-scroll-Dashboard_wrapper").find(".form-control").focus();
-        });
-        // Add href to tr in table 
-        $('tr[data-href]').on("click", function () {
-            document.location = $(this).data('href');
-        });
 
-        // 
-    });
+
+
+
+
+    // $(document).ready(function () {
+
+    //     // Table
+    //     // Set a dataTable
+    //     $('#dt-vertical-scroll-Dashboard').dataTable({
+    //         searchHighlight: true,
+    //         filter: true,
+    //         paging: true,
+    //         "pagingType": "simple_numbers",
+    //         "fnInitComplete": function () {
+    //             var myCustomScrollbar = document.querySelector('#dt-vertical-scroll_wrapper .dataTables_scrollBody');
+    //             var ps = new PerfectScrollbar(myCustomScrollbar);
+    //         },
+    //         "scrollY": 420,
+    //         language: {
+    //             searchPlaceholder: "اكتب هنا كلمات المراد البحث عنها",
+    //             search: "",
+    //         },
+    //         'responsive': {
+    //             details: true
+    //         }
+    //     });
+    //     // set layout Table Dashboard
+    //     $(".tblDashBoard").ready(function () {
+    //         $("#dt-vertical-scroll-Dashboard_wrapper").find(".row .col:nth-child(2)").addClass('d-none');
+    //         $("#dt-vertical-scroll-Dashboard_wrapper").find(".form-control").css("height", "41px")
+    //         // $("#dt-vertical-scroll-Dashboard_wrapper").find(".form-control").attr("placeholder", "اكتب هنا كلمات المراد البحث عنها");
+    //         $("#dt-vertical-scroll-Dashboard_wrapper").find(".form-control").focus();
+    //     });
+    //     // Add href to tr in table
+    //     $('tr[data-href]').on("click", function () {
+    //         document.location = $(this).data('href');
+    //     });
+
+    //     //
+    // });
 </script>
